@@ -80,3 +80,13 @@ body {
   height: 40px;
   background-color: #ff941a;
 }
+
+.nav .container {
+  display: flex;
+}
+
+.nav-link {
+  flex: 1;
+  text-align: center;
+  background-color: #ffe6ca;
+}
