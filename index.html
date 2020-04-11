@@ -3,18 +3,34 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport"
+        content="width=device-width, initial-scale=1.0"> -->
   <title>8090餐饮招商加盟</title>
+
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="./css/iconfont.css">
   <link rel="stylesheet"
         href="./css/main.css">
-  <link rel="stylesheet"
-        href="./node_modules/bootstrap/dist/css/bootstrap.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container-zf">
       <div class="logo">
         <a href="#">
           <img src="./images/logo.png"
@@ -29,18 +45,7 @@
         <div class="searchMin">
           <input class="rounded-pill"
                  type="text">
-          <svg t="1586414807002"
-               class="icon search-icon"
-               viewBox="0 0 1024 1024"
-               version="1.1"
-               xmlns="http://www.w3.org/2000/svg"
-               p-id="1203"
-               width="22"
-               height="22">
-            <path d="M928 886.4l-160-160c128-150.4 120-377.6-20.8-520C596.8 56 353.6 56 204.8 206.4c-72 72-112 169.6-112 272s40 198.4 112 272c72 72 169.6 112 272 112 91.2 0 179.2-32 248-91.2l160 160c12.8 12.8 32 12.8 44.8 0 11.2-12.8 11.2-32-1.6-44.8zM249.6 705.6c-60.8-60.8-94.4-140.8-94.4-225.6s33.6-166.4 94.4-225.6c62.4-62.4 144-92.8 225.6-92.8s163.2 30.4 225.6 92.8c124.8 124.8 124.8 328 0 452.8C640 768 560 801.6 475.2 801.6c-84.8-3.2-164.8-35.2-225.6-96z"
-                  p-id="1204"
-                  fill="#ff941a"></path>
-          </svg>
+          <span class="iconfont icon-xiazai5 search-icon color"></span>
         </div>
         <p>热门搜索：
           <a href="#"
@@ -59,8 +64,8 @@
       </div>
     </div>
   </header>
-  <nav class="nav">
-    <div class="container">
+  <nav class="nav nav-zf">
+    <div class="container-zf">
       <a class="nav-link active"
          href="#"
          target="_blank">首页</a>
@@ -78,6 +83,9 @@
          target="_blank">地方小吃</a>
       <a class="nav-link"
          href="#"
+         target="_blank">养生粥铺</a>
+      <a class="nav-link"
+         href="#"
          target="_blank">特色美食</a>
       <a class="nav-link"
          href="#"
@@ -85,7 +93,775 @@
     </div>
 
   </nav>
+  <section class="banner">
+    <div class="container-zf">
+      <aside class="rank-list">
+        <div class="rlbox"> <span class="rltit">热门项目排行</span>
+        </div>
+        <div class="content">
+          <ul class="nav nav-tabs"
+              id="myTab"
+              role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active"
+                 id="week-tab"
+                 data-toggle="tab"
+                 href="#week"
+                 role="tab"
+                 aria-controls="week"
+                 aria-selected="true">本周排行</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                 id="month-tab"
+                 data-toggle="tab"
+                 href="#month"
+                 role="tab"
+                 aria-controls="month"
+                 aria-selected="false">本月排行</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                 id="overall-tab"
+                 data-toggle="tab"
+                 href="#overall"
+                 role="tab"
+                 aria-controls="overall"
+                 aria-selected="false">总 排 行</a>
+            </li>
+          </ul>
+          <div class="tab-content zf-tab-content"
+               id="myTabContent">
+            <!-- 周排行 -->
+            <div class="tab-pane fade show active"
+                 id="week"
+                 role="tabpanel"
+                 aria-labelledby="week-tab">
+              <p class="item top">
+                <span class="number">1</span>
+                <a href="#">
+                  尚品宫自主烤肉火锅
+                </a>
+                <span class="iconfont icon-rexiao"></span>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item top">
+                <span class="number">2</span>
+                <a href="#">
+                  尚品宫自主烤肉火锅
+                </a>
+                <span class="iconfont icon-rexiao"></span>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item top">
+                <span class="number">3</span>
+                <a href="#">
+                  尚品宫自主烤肉火锅
+                </a>
+                <span class="iconfont icon-rexiao"></span>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">4</span>
+                <a href="#">
+                  尚品宫自主烤肉火锅
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">5</span>
+                <a href="#">
+                  尚品宫自主烤肉火锅
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">6</span>
+                <a href="#">
+                  尚品宫自主烤肉火锅
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">7</span>
+                <a href="#">
+                  尚品宫自主烤肉火锅
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">8</span>
+                <a href="#">
+                  尚品宫自主烤肉火锅
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">9</span>
+                <a href="#">
+                  尚品宫自主烤肉火锅
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item lastone">
+                <span class="number">10</span>
+                <a href="#">
+                  尚品宫自主烤肉火锅
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+            </div>
+            <!-- 月排行 -->
+            <div class="tab-pane fade"
+                 id="month"
+                 role="tabpanel"
+                 aria-labelledby="month-tab">
+              <p class="item top">
+                <span class="number">1</span>
+                <a href="#">
+                  御厨传奇
+                </a>
+                <span class="iconfont icon-rexiao"></span>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item top">
+                <span class="number">2</span>
+                <a href="#">
+                  御厨传奇
+                </a>
+                <span class="iconfont icon-rexiao"></span>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item top">
+                <span class="number">3</span>
+                <a href="#">
+                  御厨传奇
+                </a>
+                <span class="iconfont icon-rexiao"></span>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">4</span>
+                <a href="#">
+                  御厨传奇
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">5</span>
+                <a href="#">
+                  御厨传奇
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">6</span>
+                <a href="#">
+                  御厨传奇
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">7</span>
+                <a href="#">
+                  御厨传奇
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">8</span>
+                <a href="#">
+                  御厨传奇
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">9</span>
+                <a href="#">
+                  御厨传奇
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item lastone">
+                <span class="number">10</span>
+                <a href="#">
+                  御厨传奇
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+            </div>
+            <!-- 总排行 -->
+            <div class="tab-pane fade"
+                 id="overall"
+                 role="tabpanel"
+                 aria-labelledby="overall-tab">
+              <p class="item top">
+                <span class="number">1</span>
+                <a href="#">
+                  美食记
+                </a>
+                <span class="iconfont icon-rexiao"></span>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item top">
+                <span class="number">2</span>
+                <a href="#">
+                  美食记
+                </a>
+                <span class="iconfont icon-rexiao"></span>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item top">
+                <span class="number">3</span>
+                <a href="#">
+                  美食记
+                </a>
+                <span class="iconfont icon-rexiao"></span>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">4</span>
+                <a href="#">
+                  美食记
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">5</span>
+                <a href="#">
+                  美食记
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">6</span>
+                <a href="#">
+                  美食记
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">7</span>
+                <a href="#">
+                  美食记
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">8</span>
+                <a href="#">
+                  美食记
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item">
+                <span class="number">9</span>
+                <a href="#">
+                  美食记
+                </a>
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+              <p class="item lastone">
+                <span class="number">10</span>
+                <a href="#">
+                  美食记
+                </a>
 
+                <font>5519</font>
+                <span class="iconfont icon-xiangshang4"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+      <section class="slide">
+        <div id="carouselExampleIndicators"
+             class="carousel slide"
+             data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"></li>
+            <li data-target="#carouselExampleIndicators"
+                data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators"
+                data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active zf-carousel-item1">
+            </div>
+            <div class="carousel-item zf-carousel-item2">
+            </div>
+            <div class="carousel-item zf-carousel-item3">
+            </div>
+          </div>
+          <a class="carousel-control-prev"
+             href="#carouselExampleIndicators"
+             role="button"
+             data-slide="prev">
+            <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next"
+             href="#carouselExampleIndicators"
+             role="button"
+             data-slide="next">
+            <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+  </section>
+  <section class="zfcont">
+    <div class="container-zf">
+      <div class="zfcont1">
+        <ul>
+          <li><a href="/"
+               title="掉渣爪爪"
+               target="_blank"><img src="./images/zfconttop.jpg"
+                   alt=""></a></li>
+          <li><a href="/"
+               title="掉渣爪爪"
+               target="_blank"><img src="./images/zfconttop.jpg"
+                   alt=""></a></li>
+          <li><a href="/"
+               title="掉渣爪爪"
+               target="_blank"><img src="./images/zfconttop.jpg"
+                   alt=""></a></li>
+          <li><a href="/"
+               title="掉渣爪爪"
+               target="_blank"><img src="./images/zfconttop.jpg"
+                   alt=""></a></li>
+          <li><a href="/"
+               title="掉渣爪爪"
+               target="_blank"><img src="./images/zfconttop.jpg"
+                   alt=""></a></li>
+        </ul>
+      </div>
+      <div class="zfcont2">
+        <ul>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li class="oringe"><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li class="oringe"><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li class="oringe"><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li class="oringe"><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li class="oringe"><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li class="oringe"><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li class="oringe"><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li class="oringe"><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li class="oringe"><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li class="oringe"><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+          <li><a title="仟佰味捞汁小海鲜"
+               href="#"
+               target="_blank">海鲜零食 日售百份</a></li>
+        </ul>
+      </div>
+      <div class="zfcont3">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./images/zfcont3min.jpg"
+                   alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/zfcont3min.jpg"
+                   alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/zfcont3min.jpg"
+                   alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/zfcont3min.jpg"
+                   alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/zfcont3min.jpg"
+                   alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/zfcont3min.jpg"
+                   alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/zfcont3min.jpg"
+                   alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/zfcont3min.jpg"
+                   alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/zfcont3min.jpg"
+                   alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="zfcont4">
+        <div class="zfcont4div">
+          <div class="wide">
+            <a href="#"
+               title=""
+               target="_blank">华北</a>　｜　<a href="#"
+               title=""
+               target="_blank">华南</a><br>
+            <a href="#"
+               title=""
+               target="_blank">西北</a>　｜　<a href="#"
+               title=""
+               target="_blank">华中</a>　｜　<a href="#"
+               title=""
+               target="_blank">东北</a><br>
+            <a href="#"
+               title=""
+               target="_blank">西南</a>　｜　<a href="#"
+               title=""
+               target="_blank">东北</a>
+          </div>
+          <ul>
+            <li>
+              <a href="#"
+                 title=""
+                 target="_blank"><img src="./images/201901181656262714662.jpg"
+                     alt="">
+                <p>尚品宫餐饮</p>
+                <label>投资金额 1-3万</label>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                 title=""
+                 target="_blank"><img src="./images/201901181656262714662.jpg"
+                     alt="">
+                <p>尚品宫餐饮</p>
+                <label>投资金额 1-3万</label>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                 title=""
+                 target="_blank"><img src="./images/201901181656262714662.jpg"
+                     alt="">
+                <p>尚品宫餐饮</p>
+                <label>投资金额 1-3万</label>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                 title=""
+                 target="_blank"><img src="./images/201901181656262714662.jpg"
+                     alt="">
+                <p>尚品宫餐饮</p>
+                <label>投资金额 1-3万</label>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                 title=""
+                 target="_blank"><img src="./images/201901181656262714662.jpg"
+                     alt="">
+                <p>尚品宫餐饮</p>
+                <label>投资金额 1-3万</label>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="zfcont5">
+        <ul class="zfcont5min">
+          <li>
+            <a href="#"
+               title="石锅拌饭 全年红火"
+               target="_blank"
+               class="zfco5ig"><img src="./images/meishiji.jpg"
+                   alt=""></a>
+            <div class="zfco5dv zfco5dv1">
+              <label class="zfco5lb">快餐</label>
+              <a href="#"
+                 title=""
+                 target="_blank">美石记美食</a>
+              <p>额度：3-5万</p>
+              <p><a href="#"
+                   title="石锅拌饭 全年红火"
+                   target="_blank">石锅拌饭 全年红火</a></p>
+              <a href="#"
+                 title="石锅拌饭 全年红火"
+                 target="_blank"
+                 class="zfco5ck">立即查看</a>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+               title="石锅拌饭 全年红火"
+               target="_blank"
+               class="zfco5ig"><img src="./images/meishiji.jpg"
+                   alt=""></a>
+            <div class="zfco5dv zfco5dv2">
+              <label class="zfco5lb">快餐</label>
+              <a href="#"
+                 title=""
+                 target="_blank">美石记美食</a>
+              <p>额度：3-5万</p>
+              <p><a href="#"
+                   title="石锅拌饭 全年红火"
+                   target="_blank">石锅拌饭 全年红火</a></p>
+              <a href="#"
+                 title="石锅拌饭 全年红火"
+                 target="_blank"
+                 class="zfco5ck">立即查看</a>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+               title="石锅拌饭 全年红火"
+               target="_blank"
+               class="zfco5ig"><img src="./images/meishiji.jpg"
+                   alt=""></a>
+            <div class="zfco5dv zfco5dv3">
+              <label class="zfco5lb">快餐</label>
+              <a href="#"
+                 title=""
+                 target="_blank">美石记美食</a>
+              <p>额度：3-5万</p>
+              <p><a href="#"
+                   title="石锅拌饭 全年红火"
+                   target="_blank">石锅拌饭 全年红火</a></p>
+              <a href="#"
+                 title="石锅拌饭 全年红火"
+                 target="_blank"
+                 class="zfco5ck">立即查看</a>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+               title="石锅拌饭 全年红火"
+               target="_blank"
+               class="zfco5ig"><img src="./images/meishiji.jpg"
+                   alt=""></a>
+            <div class="zfco5dv zfco5dv4">
+              <label class="zfco5lb">快餐</label>
+              <a href="#"
+                 title=""
+                 target="_blank">美石记美食</a>
+              <p>额度：3-5万</p>
+              <p><a href="#"
+                   title="石锅拌饭 全年红火"
+                   target="_blank">石锅拌饭 全年红火</a></p>
+              <a href="#"
+                 title="石锅拌饭 全年红火"
+                 target="_blank"
+                 class="zfco5ck">立即查看</a>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+               title="石锅拌饭 全年红火"
+               target="_blank"
+               class="zfco5ig"><img src="./images/meishiji.jpg"
+                   alt=""></a>
+            <div class="zfco5dv zfco5dv5">
+              <label class="zfco5lb">快餐</label>
+              <a href="#"
+                 title=""
+                 target="_blank">美石记美食</a>
+              <p>额度：3-5万</p>
+              <p><a href="#"
+                   title="石锅拌饭 全年红火"
+                   target="_blank">石锅拌饭 全年红火</a></p>
+              <a href="#"
+                 title="石锅拌饭 全年红火"
+                 target="_blank"
+                 class="zfco5ck">立即查看</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="zfcont5miner">
+          <li><a title="美石记美食"
+               href="/web/meishiji/"
+               target="_blank"><img src="./images/zfcont3min.jpg"
+                   alt="美石记美食"></a></li>
+          <li><a title="美石记美食"
+               href="/web/meishiji/"
+               target="_blank"><img src="./images/zfcont3min.jpg"
+                   alt="美石记美食"></a></li>
+          <li><a title="美石记美食"
+               href="/web/meishiji/"
+               target="_blank"><img src="./images/zfcont3min.jpg"
+                   alt="美石记美食"></a></li>
+          <li><a title="美石记美食"
+               href="/web/meishiji/"
+               target="_blank"><img src="./images/zfcont3min.jpg"
+                   alt="美石记美食"></a></li>
+          <li><a title="美石记美食"
+               href="/web/meishiji/"
+               target="_blank"><img src="./images/zfcont3min.jpg"
+                   alt="美石记美食"></a></li>
+          <li><a title="美石记美食"
+               href="/web/meishiji/"
+               target="_blank"><img src="./images/zfcont3min.jpg"
+                   alt="美石记美食"></a></li>
+          <li><a title="美石记美食"
+               href="/web/meishiji/"
+               target="_blank"><img src="./images/zfcont3min.jpg"
+                   alt="美石记美食"></a></li>
+          <li><a title="美石记美食"
+               href="/web/meishiji/"
+               target="_blank"><img src="./images/zfcont3min.jpg"
+                   alt="美石记美食"></a></li>
+          <li><a title="美石记美食"
+               href="/web/meishiji/"
+               target="_blank"><img src="./images/zfcont3min.jpg"
+                   alt="美石记美食"></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="column-zf bgc">
+    <div class="container-zf">
+      <div class="gbftit gbftit1">
+        <span class="iconfont icon-xiangshang4"></span>
+        <span>地区特色选</span>
+        <div><a title="签捧串串杯"
+             href="/web/qpccbei/"
+             target="_blank">串 串 杯</a>　｜　<a title="艾菲力牛排杯"
+             href="/web/aflnpb/"
+             target="_blank">手心牛排</a>　｜　<a title="九品锅食材超市"
+             href="/web/jpgsccs/"
+             target="_blank">食材超市</a>　｜　<a title="禾小卷"
+             href="/web/byyscyu/"
+             target="_blank">炸串果饮</a></div>
+        <i></i>
+      </div>
+    </div>
+  </section>
+  <script src="./js/common.js"></script>
 </body>
 
 </html>

@@ -2,8 +2,7 @@
  * @Descripttion:网站全局样式表文件，字体使用思源
  * @Author: zf
  * @Date: 2020-04-09 15:41:27
- * @LastEditors: zf
- * @LastEditTime: Do not Edit
+ * main-color: #ff941a; background-color: #f4f4f4; distance: 10px;
  */
 @font-face {
   font-family: 'SourceHanSansCN-Medium';
@@ -17,12 +16,36 @@ html,
 body {
   font-family: 'SourceHanSansCN-Medium' !important;
 }
-
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.container-zf {
+  width: 1200px !important;
+  margin: auto;
+}
+.bgc {
+  background-color: #f4f4f4;
+}
+.color {
+  color: #ff941a;
+}
+.icon-rexiao:before {
+  font-size: 18px;
+  color: rgb(255, 2, 2);
+}
+.icon-xiangshang4:before {
+  font-size: 20px;
+  color: rgb(255, 2, 2);
+}
+/* 头部 */
 .header {
+  min-width: 1200px;
   padding: 10px 0 6px;
   background-color: #ffe6ca;
 }
-.header .container {
+.header .container-zf {
   display: flex;
   align-items: center;
 }
@@ -42,8 +65,9 @@ body {
 .search .search-icon {
   position: absolute;
   top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
+  left: 12px;
+  font-size: 20px;
+  transform: translateY(-46%);
 }
 
 .search input {
@@ -76,17 +100,467 @@ body {
   margin-left: 16px;
 }
 
-.nav {
+.nav-zf {
+  min-width: 1200px;
   height: 40px;
   background-color: #ff941a;
 }
 
-.nav .container {
+.nav-zf .container-zf {
   display: flex;
+  justify-content: center;
 }
 
 .nav-link {
   flex: 1;
+  color: #fff;
   text-align: center;
-  background-color: #ffe6ca;
+  letter-spacing: 2px;
+}
+@media (max-width: 992px) {
+  .nav-link {
+    flex: 0 1 auto;
+  }
+}
+.nav-zf .nav-link:hover {
+  color: #fff;
+  background-color: rgba(255, 230, 202, 0.3);
+}
+
+.nav-link.active {
+  background-color: rgba(255, 230, 202, 0.7);
+}
+.nav-link.active:hover {
+  background-color: rgba(255, 230, 202, 0.8);
+}
+
+/* 轮播 */
+.banner {
+  background-color: #f4f4f4;
+}
+.banner > .container-zf {
+  display: flex;
+  padding: 10px 0;
+}
+.rank-list {
+  width: 274px;
+  height: 460px;
+  margin-right: 10px;
+}
+
+.rank-list .rlbox {
+  height: 46px;
+}
+
+.rank-list .rltit {
+  display: block;
+  width: 274px;
+  height: 46px;
+  font-size: 20px;
+  line-height: 46px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background: #ff941a;
+}
+.rank-list .content {
+  height: 414px;
+  padding: 12px 10px;
+  background-color: #fff;
+  border: 1px solid #ff941a;
+  overflow: hidden;
+}
+.rank-list .nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+  border: none;
+}
+
+.rank-list .nav-item {
+  width: 80px;
+  height: 22px;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  border: none;
+}
+
+.rank-list .nav-item .nav-link {
+  padding: 0;
+  /* margin: 0 2px; */
+  color: #666;
+  border: 1px solid #dcdcdc;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.rank-list .nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #ff941a;
+  border: 1px solid #dcdcdc;
+}
+
+.zf-tab-content {
+  padding: 12px 0 0;
+}
+
+.zf-tab-content p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.zf-tab-content p > a {
+  flex: 1;
+  font-size: 13px;
+  color: #666;
+}
+
+.zf-tab-content p .number {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  line-height: 24px;
+  color: #ff941a;
+  text-align: center;
+  border: 1px solid #ff941a;
+  border-radius: 50%;
+}
+.zf-tab-content .item.top .number {
+  color: #fff;
+  background-color: #ff941a;
+}
+.zf-tab-content p font {
+  margin: 0 6px;
+  padding-top: 3px;
+}
+.zf-tab-content .item.lastone {
+  margin-bottom: 4px;
+}
+
+.slide {
+  width: 912px;
+  height: 460px;
+  /* background-color: pink; */
+}
+.slide .carousel {
+  height: 100%;
+}
+.slide .carousel-inner {
+  height: 100%;
+}
+.slide .carousel-item {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.slide .zf-carousel-item1 {
+  background-image: url('../images/banner1.jpg');
+}
+.slide .zf-carousel-item2 {
+  background-image: url('../images/banner2.jpg');
+}
+.slide .zf-carousel-item3 {
+  background-image: url('../images/banner1.jpg');
+}
+
+.zfcont {
+  background-color: #f4f4f4;
+}
+
+.zfcont .container-zf {
+  background-color: #f4f4f4;
+  height: 100%;
+}
+
+.zfcont1 {
+  padding: 10px 6px;
+  height: 138px;
+  background-color: #fff;
+}
+.zfcont1 ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.zfcont1 ul li a img {
+  width: 228px;
+  height: 118px;
+  transition: all 0.5s;
+}
+.zfcont1 ul li a:hover img {
+  transform: translateY(-5px);
+}
+.zfcont2 {
+  background-color: #fff;
+}
+.zfcont2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 0;
+  border-top: 1px solid #f5f5f5;
+  border-left: 1px solid #f5f5f5;
+}
+.zfcont2 ul li {
+  width: 20%;
+  padding: 5px 0;
+  text-align: center;
+  border-bottom: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+}
+
+.zfcont2 ul li a {
+  font-size: 14px;
+  color: #666;
+}
+.zfcont2 ul li.oringe a {
+  color: #ff941a;
+}
+.zfcont2 ul li:hover {
+  color: #fff;
+  background-color: #ff941a;
+}
+
+.zfcont2 ul li:hover a {
+  color: #fff;
+  text-decoration: none;
+}
+.zfcont3 ul {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+.zfcont3 ul li {
+  flex: 1;
+}
+.zfcont3 ul li a {
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  border-right: 1px solid #f5f5f5;
+  transition: all 0.8s;
+}
+.zfcont3 ul li:last-child a {
+  border: none;
+}
+.zfcont3 ul li a:hover {
+  padding-top: 5px;
+}
+.zfcont3 ul li a > img {
+  width: 106px;
+  height: 64px;
+}
+
+.zfcont4 {
+  margin-top: 10px;
+  height: 232px;
+  background: #f4f4f4;
+}
+
+.zfcont4div {
+  position: relative;
+  width: 1270px;
+  height: 230px;
+  margin-left: -70px;
+  background: url('../images/cent3bg.png') no-repeat;
+}
+
+.zfcont4 .wide {
+  position: absolute;
+  top: 75px;
+  left: 115px;
+  font-size: 12px;
+  color: #fec5be;
+}
+
+.zfcont4 .wide a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.zfcont4 ul {
+  margin-left: 270px;
+  padding: 15px 0px;
+  clear: both;
+  overflow: auto;
+  zoom: 1;
+}
+
+.zfcont4 ul li {
+  width: 182px;
+  float: left;
+  margin-left: 15px;
+}
+.zfcont4 ul li a {
+  display: block;
+  width: 182px;
+  margin-top: 3px;
+}
+.zfcont4 ul li a:hover {
+  text-decoration: none;
+}
+.zfcont4 ul li a img {
+  display: block;
+  width: 178px;
+  height: 128px;
+  border: 2px solid #ffffff;
+  transition: all 0.6s;
+}
+.zfcont4 ul li a img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.zfcont4 ul li a p {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #fff;
+  text-align: center;
+}
+.zfcont4 ul li a label {
+  display: block;
+  width: 150px;
+  height: 32px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 32px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  transition: all 0.6s;
+}
+.zfcont4 ul li:hover label {
+  color: #fc4936;
+  background: #fff;
+}
+.zfcont5min {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.zfcont5min > li {
+  position: relative;
+  width: 232px;
+  height: 308px;
+  overflow: hidden;
+}
+.zfcont5min li a.zfco5ig {
+  display: block;
+  width: 232px;
+  height: 308px;
+}
+.zfcont5min li a.zfco5ig img {
+  display: block;
+  width: 100%;
+}
+.zfcont5min li .zfco5dv {
+  position: absolute;
+  bottom: -47px;
+  left: 0px;
+  display: block;
+  width: 232px;
+  height: 190px;
+  padding: 20px;
+  overflow: hidden;
+  transition: all 0.6s;
+}
+.zfcont5min li .zfco5dv1 {
+  background: url('../images/hot1.png') repeat;
+}
+.zfcont5min li .zfco5dv2 {
+  background: url('../images/hot2.png') repeat;
+}
+.zfcont5min li .zfco5dv3 {
+  background: url('../images/hot3.png') repeat;
+}
+.zfcont5min li .zfco5dv4 {
+  background: url('../images/hot4.png') repeat;
+}
+.zfcont5min li .zfco5dv5 {
+  background: url('../images/hot5.png') repeat;
+}
+.zfcont5min li .zfco5dv label {
+  display: block;
+  width: 60px;
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background: #fc4936;
+  border-radius: 5px;
+}
+.zfcont5min li .zfco5dv > a {
+  height: 40px;
+  overflow: hidden;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #fff;
+  white-space: nowrap;
+}
+.zfcont5min li .zfco5dv > p {
+  height: 22px;
+  margin-bottom: 0;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+  white-space: nowrap;
+}
+.zfcont5min li .zfco5dv > p a {
+  color: #fff;
+}
+
+.zfcont5min li .zfco5dv a.zfco5ck {
+  display: block;
+  width: 160px;
+  height: 32px;
+  margin: 10px auto;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 16px;
+}
+.zfcont5min li:hover a {
+  text-decoration: none;
+}
+.zfcont5min li:hover .zfco5dv {
+  bottom: 0px !important;
+}
+
+.zfcont5miner {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  background: #fff;
+}
+.zfcont5miner li a {
+  display: block;
+  width: 125px;
+  height: 82px;
+  padding-top: 5px;
+  transition: all 0.6s;
+}
+.zfcont5miner li a img {
+  display: block;
+  width: 125px;
+  max-height: 75.5px;
+}
+.zfcont5miner li a:hover {
+  box-shadow: 0 0 10px #999999;
 }
