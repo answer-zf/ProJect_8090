@@ -26,7 +26,9 @@
   fill: currentColor;
   overflow: hidden;
 }
-
+.cursor-d {
+  cursor: default;
+}
 html,
 body {
   font-family: 'SourceHanSansCN-Medium' !important;
@@ -35,6 +37,9 @@ ul {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+}
+a:hover {
+  text-decoration: none;
 }
 .container-zf {
   width: 1200px !important;
@@ -75,7 +80,20 @@ ul {
 .cursor {
   cursor: pointer;
 }
+.mw {
+  min-width: 1200px;
+}
+.ellipsisOneLine {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+.fs14 {
+  font-size: 14px;
+}
 /*#region 五个主色*/
+/* -------------------- red(#ff6062) -------------------- */
 .columnEntColor {
   color: rgba(255, 96, 98);
 }
@@ -90,7 +108,7 @@ span.columnEntColor:hover {
 .columnEntColor-i {
   background: url(../images/columnEntColor.png) repeat;
 }
-/* -------------------- red -------------------- */
+/* -------------------- orange(#ff7e00) -------------------- */
 .columnStarColor {
   color: rgba(255, 126, 0);
 }
@@ -105,7 +123,7 @@ span.columnStarColor:hover {
 .columnStarColor-i {
   background: url(../images/columnStarColor.png) repeat;
 }
-/* -------------------- orange -------------------- */
+/* -------------------- green(#01c700) -------------------- */
 .columnCreColor {
   color: rgba(1, 199, 0);
 }
@@ -120,7 +138,7 @@ span.columnCreColor:hover {
 .columnCreColor-i {
   background: url(../images/columnCreColor.png) repeat;
 }
-/* -------------------- green -------------------- */
+/* -------------------- yellow(#ffba00) -------------------- */
 .columnLocallyColor {
   color: rgba(255, 186, 0);
 }
@@ -135,7 +153,7 @@ span.columnLocallyColor:hover {
 .columnLocallyColor-i {
   background: url(../images/columnLocallyColor.png) repeat;
 }
-/* -------------------- yellow -------------------- */
+/* -------------------- blue(#1082ff) -------------------- */
 .columnNewsColor {
   color: rgba(16, 130, 255);
 }
@@ -150,7 +168,6 @@ span.columnNewsColor:hover {
 .columnNewsColor-i {
   background: url(../images/columnNewsColor.png) repeat;
 }
-/* -------------------- blue -------------------- */
 /*#endregion */
 /* 头部 */
 .header {
@@ -757,12 +774,17 @@ span.columnNewsColor:hover {
   justify-content: space-evenly;
   padding: 10px 0;
 }
+.columnItemContainer {
+  display: flex;
+  justify-content: space-between;
+}
 .locallyItem .details {
   width: 116px;
   font-size: 12px;
 }
 .locallyItem .details span {
   display: block;
+  width: 116px;
 }
 .locallyItem .details span:first-child {
   margin-bottom: 4px;
@@ -770,7 +792,467 @@ span.columnNewsColor:hover {
 .locallyItem .zfbtn {
   padding: 2px 8px;
   font-size: 12px;
+  background-color: #ff941a;
 }
 .locallyItem .zfbtn a {
   color: #fff;
+}
+.locallyItem .zfbtn:hover {
+  background-color: #ff941ad8;
+}
+.locallyItem .zfbtn:hover a {
+  text-decoration: none;
+}
+.columnItem ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 958px;
+}
+.columnItem .columnItemMin {
+  position: relative;
+  z-index: 9999;
+  width: 232px;
+  padding: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 0 6px #eee;
+  transition: all 1s;
+}
+
+.columnItem .columnItemMin a img {
+  position: relative;
+  z-index: 9999;
+}
+.columnItem .columnItemMin a p {
+  position: relative;
+  z-index: 9999;
+  margin: 10px 0px 2px;
+  font-size: 15px;
+  line-height: 27px;
+  color: #666;
+  text-align: center;
+  transition: all 1s;
+}
+.columnItem .columnItemMin a label {
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+.columnItem .columnItemMin a label font {
+  font-weight: 600;
+  transition: all 0.8s;
+}
+.columnItem .columnItemMin a label span {
+  color: #777;
+  transition: all 0.8s;
+}
+.columnItemList {
+  width: 232px;
+}
+.columnItemList a {
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 7px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 6px #eee;
+  transition: all 1s;
+}
+.columnItemList a label {
+  padding: 6px;
+  margin-bottom: 0;
+  flex: 1;
+}
+.columnItemList a label h4 {
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+.columnItemList a label p {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+.columnItemList a em {
+  width: 70px;
+  font-style: normal;
+  font-weight: 600;
+}
+.columnItemList a h4,
+.columnItemList a p,
+.columnItemList a em {
+  position: relative;
+  z-index: 9999;
+  transition: all 0.5s;
+}
+.columnItemList a:hover {
+  text-decoration: none;
+}
+
+.columnItemList a:hover h4,
+.columnItemList a:hover p,
+.columnItemList a:hover em {
+  color: #fff;
+}
+/* 悬停动画 */
+.columnItem .columnItemMin:hover a p {
+  color: #fff;
+}
+.columnItem .columnItemMin:hover a label font {
+  color: #fff;
+}
+.columnItem .columnItemMin:hover a label span {
+  color: #fff;
+}
+.columnItem .columnItemMin:hover a {
+  position: relative;
+  z-index: 9999;
+  text-decoration: none;
+}
+.columnItemMin:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 200%;
+  height: 150%;
+  opacity: 0;
+  left: -50%;
+  bottom: 0;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-transform: rotate(-90deg) translateZ(0);
+  transform: rotate(-90deg) translateZ(0);
+  -webkit-transition: opacity 2s cubic-bezier(0.01, -0.24, 0, 0.68),
+    -webkit-transform 2s cubic-bezier(0.01, -0.24, 0, 0.68);
+  transition: opacity 2s cubic-bezier(0.01, -0.24, 0, 0.68),
+    -webkit-transform 2s cubic-bezier(0.01, -0.24, 0, 0.68);
+  transition: transform 2s cubic-bezier(0.01, -0.24, 0, 0.68),
+    opacity 2s cubic-bezier(0.01, -0.24, 0, 0.68);
+  transition: transform 2s cubic-bezier(0.01, -0.24, 0, 0.68),
+    opacity 2s cubic-bezier(0.01, -0.24, 0, 0.68),
+    -webkit-transform 2s cubic-bezier(0.01, -0.24, 0, 0.68);
+}
+.columnItemMin:hover:before,
+.columnItemMin:focus:before {
+  -webkit-transform: rotate(0deg) translateZ(0);
+  transform: rotate(0deg) translateZ(0);
+  opacity: 1;
+  -webkit-transition-duration: 0.6s, 0.6s;
+  transition-duration: 0.6s, 0.6s;
+}
+.columnItemList a:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 18%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(0);
+  transform: translate3d(-50%, -50%, 0) scale(0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(1, 0.15, 0.34, 1.03);
+  transition: -webkit-transform 0.5s cubic-bezier(1, 0.15, 0.34, 1.03);
+  transition: transform 0.5s cubic-bezier(1, 0.15, 0.34, 1.03);
+  transition: transform 0.5s cubic-bezier(1, 0.15, 0.34, 1.03),
+    -webkit-transform 0.5s cubic-bezier(1, 0.15, 0.34, 1.03);
+}
+.columnItemList a:hover:before,
+.columnItemList a:focus:before {
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(3);
+  transform: translate3d(-50%, -50%, 0) scale(3);
+}
+
+/* 独立样式 */
+.columnItemList a.starHover {
+  border-right: 3px solid #ff941a;
+}
+.columnItemList a.starHover em {
+  color: #ff941a;
+}
+.columnItemList a.starHover:hover em {
+  color: #fff;
+}
+.columnItemMin.starHover:before,
+.columnItemList a.starHover:before {
+  background: -moz-linear-gradient(to right, #ff4c2e, #ff9813);
+  background: -webkit-linear-gradient(to right, #ff4c2e, #ff9813);
+  background: -ms-linear-gradient(to right, #ff4c2e, #ff9813);
+  background: -o-linear-gradient(to right, #ff4c2e, #ff9813);
+  background: linear-gradient(to right, #ff4c2e, #ff9813);
+}
+
+.columnItemList a.creHover {
+  border-right: 3px solid #01c700;
+}
+.columnItemList a.creHover em {
+  color: #01c700;
+}
+.columnItemList a.creHover:hover em {
+  color: #fff;
+}
+.columnItemMin.creHover:before,
+.columnItemList a.creHover:before {
+  background: -moz-linear-gradient(to right, #89e412, #01c700);
+  background: -webkit-linear-gradient(to right, #89e412, #01c700);
+  background: -ms-linear-gradient(to right, #89e412, #01c700);
+  background: -o-linear-gradient(to right, #89e412, #01c700);
+  background: linear-gradient(to right, #89e412, #01c700);
+}
+
+.columnItemList a.locallyHover {
+  border-right: 3px solid #ffba00;
+}
+.columnItemList a.locallyHover em {
+  color: #ffba00;
+}
+.columnItemList a.locallyHover:hover em {
+  color: #fff;
+}
+.columnItemMin.locallyHover:before,
+.columnItemList a.locallyHover:before {
+  background: -moz-linear-gradient(to right, #ffc711, #ffba00);
+  background: -webkit-linear-gradient(to right, #ffc711, #ffba00);
+  background: -ms-linear-gradient(to right, #ffc711, #ffba00);
+  background: -o-linear-gradient(to right, #ffc711, #ffba00);
+  background: linear-gradient(to right, #ffc711, #ffba00);
+}
+
+/* 资讯中心 */
+
+.newsContainer {
+  display: flex;
+}
+.columnNews .hotNews {
+  width: 330px;
+  height: 468px;
+  background-color: #fff;
+  box-shadow: 0 0 6px #eee;
+}
+.columnNews .hotNews .slide {
+  width: 330px;
+  height: 246px;
+}
+.columnNews .hotNews .carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  z-index: 10;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #fff;
+  text-align: center;
+  background: -moz-linear-gradient(#1084ff00, #1082ff);
+  background: -webkit-linear-gradient(#1084ff00, #1082ff);
+  background: -ms-linear-gradient(#1084ff00, #1082ff);
+  background: -o-linear-gradient(#1084ff00, #1082ff);
+  background: linear-gradient(#1084ff00, #1082ff);
+}
+.columnNews .hotNews .carousel-caption h5 {
+  padding: 22px 14px 16px;
+  margin-bottom: 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.columnNews .hotNews .carousel-caption:hover h5 {
+  color: rgba(255, 255, 255, 0.8);
+}
+.hotInfo {
+  padding: 0 8px;
+}
+.hotTitle {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.newsContainer h4 {
+  display: flex;
+  margin-top: 14px;
+  margin-bottom: 0px;
+  padding: 8px 0 8px 0;
+  font-size: 16px;
+  color: #666;
+}
+.newsContainer h4 em {
+  height: 16px;
+  padding: 0px 5px;
+  margin: 2px 10px 0 0;
+  font-size: 12px;
+  font-style: normal;
+  color: #1082ff;
+  line-height: 14px;
+  border: 1px solid #1082ff;
+}
+.newsContainer h4 span {
+  flex: 1;
+  font-weight: 700;
+}
+.hotInfo ul li a:hover {
+  color: rgba(16, 130, 255);
+}
+.hotTitle a:hover span {
+  color: rgba(85, 85, 85, 0.8);
+}
+.newsContainer p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #999;
+  text-align: justify;
+  letter-spacing: 0.25px;
+}
+.newsContainer p a {
+  display: inline-block;
+  margin-left: 11px;
+}
+.newsContainer ul {
+  padding: 16px 0;
+}
+.newsContainer ul li,
+.newsContainer ul li a {
+  color: #666;
+}
+.newsContainer ul li {
+  margin-bottom: 10px;
+}
+.newsContainer ul li a {
+  display: flex;
+  align-items: baseline;
+}
+.columnNews .newsContent {
+  width: 520px;
+  margin: 0 10px;
+}
+
+.newsContentMin {
+  height: 229px;
+  background-color: #fff;
+}
+.newsContent .nav-tabs {
+  display: flex;
+  border-bottom: none;
+}
+.newsContent .nav-tabs .nav-item {
+  flex: 1;
+}
+.newsContent .nav-link {
+  display: block;
+  color: #666;
+  font-weight: 700;
+  text-align: center;
+  border-color: #dfdfdf #fff #fff #fff;
+  border-width: 3px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  transition: all 0.5s;
+}
+.newsContent .nav-link.active {
+  color: #1082ff;
+  border-color: #1082ff #fff #fff #fff;
+}
+.newsContent .nav-link.active:hover {
+  color: #1082ff;
+  background-color: #fff;
+}
+.newsContent ul {
+  padding-top: 0;
+}
+.newsContent ul.nav-tabs {
+  padding-bottom: 0;
+}
+.newsContent .tab-content {
+  padding: 0 8px;
+}
+.newsContent .tab-content a h4 {
+  padding: 14px 0 20px;
+  margin-top: 0px;
+}
+.newsContent .tab-content a h4 span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+  transition: all 0.1s;
+}
+.newsContent .tab-content a:hover h4 span {
+  color: rgba(85, 85, 85, 0.8);
+}
+.newsContent .tab-content ul {
+  padding-bottom: 0;
+}
+
+.newsContent .tab-content ul li a:hover span {
+  color: rgba(16, 130, 255);
+}
+.columnNews .qora {
+  width: 330px;
+  height: 468px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-top: 3px solid rgba(16, 130, 255);
+  box-shadow: 0 0 6px #eee;
+}
+.qora .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.qora .title h4 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #444;
+}
+.qora .title em {
+  font-size: 14px;
+  font-style: normal;
+  color: #777;
+}
+.qora a:hover h4 span {
+  color: rgba(85, 85, 85, 0.8);
+}
+.qora .title em a {
+  color: #888;
+}
+.qora .title em a:hover {
+  color: rgb(167, 167, 167);
+}
+.qora p {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+.qora p span {
+  display: block;
+  width: 230px;
+  height: 20px;
+  overflow: hidden;
+}
+.qora a h4 {
+  margin-top: 0;
+}
+.qora ul li {
+  margin-bottom: 15px;
+}
+.qora ul li a:hover span {
+  color: rgba(16, 130, 255);
 }

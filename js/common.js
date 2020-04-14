@@ -1,5 +1,7 @@
 $(function () {
   tab_floatingSwitch('#myTab > li', '#myTabContent > div')
+  tab_floatingSwitch('#nav-tab > li', '#nav-tabContent > div')
+  tab_floatingSwitch('#pills-tab > li', '#pills-contact-tab > div')
 })
 
 /* tab页悬停切换 */
