@@ -74,27 +74,26 @@
          target="_blank">首页</a>
       <a class="nav-link"
          href="#"
-         target="_blank">韩式美食</a>
+         target="_blank">品牌查询</a>
       <a class="nav-link"
          href="#"
-         target="_blank">自助餐厅</a>
+         target="_blank">项目大全</a>
       <a class="nav-link"
          href="#"
-         target="_blank">时尚烤鱼</a>
+         target="_blank">排行榜</a>
       <a class="nav-link"
          href="#"
-         target="_blank">地方小吃</a>
+         target="_blank">新闻资讯</a>
       <a class="nav-link"
          href="#"
-         target="_blank">养生粥铺</a>
+         target="_blank">加盟资讯</a>
       <a class="nav-link"
          href="#"
-         target="_blank">特色美食</a>
-      <a class="nav-link"
+         target="_blank">创业故事</a>
+      <a class="nav-link navSpecialColor"
          href="#"
-         target="_blank">经典美食</a>
+         target="_blank">品牌入驻</a>
     </div>
-
   </nav>
   <!-- 广告区域 -->
   <section class="banner">
@@ -2426,7 +2425,7 @@
   <section class="bgAux"
            style="height: 10px;"></section>
 
-  <nav class="nav nav-zf"
+  <nav class="nav nav-zf nav-fix-zf"
        style="position: fixed; top:0;width:100%;">
     <div class="container-zf">
       <a class="nav-link active"
@@ -2434,25 +2433,25 @@
          target="_blank">首页</a>
       <a class="nav-link"
          href="#"
-         target="_blank">韩式美食</a>
+         target="_blank">品牌查询</a>
       <a class="nav-link"
          href="#"
-         target="_blank">自助餐厅</a>
+         target="_blank">项目大全</a>
       <a class="nav-link"
          href="#"
-         target="_blank">时尚烤鱼</a>
+         target="_blank">排行榜</a>
       <a class="nav-link"
          href="#"
-         target="_blank">地方小吃</a>
+         target="_blank">新闻资讯</a>
       <a class="nav-link"
          href="#"
-         target="_blank">养生粥铺</a>
+         target="_blank">加盟资讯</a>
       <a class="nav-link"
          href="#"
-         target="_blank">特色美食</a>
-      <a class="nav-link"
+         target="_blank">创业故事</a>
+      <a class="nav-link navSpecialColor"
          href="#"
-         target="_blank">经典美食</a>
+         target="_blank">品牌入驻</a>
     </div>
   </nav>
   <script src="./js/common.js"></script>
@@ -2460,8 +2459,10 @@
     $(function ($) {
       $('#hotNewsInfo').html($('#hotNewsInfo').html().slice(0, 42) + '...')
       $(window).scroll(function () {
-        if ($(window).scrollTop() > 200) {
-          console.log($(window).scrollTop())
+        if ($(window).scrollTop() > 300) {
+          $('.nav-fix-zf').addClass('show')
+        } else {
+          $('.nav-fix-zf').removeClass('show')
         }
       });
     })

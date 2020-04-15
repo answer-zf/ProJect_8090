@@ -92,6 +92,19 @@ a:hover {
 .fs14 {
   font-size: 14px;
 }
+.fw700 {
+  font-weight: 700;
+}
+.navSpecialColor {
+  color: rgb(0, 165, 0) !important;
+}
+.nav-fix-zf {
+  z-index: 999999999;
+  opacity: 0;
+}
+.nav-fix-zf.show {
+  opacity: 1;
+}
 /*#region 五个主色*/
 /* -------------------- red(#ff6062) -------------------- */
 .columnEntColor {
