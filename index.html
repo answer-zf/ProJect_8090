@@ -11,6 +11,9 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
         crossorigin="anonymous">
+  <link rel="shortcut icon"
+        href="./images/favicon.ico"
+        type="image/x-icon">
   <!-- iconfont font-class 引用 -->
   <link rel="stylesheet"
         href="./css/iconfont.css">
@@ -2422,9 +2425,96 @@
       </div>
     </div>
   </section>
-  <section class="bgAux"
-           style="height: 10px;"></section>
 
+  <!-- 友情链接 -->
+  <section class="bgAux toLinks"
+           style="padding-top: 17px;">
+    <div class="
+           container-zf">
+      <div class="columnHeader"
+           style="padding-top: 7px;">
+        <div class="zficon-container">
+          <svg class="zficon"
+               aria-hidden="true">
+            <use xlink:href="#icon-xunzhang"></use>
+          </svg>
+        </div>
+        <h3 class="title-font columnStarColor cursor">友情链接</h3>
+
+        <i class="columnStarColor-i"
+           style="margin-left: 44px;"></i>
+      </div>
+    </div>
+    <div class="container-zf">
+      <span class="linksItem"><a href="#">尚京集团</a></span>
+      <span class="linksItem"><a href="#">尚京集团</a></span>
+      <span class="linksItem"><a href="#">尚京集团</a></span>
+      <span class="linksItem"><a href="#">尚京集团</a></span>
+      <span class="linksItem"><a href="#">尚京集团</a></span>
+      <span class="linksItem"><a href="#">尚京集团</a></span>
+      <span class="linksItem"><a href="#">尚京集团</a></span>
+      <span class="linksItem"><a href="#">尚京集团</a></span>
+      <span class="linksItem"><a href="#">尚京集团</a></span>
+      <span class="linksItem"><a href="#">尚京集团</a></span>
+      <span class="linksItem"><a href="#">尚京集团</a></span>
+      <span class="linksItem"><a href="#">尚京集团</a></span>
+    </div>
+  </section>
+  <!-- 底部 -->
+  <footer class="footer-zf">
+    <div class="footer-header">
+      <div class="container-zf">
+        <div class="brand">
+          <img src="./images/footerHeader.png"
+               alt="">
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <div class="container-zf">
+        <ul>
+          <li><a href="#"
+               target="_blank">首页</a></li>
+          <li><a href="#"
+               target="_blank">品牌查询</a></li>
+          <li><a href="#"
+               target="_blank">项目大全</a></li>
+          <li><a href="#"
+               target="_blank">排行榜</a></li>
+          <li><a href="#"
+               target="_blank">新闻资讯</a></li>
+          <li><a href="#"
+               target="_blank">加盟资讯</a></li>
+          <li><a href="#"
+               target="_blank">创业故事</a></li>
+          <li><a class="navSpecialColor"
+               href="#"
+               target="_blank">品牌入驻</a></li>
+        </ul>
+        <div class="copyright">
+          <div>
+            <div style="margin-bottom: -4px;">
+              <span>安徽尚京文化传媒股份有限公司版权所有</span>
+              <a href="#">备案号：111111111111</a>
+            </div>
+            <span>创业有风险 选择需谨慎</span>
+          </div>
+          <div class="prove">
+            <div class="gbicp">
+              <a href="#"
+                 target="_blank"><img src="./images/ft_02.gif"></a>
+              <a href="#"
+                 target="_blank"><img src="./images/fcx.png"></a>
+              <a href="#"
+                 target="_blank"><img src="./images/qyzz.png"></a>
+              <img src="./images/ft_03.gif">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 吸顶导航 -->
   <nav class="nav nav-zf nav-fix-zf"
        style="position: fixed; top:0;width:100%;">
     <div class="container-zf">
@@ -2459,7 +2549,7 @@
     $(function ($) {
       $('#hotNewsInfo').html($('#hotNewsInfo').html().slice(0, 42) + '...')
       $(window).scroll(function () {
-        if ($(window).scrollTop() > 300) {
+        if ($(window).scrollTop() > 150) {
           $('.nav-fix-zf').addClass('show')
         } else {
           $('.nav-fix-zf').removeClass('show')
