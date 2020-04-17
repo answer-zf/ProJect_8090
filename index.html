@@ -6,101 +6,49 @@
   <!-- <meta name="viewport"
         content="width=device-width, initial-scale=1.0"> -->
   <title>8090餐饮招商加盟</title>
-
-  <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-        crossorigin="anonymous">
   <link rel="shortcut icon"
         href="./images/favicon.ico"
         type="image/x-icon">
   <!-- iconfont font-class 引用 -->
   <link rel="stylesheet"
         href="./css/iconfont.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
   <link rel="stylesheet"
         href="./css/main.css">
+  <!-- iconfont Symbol 引用  -->
+  <script src="./js/iconfont.js"></script>
+  <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
           integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
           crossorigin="anonymous"></script>
+  <!-- popper -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
           integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
           crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
           integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
           crossorigin="anonymous"></script>
-  <!-- iconfont Symbol 引用  -->
-  <script src="./js/iconfont.js"></script>
+  <!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
 </head>
 
 <body>
-  <!-- 头部区域 -->
-  <header class="header">
-    <div class="container-zf">
-      <div class="logo">
-        <a href="#">
-          <img src="./images/logo.png"
-               alt="8090餐饮加盟logo">
-        </a>
-      </div>
-      <div class="slogan">
-        <img src="./images/slogan.png"
-             alt="">
-      </div>
-      <div class="search">
-        <div class="searchMin">
-          <input class="rounded-pill"
-                 type="text">
-          <span class="iconfont icon-xiazai5 search-icon color"></span>
-        </div>
-        <p>热门搜索：
-          <a href="#"
-             target="_blank">尚品宫</a>
-          <a href="#"
-             target="_blank">尚品宫</a>
-          <a href="#"
-             target="_blank">尚品宫</a>
-          <a href="#"
-             target="_blank">尚品宫</a>
-        </p>
-      </div>
-      <div class="miniSlide">
-        <img src="./images/text.jpg"
-             alt="">
-      </div>
-    </div>
-  </header>
-  <!-- 导航区域 -->
-  <nav class="nav nav-zf">
-    <div class="container-zf">
-      <a class="nav-link active"
-         href="#"
-         target="_blank">首页</a>
-      <a class="nav-link"
-         href="#"
-         target="_blank">品牌查询</a>
-      <a class="nav-link"
-         href="#"
-         target="_blank">项目大全</a>
-      <a class="nav-link"
-         href="#"
-         target="_blank">排行榜</a>
-      <a class="nav-link"
-         href="#"
-         target="_blank">新闻资讯</a>
-      <a class="nav-link"
-         href="#"
-         target="_blank">加盟资讯</a>
-      <a class="nav-link"
-         href="#"
-         target="_blank">创业故事</a>
-      <a class="nav-link navSpecialColor"
-         href="#"
-         target="_blank">品牌入驻</a>
-    </div>
-  </nav>
+
+  <div id="header-vue">
+    <!-- 头部区域 -->
+    <headercontent></headercontent>
+    <!-- 导航区域 -->
+    <navcontent></navcontent>
+  </div>
   <!-- 广告区域 -->
   <section class="banner">
     <div class="container-zf">
+      <!-- 排行榜 -->
       <aside class="rank-list">
         <div class="rlbox"> <span class="rltit">热门项目排行</span>
         </div>
@@ -146,6 +94,7 @@
               <p class="item top">
                 <span class="number">1</span>
                 <a href="#">
+                  尚品宫自主烤肉火锅
                   尚品宫自主烤肉火锅
                 </a>
                 <span class="iconfont icon-rexiao"></span>
@@ -408,8 +357,8 @@
             </div>
           </div>
         </div>
-
       </aside>
+      <!-- banner -->
       <section class="slide">
         <div id="carouselExampleIndicators"
              class="carousel slide"
@@ -424,11 +373,29 @@
                 data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active zf-carousel-item1">
+            <div class="carousel-item active">
+              <a href="#"
+                 class="zf-carousel-item"
+                 target="_blank">
+                <img class="banner"
+                     src="./images/banner1.jpg"
+                     alt=""></a>
             </div>
             <div class="carousel-item zf-carousel-item2">
+              <a href="#"
+                 class="zf-carousel-item"
+                 target="_blank">
+                <img class="banner"
+                     src="./images/banner2.jpg"
+                     alt=""></a>
             </div>
             <div class="carousel-item zf-carousel-item3">
+              <a href="#"
+                 class="zf-carousel-item"
+                 target="_blank">
+                <img class="banner"
+                     src="./images/banner1.jpg"
+                     alt=""></a>
             </div>
           </div>
           <a class="carousel-control-prev"
@@ -489,7 +456,7 @@
                target="_blank">海鲜零食 日售百份</a></li>
           <li><a title="仟佰味捞汁小海鲜"
                href="#"
-               target="_blank">海鲜零食 日售百份</a></li>
+               target="_blank">海鲜零食 日售百海鲜零食 日售百份海鲜零食 日售百份份</a></li>
           <li><a title="仟佰味捞汁小海鲜"
                href="#"
                target="_blank">海鲜零食 日售百份</a></li>
@@ -717,7 +684,7 @@
               <p>额度：3-5万</p>
               <p><a href="#"
                    title="石锅拌饭 全年红火"
-                   target="_blank">石锅拌饭 全年红火</a></p>
+                   target="_blank">石锅拌饭 全年红火 全年红火 全年红火</a></p>
               <a href="#"
                  title="石锅拌饭 全年红火"
                  target="_blank"
@@ -1409,7 +1376,7 @@
                target="_blank">
               <label>
                 <h4>小蛮螺螺蛳粉</h4>
-                <p>螺蛳粉加盟粉够Q</p>
+                <p>螺蛳粉加盟粉够螺蛳粉加盟粉够QQ</p>
               </label>
               <em>￥8-10万</em>
             </a>
@@ -1748,7 +1715,7 @@
                      width="216"
                      height="103"
                      alt="">
-                <p>货源配送 一站购齐</p>
+                <p>货源配送 一站购齐货源配送 一站购齐货源配送 一站购齐货源配送 一站购齐</p>
                 <label>
                   <font class="columnLocallyColor">￥20-50万</font>
                   <span>门店：<font class="columnLocallyColor">122 </font>家</span>
@@ -2076,7 +2043,9 @@
                  target="_blank">
                 <h4><em>热点</em> <span class="ellipsisOneLine">亚陶卫浴精工打造专业卫浴产品 生意好亚陶卫浴精工打造专业卫浴产品 生意好</span></h4>
               </a>
-              <p><span id="hotNewsInfo">亚陶卫浴精工打造专业卫浴产品 生意好亚陶卫浴精工打造专业卫浴产品 生意好亚陶卫浴精工打造专业卫浴产品 生意好亚陶卫浴精工打造专业卫浴产品 生意好</span>
+              <p><span id="hotNewsInfo"
+                      style="cursor: default;">亚陶卫浴精工打造专业卫浴产品 生意好亚陶卫浴精工打造专业卫浴产品 生意好亚陶卫浴精工打造专业卫浴产品 生意好亚陶卫浴精工打造专业卫浴产品
+                  生意好</span>
                 <a href="#"
                    target="_blank">【详情】</a>
               </p>
@@ -2428,7 +2397,7 @@
 
   <!-- 友情链接 -->
   <section class="bgAux toLinks"
-           style="padding-top: 17px;">
+           style="padding-top: 17px;padding-bottom:12px;">
     <div class="
            container-zf">
       <div class="columnHeader"
@@ -2446,117 +2415,36 @@
       </div>
     </div>
     <div class="container-zf">
-      <span class="linksItem"><a href="#">尚京集团</a></span>
-      <span class="linksItem"><a href="#">尚京集团</a></span>
-      <span class="linksItem"><a href="#">尚京集团</a></span>
-      <span class="linksItem"><a href="#">尚京集团</a></span>
-      <span class="linksItem"><a href="#">尚京集团</a></span>
-      <span class="linksItem"><a href="#">尚京集团</a></span>
-      <span class="linksItem"><a href="#">尚京集团</a></span>
-      <span class="linksItem"><a href="#">尚京集团</a></span>
-      <span class="linksItem"><a href="#">尚京集团</a></span>
-      <span class="linksItem"><a href="#">尚京集团</a></span>
-      <span class="linksItem"><a href="#">尚京集团</a></span>
-      <span class="linksItem"><a href="#">尚京集团</a></span>
+      <!-- 一组九个分项 -->
+      <div class="linksItems">
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+      </div>
+      <div class="linksItems">
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+        <span class="linksItem"><a href="#">尚京集团</a></span>
+      </div>
     </div>
   </section>
   <!-- 底部 -->
-  <footer class="footer-zf">
-    <div class="footer-header">
-      <div class="container-zf">
-        <div class="brand">
-          <img src="./images/footerHeader.png"
-               alt="">
-        </div>
-      </div>
-    </div>
-    <div class="footer-copy">
-      <div class="container-zf">
-        <ul>
-          <li><a href="#"
-               target="_blank">首页</a></li>
-          <li><a href="#"
-               target="_blank">品牌查询</a></li>
-          <li><a href="#"
-               target="_blank">项目大全</a></li>
-          <li><a href="#"
-               target="_blank">排行榜</a></li>
-          <li><a href="#"
-               target="_blank">新闻资讯</a></li>
-          <li><a href="#"
-               target="_blank">加盟资讯</a></li>
-          <li><a href="#"
-               target="_blank">创业故事</a></li>
-          <li><a class="navSpecialColor"
-               href="#"
-               target="_blank">品牌入驻</a></li>
-        </ul>
-        <div class="copyright">
-          <div>
-            <div style="margin-bottom: -4px;">
-              <span>安徽尚京文化传媒股份有限公司版权所有</span>
-              <a href="#">备案号：111111111111</a>
-            </div>
-            <span>创业有风险 选择需谨慎</span>
-          </div>
-          <div class="prove">
-            <div class="gbicp">
-              <a href="#"
-                 target="_blank"><img src="./images/ft_02.gif"></a>
-              <a href="#"
-                 target="_blank"><img src="./images/fcx.png"></a>
-              <a href="#"
-                 target="_blank"><img src="./images/qyzz.png"></a>
-              <img src="./images/ft_03.gif">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- 吸顶导航 -->
-  <nav class="nav nav-zf nav-fix-zf"
-       style="position: fixed; top:0;width:100%;">
-    <div class="container-zf">
-      <a class="nav-link active"
-         href="#"
-         target="_blank">首页</a>
-      <a class="nav-link"
-         href="#"
-         target="_blank">品牌查询</a>
-      <a class="nav-link"
-         href="#"
-         target="_blank">项目大全</a>
-      <a class="nav-link"
-         href="#"
-         target="_blank">排行榜</a>
-      <a class="nav-link"
-         href="#"
-         target="_blank">新闻资讯</a>
-      <a class="nav-link"
-         href="#"
-         target="_blank">加盟资讯</a>
-      <a class="nav-link"
-         href="#"
-         target="_blank">创业故事</a>
-      <a class="nav-link navSpecialColor"
-         href="#"
-         target="_blank">品牌入驻</a>
-    </div>
-  </nav>
+  <div id="footer-vue">
+    <footercontent></footercontent>
+  </div>
+
+  <script src="./js/index.js"></script>
   <script src="./js/common.js"></script>
-  <script>
-    $(function ($) {
-      $('#hotNewsInfo').html($('#hotNewsInfo').html().slice(0, 42) + '...')
-      $(window).scroll(function () {
-        if ($(window).scrollTop() > 150) {
-          $('.nav-fix-zf').addClass('show')
-        } else {
-          $('.nav-fix-zf').removeClass('show')
-        }
-      });
-    })
-  </script>
+  <script src="./js/template-zf.js"></script>
+
 </body>
 
 </html>

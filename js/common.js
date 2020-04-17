@@ -1,18 +1,26 @@
 $(function () {
-  tab_floatingSwitch('#myTab > li', '#myTabContent > div')
-  tab_floatingSwitch('#nav-tab > li', '#nav-tabContent > div')
-  tab_floatingSwitch('#pills-tab > li', '#pills-contact-tab > div')
+  // 导航吸顶
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 106) {
+      $('#nav-zf').addClass('nav-fix-zf')
+    } else {
+      $('#nav-zf').removeClass('nav-fix-zf')
+    }
+  })
+
+  // 导航高亮
+  var hash = '#' + window.location.pathname.split('.')[0].slice(1)
+
+  if (hash === '#') {
+    $('#nav-zf .nav-link').removeClass('active')
+    $('#index').addClass('active')
+  } else {
+    $('#nav-zf .nav-link').removeClass('active')
+    $(hash).addClass('active')
+  }
 })
 
-/* tab页悬停切换 */
-function tab_floatingSwitch(id_1, id_2) {
-  $(id_1).hover(function () {
-    $(id_1 + ' > a').removeClass('active')
-    $(this).children().addClass('active')
-
-    $(id_2).removeClass('show active')
-
-    var href = $(this).children().attr('href')
-    $(href).addClass(' show active')
-  })
+// 头部搜索
+function searchHandle() {
+  console.log($('#search-input').val())
 }
