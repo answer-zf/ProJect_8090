@@ -18,9 +18,6 @@ $(function () {
     $('#nav-zf .nav-link').removeClass('active')
     $(hash).addClass('active')
   }
-
-  // 图片懒加载
-  $('img.lazyload').lazyload()
 })
 
 // 头部搜索

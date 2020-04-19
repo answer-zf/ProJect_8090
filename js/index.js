@@ -6,6 +6,9 @@ $(function () {
 
   // 首页新闻栏目摘要
   $('#hotNewsInfo').html($('#hotNewsInfo').html().slice(0, 42) + '...')
+
+  // 图片懒加载
+  $('img.lazyload').lazyload()
 })
 
 /* tab页悬停切换 */

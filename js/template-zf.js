@@ -83,7 +83,7 @@ var navcontent = {
 }
 
 var footercontent = {
-  template: `  <footer class="footer-zf">
+  template: `  <footer class="footer-zf" style="min-width: 1200px;">
   <div class="footer-header">
     <div class="container-zf">
       <div class="brand">

@@ -38,55 +38,626 @@
 </head>
 
 <body>
-  <!-- 头部区域 -->
-  <header class="header">
-    <div class="container-zf">
-      <div class="logo">
-        <a href="#">
-          <img src="./images/logo.png"
-               alt="8090餐饮加盟logo">
-        </a>
-      </div>
-      <div class="slogan">
-        <img src="./images/slogan.png"
-             alt="">
-      </div>
-      <div class="search">
-        <div class="searchMin">
-          <input class="rounded-pill"
-                 type="text">
-          <span class="iconfont icon-xiazai5 search-icon color"></span>
-        </div>
-        <p>热门搜索：
-          <a href="#"
-             target="_blank">尚品宫</a>
-          <a href="#"
-             target="_blank">尚品宫</a>
-          <a href="#"
-             target="_blank">尚品宫</a>
-          <a href="#"
-             target="_blank">尚品宫</a>
-        </p>
-      </div>
-      <div class="miniSlide">
-        <img src="./images/text.jpg"
-             alt="">
-      </div>
-    </div>
-  </header>
-  <!-- 导航区域 -->
-  <div id="nav-vue">
+  <div id="header-vue">
+    <!-- 头部区域 -->
+    <headercontent></headercontent>
+    <!-- 导航区域 -->
     <navcontent></navcontent>
   </div>
+
+  <div class="brandContent bgAux"
+       style="min-width: 1200px;">
+    <div class="container-zf">
+      <!-- 导航 -->
+      <div class="guidance">
+        <span><a href="./index.html"
+             title="首页">首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./brands"
+             title="品牌查询">品牌查询</a></span>
+      </div>
+      <!-- 分类 -->
+      <div class="project-screen">
+        <dl>
+          <dt>行业分类</dt>
+          <dd>
+            <div class="wood-fl">
+              <a class="a1 on"
+                 href="./brand.html"
+                 title="不限">不限</a>
+              <a class="a2 "
+                 href="#"
+                 title="餐饮">小吃</a>
+              <a class="a2 "
+                 href="#"
+                 title="快餐">快餐</a>
+              <a class="a2 "
+                 href="#"
+                 title="饮品">饮品</a>
+              <a class="a2 "
+                 href="#"
+                 title="面馆">面馆</a>
+              <a class="a2 "
+                 href="#"
+                 title="韩餐">韩餐</a>
+              <a class="a2 "
+                 href="#"
+                 title="烧烤">烧烤</a>
+              <a class="a2 "
+                 href="#"
+                 title="火锅">火锅</a>
+              <a class="a2 "
+                 href="#"
+                 title="西餐">西餐</a>
+              <a class="a2 "
+                 href="#"
+                 title="便当">便当</a>
+              <a class="a2 "
+                 href="#"
+                 title="石锅饭">石锅饭</a>
+              <a class="a2 "
+                 href="#"
+                 title="自助">自助</a>
+              <a class="a2 "
+                 href="#"
+                 title="粥铺">粥铺</a>
+              <a class="a2 "
+                 href="#"
+                 title="汉堡">汉堡</a>
+              <a class="a2 "
+                 href="#"
+                 title="烤鱼">烤鱼</a>
+              <a class="a2 "
+                 href="#"
+                 title="特色">特色</a>
+              <a class="a2 "
+                 href="#"
+                 title="经典">经典</a>
+            </div>
+            <!--子分类 start-->
+            <div class="wood-none"
+                 style="display:none">
+              <a class="a1 on"
+                 href="./brand.html"
+                 title="不限">不限</a>
+            </div>
+            <!--子分类 end-->
+
+          </dd>
+        </dl>
+        <dl>
+          <dt>投资金额</dt>
+          <dd>
+            <a class="on"
+               href="./brand.html"
+               title="不限">不限</a>
+            <a class=""
+               href="#"
+               title="10万以下">10万以下</a>
+            <a class=""
+               href="#"
+               title="10-20万">10-20万</a>
+            <a class=""
+               href="#"
+               title="21-50万">21-50万</a>
+            <a class=""
+               href="#"
+               title="51-100万">51-100万</a>
+            <a class=""
+               href="#"
+               title="101-200万">101-200万</a>
+            <a class=""
+               href="#"
+               title="200万以上">200万以上</a>
+          </dd>
+        </dl>
+        <dl>
+          <dt>加盟区域</dt>
+          <dd>
+            <div class="city-mr">
+              <a class="on"
+                 href="./brand.html"
+                 title="不限">不限</a>
+              <a class=""
+                 href="#"
+                 title="北京">北京</a>
+              <a class=""
+                 href="#"
+                 title="上海">上海</a>
+              <a class=""
+                 href="#"
+                 title="天津">天津</a>
+              <a class=""
+                 href="#"
+                 title="重庆">重庆</a>
+              <a class=""
+                 href="#"
+                 title="广东">广东</a>
+              <a class=""
+                 href="#"
+                 title="江苏">江苏</a>
+              <a class=""
+                 href="#"
+                 title="山东">山东</a>
+              <a class=""
+                 href="#"
+                 title="河南">河南</a>
+              <a class=""
+                 href="#"
+                 title="河北">河北</a>
+              <a class=""
+                 href="#"
+                 title="浙江">浙江</a>
+              <a class=""
+                 href="#"
+                 title="福建">福建</a>
+              <a class=""
+                 href="#"
+                 title="四川">四川</a>
+              <a class=""
+                 href="#"
+                 title="安徽">安徽</a>
+              <a class=""
+                 href="#"
+                 title="湖北">湖北</a>
+              <a class=""
+                 href="#"
+                 title="湖南">湖南</a>
+              <a class=""
+                 href="#"
+                 title="陕西">陕西</a>
+              <a href="javascript:;"
+                 class="a-more">更多</a>
+            </div>
+            <div class="city-none">
+              <a class=""
+                 href="#"
+                 title="辽宁">辽宁</a>
+              <a class=""
+                 href="#"
+                 title="广西">广西</a>
+              <a class=""
+                 href="#"
+                 title="黑龙江">黑龙江</a>
+              <a class=""
+                 href="#"
+                 title="云南">云南</a>
+              <a class=""
+                 href="#"
+                 title="江西">江西</a>
+              <a class=""
+                 href="#"
+                 title="内蒙古">内蒙古</a>
+              <a class=""
+                 href="#"
+                 title="吉林">吉林</a>
+              <a class=""
+                 href="#"
+                 title="山西">山西</a>
+              <a class=""
+                 href="#"
+                 title="贵州">贵州</a>
+              <a class=""
+                 href="#"
+                 title="甘肃">甘肃</a>
+              <a class=""
+                 href="#"
+                 title="新疆">新疆</a>
+              <a class=""
+                 href="#"
+                 title="海南">海南</a>
+              <a class=""
+                 href="#"
+                 title="宁夏">宁夏</a>
+              <a class=""
+                 href="#"
+                 title="青海">青海</a>
+              <a class=""
+                 href="#"
+                 title="西藏">西藏</a>
+              <a class=""
+                 href="#"
+                 title="澳门">澳门</a>
+            </div>
+          </dd>
+        </dl>
+        <dl class="no-border">
+          <dt>发源地</dt>
+          <dd>
+            <a class="on"
+               href="./brand.html"
+               title="不限">不限</a>
+            <a class=""
+               href="#"
+               title="华南">华南</a>
+            <a class=""
+               href="#"
+               title="华中">华中</a>
+            <a class=""
+               href="#"
+               title="华北">华北</a>
+            <a class=""
+               href="#"
+               title="西北">西北</a>
+            <a class=""
+               href="#"
+               title="华东">华东</a>
+            <a class=""
+               href="#"
+               title="西南">西南</a>
+            <a class=""
+               href="#"
+               title="东北">东北</a>
+          </dd>
+        </dl>
+      </div>
+      <!-- 内容 -->
+      <div class="projectcontent"
+           style="margin-top: 10px;">
+        <div class="project-list-li"
+             style="background-color: #fff;">
+          <h3 style="margin: 0;padding:0 33px;font-size:16px;font-weight:700;line-height: 50px;">加盟项目</h3>
+          <ul>
+            <li>
+              <div class="pro-img">
+                <!-- <span class="vip-img"><img
+                       src="https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/c_copy/images/vip.png"></span> --> <a
+                   href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190726/8e210a8c142f27cd60c959d93c6c7675.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <div class="pro-m">
+                <div class="pro-m-h"><a href="https://www.mxj.com.cn/brands/132421.html"
+                     title="雪加SNOWPLUS"
+                     target="_blank"
+                     style="color:#333">雪加SNOWPLUS</a><span>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;雪加，超越此刻</span></div>
+                <dl>
+                  <dd>直营店：<span>55家</span></dd>
+                  <dd>主营业务：<span>其他</span></dd>
+                  <dd>加盟店：<span>140家</span></dd>
+                  <dd>成立时间：<span>2019-05-15</span></dd>
+                </dl>
+                <p>投资额：
+                  <em> 10万以下
+                  </em>
+                  <span class="span-3a">协助选址</span><span class="span-cz">网红品牌</span> </p>
+              </div>
+              <div class="pro-r">
+                <a class="openBox"
+                   onclick="openBox()"
+                   href="javascript:;"
+                   title="雪加SNOWPLUS"
+                   data-id="132421">我要咨询</a>
+                <a href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200410/d02c62b00373c949e61db40acdbf4bc4.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <i></i>
+            </li>
+            <li>
+              <div class="pro-img">
+                <!-- <span class="vip-img"><img
+                       src="https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/c_copy/images/vip.png"></span> --> <a
+                   href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190726/8e210a8c142f27cd60c959d93c6c7675.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <div class="pro-m">
+                <div class="pro-m-h"><a href="https://www.mxj.com.cn/brands/132421.html"
+                     title="雪加SNOWPLUS"
+                     target="_blank"
+                     style="color:#333">雪加SNOWPLUS</a><span>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;雪加，超越此刻</span></div>
+                <dl>
+                  <dd>直营店：<span>55家</span></dd>
+                  <dd>主营业务：<span>其他</span></dd>
+                  <dd>加盟店：<span>140家</span></dd>
+                  <dd>成立时间：<span>2019-05-15</span></dd>
+                </dl>
+                <p>投资额：
+                  <em> 10万以下
+                  </em>
+                  <span class="span-3a">协助选址</span><span class="span-cz">网红品牌</span> </p>
+              </div>
+              <div class="pro-r">
+                <a class="openBox"
+                   onclick="openBox()"
+                   href="javascript:;"
+                   title="雪加SNOWPLUS"
+                   data-id="132421">我要咨询</a>
+                <a href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200410/d02c62b00373c949e61db40acdbf4bc4.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <i></i>
+            </li>
+            <li>
+              <div class="pro-img">
+                <!-- <span class="vip-img"><img
+                       src="https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/c_copy/images/vip.png"></span> --> <a
+                   href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190726/8e210a8c142f27cd60c959d93c6c7675.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <div class="pro-m">
+                <div class="pro-m-h"><a href="https://www.mxj.com.cn/brands/132421.html"
+                     title="雪加SNOWPLUS"
+                     target="_blank"
+                     style="color:#333">雪加SNOWPLUS</a><span>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;雪加，超越此刻</span></div>
+                <dl>
+                  <dd>直营店：<span>55家</span></dd>
+                  <dd>主营业务：<span>其他</span></dd>
+                  <dd>加盟店：<span>140家</span></dd>
+                  <dd>成立时间：<span>2019-05-15</span></dd>
+                </dl>
+                <p>投资额：
+                  <em> 10万以下
+                  </em>
+                  <span class="span-3a">协助选址</span><span class="span-cz">网红品牌</span> </p>
+              </div>
+              <div class="pro-r">
+                <a class="openBox"
+                   onclick="openBox()"
+                   href="javascript:;"
+                   title="雪加SNOWPLUS"
+                   data-id="132421">我要咨询</a>
+                <a href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200410/d02c62b00373c949e61db40acdbf4bc4.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <i></i>
+            </li>
+            <li>
+              <div class="pro-img">
+                <!-- <span class="vip-img"><img
+                       src="https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/c_copy/images/vip.png"></span> --> <a
+                   href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190726/8e210a8c142f27cd60c959d93c6c7675.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <div class="pro-m">
+                <div class="pro-m-h"><a href="https://www.mxj.com.cn/brands/132421.html"
+                     title="雪加SNOWPLUS"
+                     target="_blank"
+                     style="color:#333">雪加SNOWPLUS</a><span>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;雪加，超越此刻</span></div>
+                <dl>
+                  <dd>直营店：<span>55家</span></dd>
+                  <dd>主营业务：<span>其他</span></dd>
+                  <dd>加盟店：<span>140家</span></dd>
+                  <dd>成立时间：<span>2019-05-15</span></dd>
+                </dl>
+                <p>投资额：
+                  <em> 10万以下
+                  </em>
+                  <span class="span-3a">协助选址</span><span class="span-cz">网红品牌</span> </p>
+              </div>
+              <div class="pro-r">
+                <a class="openBox"
+                   onclick="openBox()"
+                   href="javascript:;"
+                   title="雪加SNOWPLUS"
+                   data-id="132421">我要咨询</a>
+                <a href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200410/d02c62b00373c949e61db40acdbf4bc4.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <i></i>
+            </li>
+            <li>
+              <div class="pro-img">
+                <!-- <span class="vip-img"><img
+                       src="https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/c_copy/images/vip.png"></span> --> <a
+                   href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190726/8e210a8c142f27cd60c959d93c6c7675.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <div class="pro-m">
+                <div class="pro-m-h"><a href="https://www.mxj.com.cn/brands/132421.html"
+                     title="雪加SNOWPLUS"
+                     target="_blank"
+                     style="color:#333">雪加SNOWPLUS</a><span>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;雪加，超越此刻</span></div>
+                <dl>
+                  <dd>直营店：<span>55家</span></dd>
+                  <dd>主营业务：<span>其他</span></dd>
+                  <dd>加盟店：<span>140家</span></dd>
+                  <dd>成立时间：<span>2019-05-15</span></dd>
+                </dl>
+                <p>投资额：
+                  <em> 10万以下
+                  </em>
+                  <span class="span-3a">协助选址</span><span class="span-cz">网红品牌</span> </p>
+              </div>
+              <div class="pro-r">
+                <a class="openBox"
+                   onclick="openBox()"
+                   href="javascript:;"
+                   title="雪加SNOWPLUS"
+                   data-id="132421">我要咨询</a>
+                <a href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200410/d02c62b00373c949e61db40acdbf4bc4.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <i></i>
+            </li>
+            <li>
+              <div class="pro-img">
+                <!-- <span class="vip-img"><img
+                       src="https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/c_copy/images/vip.png"></span> --> <a
+                   href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190726/8e210a8c142f27cd60c959d93c6c7675.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <div class="pro-m">
+                <div class="pro-m-h"><a href="https://www.mxj.com.cn/brands/132421.html"
+                     title="雪加SNOWPLUS"
+                     target="_blank"
+                     style="color:#333">雪加SNOWPLUS</a><span>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;雪加，超越此刻</span></div>
+                <dl>
+                  <dd>直营店：<span>55家</span></dd>
+                  <dd>主营业务：<span>其他</span></dd>
+                  <dd>加盟店：<span>140家</span></dd>
+                  <dd>成立时间：<span>2019-05-15</span></dd>
+                </dl>
+                <p>投资额：
+                  <em> 10万以下
+                  </em>
+                  <span class="span-3a">协助选址</span><span class="span-cz">网红品牌</span> </p>
+              </div>
+              <div class="pro-r">
+                <a class="openBox"
+                   onclick="openBox()"
+                   href="javascript:;"
+                   title="雪加SNOWPLUS"
+                   data-id="132421">我要咨询</a>
+                <a href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200410/d02c62b00373c949e61db40acdbf4bc4.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <i></i>
+            </li>
+            <li>
+              <div class="pro-img">
+                <!-- <span class="vip-img"><img
+                       src="https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/c_copy/images/vip.png"></span> --> <a
+                   href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190726/8e210a8c142f27cd60c959d93c6c7675.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <div class="pro-m">
+                <div class="pro-m-h"><a href="https://www.mxj.com.cn/brands/132421.html"
+                     title="雪加SNOWPLUS"
+                     target="_blank"
+                     style="color:#333">雪加SNOWPLUS</a><span>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;雪加，超越此刻</span></div>
+                <dl>
+                  <dd>直营店：<span>55家</span></dd>
+                  <dd>主营业务：<span>其他</span></dd>
+                  <dd>加盟店：<span>140家</span></dd>
+                  <dd>成立时间：<span>2019-05-15</span></dd>
+                </dl>
+                <p>投资额：
+                  <em> 10万以下
+                  </em>
+                  <span class="span-3a">协助选址</span><span class="span-cz">网红品牌</span> </p>
+              </div>
+              <div class="pro-r">
+                <a class="openBox"
+                   onclick="openBox()"
+                   href="javascript:;"
+                   title="雪加SNOWPLUS"
+                   data-id="132421">我要咨询</a>
+                <a href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200410/d02c62b00373c949e61db40acdbf4bc4.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <i></i>
+            </li>
+            <li>
+              <div class="pro-img">
+                <!-- <span class="vip-img"><img
+                       src="https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/c_copy/images/vip.png"></span> --> <a
+                   href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190726/8e210a8c142f27cd60c959d93c6c7675.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <div class="pro-m">
+                <div class="pro-m-h"><a href="https://www.mxj.com.cn/brands/132421.html"
+                     title="雪加SNOWPLUS"
+                     target="_blank"
+                     style="color:#333">雪加SNOWPLUS</a><span>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;雪加，超越此刻</span></div>
+                <dl>
+                  <dd>直营店：<span>55家</span></dd>
+                  <dd>主营业务：<span>其他</span></dd>
+                  <dd>加盟店：<span>140家</span></dd>
+                  <dd>成立时间：<span>2019-05-15</span></dd>
+                </dl>
+                <p>投资额：
+                  <em> 10万以下
+                  </em>
+                  <span class="span-3a">协助选址</span><span class="span-cz">网红品牌</span> </p>
+              </div>
+              <div class="pro-r">
+                <a class="openBox"
+                   onclick="openBox()"
+                   href="javascript:;"
+                   title="雪加SNOWPLUS"
+                   data-id="132421">我要咨询</a>
+                <a href="https://www.mxj.com.cn/brands/132421.html"
+                   title="雪加SNOWPLUS"
+                   target="_blank"><img
+                       src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200410/d02c62b00373c949e61db40acdbf4bc4.jpg"
+                       alt="雪加SNOWPLUS"></a>
+              </div>
+              <i></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- 底部 -->
   <div id="footer-vue">
     <footercontent></footercontent>
   </div>
 
-  <script src="./js/index.js"></script>
   <script src="./js/common.js"></script>
   <script src="./js/template-zf.js"></script>
+  <script>
+    //加盟区域更多
+    var flag = true;
+    $(".a-more").click(function () {
+      if (flag) {
+        $(".city-none").show();
+        $(this).addClass("addon");
+        $(this).text("收起");
+        flag = false;
+      } else {
+        $(".city-none").hide();
+        $(this).removeClass("addon");
+        $(this).text("更多");
+        flag = true;
+      }
+    })
+    //行业分类二级栏目显示
+    $(".wood-fl a.a2").click(function () {
+      var $index = $(this).index('.a2');
+      $(this).addClass("on").siblings().removeClass("on");
+      $(this).parents(".wood-fl").siblings(".wood-none").eq($index).show().siblings(".wood-none").hide();
+    })
 
+    $(".wood-fl a.a1").click(function () {
+      $(this).addClass("on").siblings().removeClass("on");
+      $(".wood-none").hide();
+    })
+  </script>
 </body>
 
 </html>

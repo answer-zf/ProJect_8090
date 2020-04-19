@@ -33,6 +33,10 @@ html,
 body {
   font-family: 'SourceHanSansCN-Medium' !important;
 }
+dl,
+dd {
+  margin-bottom: 0;
+}
 ul {
   padding-left: 0;
   margin-bottom: 0;
@@ -106,6 +110,9 @@ a:hover {
 }
 .nav-fix-zf.show {
   opacity: 1;
+}
+em {
+  font-style: normal;
 }
 /*#region 五个主色*/
 /* -------------------- red(#ff6062) -------------------- */
@@ -1386,4 +1393,185 @@ span.columnNewsColor:hover {
 .prove .gbicp a {
   display: inline-block;
   margin-right: 10px;
+}
+/* 项目大全 */
+
+.guidance span {
+  font-size: 12px;
+  line-height: 50px;
+  color: #666;
+}
+.guidance span a {
+  color: #999;
+}
+.guidance span a:hover {
+  color: #ff9813;
+}
+/* 255, 126, 0 */
+.project-screen {
+  width: 1200px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 126, 0, 0.5);
+  padding: 5px 30px;
+  background: #fff;
+}
+.project-screen dl {
+  overflow: hidden;
+  border-bottom: 1px solid #ecedf6;
+  padding: 11px 0;
+}
+.project-screen dl dt {
+  width: 50px;
+  font-size: 12px;
+  color: #666;
+  font-weight: bold;
+  float: left;
+  line-height: 30px;
+}
+.project-screen dl dd {
+  width: 1025px;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.wood-fl {
+  overflow: hidden;
+}
+.project-screen dl dd a.on {
+  background: rgba(255, 126, 0, 1);
+  color: #fff;
+}
+.project-screen dl dd a {
+  font-size: 12px;
+  color: #666;
+  padding: 5px 10px;
+  float: left;
+  margin: 4px 0;
+  margin-left: 8px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+.wood-none {
+  overflow: hidden;
+  border: 1px solid #ff9813;
+  margin-left: 10px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+.project-screen dl dd a.a-more:hover {
+  background: url(../images/xia-icon-hover.png) no-repeat 38px center;
+}
+.project-screen dl dd a.a-more {
+  border: 1px solid #dfdfdf;
+  padding: 3px 10px;
+  padding-right: 23px;
+  background: url(../images/xia-icon.png) no-repeat 38px center;
+}
+.project-screen dl dd a.a-more.addon {
+  background: url(../images/shang-icon.png) no-repeat 38px center;
+}
+.project-screen dl dd a:hover {
+  background: rgba(255, 209, 163, 0.863);
+}
+.city-none {
+  display: none;
+}
+.city-mr {
+  overflow: hidden;
+}
+.project-screen dl.no-border {
+  border: 0;
+}
+/* 分项 */
+.project-list-li {
+  width: 850px;
+  overflow: hidden;
+}
+.project-list-li ul li {
+  position: relative;
+  padding: 20px 0 14px;
+  margin: 0 30px 0;
+  overflow: hidden;
+  border-top: 1px solid #dfdfdf;
+}
+.pro-m {
+  width: 410px;
+  float: left;
+  margin-left: 20px;
+}
+.pro-m .pro-m-h {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+.pro-m .pro-m-h span {
+  font-size: 12px;
+  color: #999;
+  font-weight: 100;
+}
+.pro-r {
+  float: right;
+  width: 81px;
+}
+.pro-r a.openBox {
+  display: block;
+  width: 80px;
+  font-size: 12px;
+  color: #04935f;
+  text-align: center;
+  line-height: 28px;
+  height: 30px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border: 1px solid rgba(4, 147, 95, 1);
+  margin-bottom: 21px;
+}
+.pro-m dl dd {
+  width: 140px;
+  float: left;
+  font-size: 12px;
+  color: #999;
+  margin-top: 15px;
+}
+.pro-m dl {
+  overflow: hidden;
+}
+.pro-img {
+  width: 180px;
+  height: 130px;
+  float: left;
+}
+.pro-img img {
+  width: 180px;
+  height: 130px;
+}
+.pro-r img {
+  width: 80px;
+  height: 80px;
+}
+.pro-m p {
+  font-size: 12px;
+  color: #999;
+  margin-top: 15px;
+}
+.pro-m p em {
+  font-size: 16px;
+  color: #ed625e;
+  font-weight: bold;
+}
+.pro-m p span.span-3a {
+  background: #defdeb;
+  color: #04935f;
+}
+.pro-m p span.span-cz {
+  background: #e0efff;
+  color: #3399ff;
+}
+.pro-m p span {
+  margin-left: 10px;
+  border: 0px;
+  padding: 2px 6px;
 }
