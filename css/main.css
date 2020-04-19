@@ -1486,7 +1486,7 @@ span.columnNewsColor:hover {
 }
 /* 分项 */
 .project-list-li {
-  width: 850px;
+  width: 880px;
   overflow: hidden;
 }
 .project-list-li ul li {
@@ -1519,14 +1519,14 @@ span.columnNewsColor:hover {
   display: block;
   width: 80px;
   font-size: 12px;
-  color: #04935f;
+  color: rgba(255, 126, 0, 1);
   text-align: center;
   line-height: 28px;
   height: 30px;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
-  border: 1px solid rgba(4, 147, 95, 1);
+  border: 1px solid rgba(255, 126, 0, 1);
   margin-bottom: 21px;
 }
 .pro-m dl dd {
@@ -1574,4 +1574,45 @@ span.columnNewsColor:hover {
   margin-left: 10px;
   border: 0px;
   padding: 2px 6px;
+}
+.project-r {
+  width: 310px;
+  overflow: hidden;
+  float: right;
+}
+.ranking {
+  padding: 15px 11px 15px 20px;
+  overflow: hidden;
+  background: #fff;
+  border-top: 2px solid #04935f;
+}
+.ranking .h3 {
+  font-size: 16px;
+  color: #04935f;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.ul-ranking li {
+  font-size: 14px;
+  line-height: 2.4;
+}
+.ul-ranking li.s1,
+.ul-ranking li.s2,
+.ul-ranking li.s3 {
+  font-weight: bold;
+}
+.ul-ranking li span {
+  float: right;
+  color: #999;
+  font-weight: normal;
+  margin-left: 3px;
+}
+.ul-ranking li a {
+  max-width: 144px;
+  color: #333;
+}
+.projectcontent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
