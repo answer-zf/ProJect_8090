@@ -1487,14 +1487,17 @@ span.columnNewsColor:hover {
 /* 分项 */
 .project-list-li {
   width: 880px;
-  overflow: hidden;
 }
-.project-list-li ul li {
+.project-list-li .project-list-item-zf {
   position: relative;
-  padding: 20px 0 14px;
-  margin: 0 30px 0;
+  z-index: 99999;
+}
+.project-list-li .project-list-item-zf li {
+  position: relative;
+  padding: 20px 30px 14px;
   overflow: hidden;
-  border-top: 1px solid #dfdfdf;
+  border: 1px solid transparent;
+  transition: all 0.5s;
 }
 .pro-m {
   width: 410px;
@@ -1528,6 +1531,7 @@ span.columnNewsColor:hover {
   -moz-border-radius: 100px;
   border: 1px solid rgba(255, 126, 0, 1);
   margin-bottom: 21px;
+  transition: all 0.5s;
 }
 .pro-m dl dd {
   width: 140px;
@@ -1540,6 +1544,7 @@ span.columnNewsColor:hover {
   overflow: hidden;
 }
 .pro-img {
+  position: relative;
   width: 180px;
   height: 130px;
   float: left;
@@ -1576,43 +1581,178 @@ span.columnNewsColor:hover {
   padding: 2px 6px;
 }
 .project-r {
+  /* position: fixed; */
   width: 310px;
-  overflow: hidden;
-  float: right;
+}
+.ranking-fixed {
+  position: fixed;
+  top: 40px;
+  width: 1200px;
+  margin: auto;
+}
+.ranking-fixed-item {
+  width: 310px;
+  margin-left: 890px;
 }
 .ranking {
-  padding: 15px 11px 15px 20px;
-  overflow: hidden;
+  padding: 15px;
   background: #fff;
-  border-top: 2px solid #04935f;
+  border-top: 2px solid #ff941a;
 }
 .ranking .h3 {
   font-size: 16px;
-  color: #04935f;
+  color: #ff941a;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
+
 .ul-ranking li {
+  height: 44px;
   font-size: 14px;
-  line-height: 2.4;
 }
-.ul-ranking li.s1,
-.ul-ranking li.s2,
-.ul-ranking li.s3 {
-  font-weight: bold;
-}
-.ul-ranking li span {
-  float: right;
+
+.ul-ranking li em {
   color: #999;
-  font-weight: normal;
-  margin-left: 3px;
-}
-.ul-ranking li a {
-  max-width: 144px;
-  color: #333;
+  margin-right: 8px;
+  margin-left: 18px;
 }
 .projectcontent {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+}
+.ul-ranking li {
+  display: flex;
+  align-items: center;
+}
+.ul-ranking li .num {
+  width: 21px;
+  height: 21px;
+  margin: 0 6px 0 1px;
+  font-size: 12px;
+  line-height: 21px;
+  color: #ff941a;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ff941a;
+}
+.icon-icon_yijizhandui::before,
+.icon-icon_erjizhandui::before,
+.icon-icon_sanjizhandui::before {
+  margin-left: -4px;
+  font-size: 32px;
+  color: #ff941a;
+}
+.rankingText {
+  flex: 1;
+  max-width: 170px;
+  margin-left: 5px;
+  height: 36px;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #666;
+}
+.rankingText:hover {
+  color: #ff941a;
+}
+.icon-huo1 {
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+.huocolor1 {
+  color: #ff0202;
+}
+.huocolor2 {
+  color: #ff4747;
+}
+.huocolor3 {
+  color: #e06161;
+}
+.vip-img {
+  position: absolute;
+  top: -17px;
+  right: -15px;
+  display: block;
+  width: 27px;
+  height: 27px;
+}
+.icon-huiyuan {
+  display: block;
+  font-size: 27px;
+  color: #ff941a;
+  transform: rotate(45deg);
+}
+.icon-huiyuan::before {
+  content: '\e62e';
+  display: block;
+  background: #fff;
+  width: 26px;
+  height: 30px;
+  border-radius: 50%;
+}
+.project-list-li .project-list-item-zf li:hover .pro-r a.openBox {
+  background: #ff941a;
+  color: #fff;
+}
+.project-list-li .project-list-item-zf li:hover {
+  border: 1px solid #ff941a;
+}
+.comment-page {
+  text-align: right;
+  margin-top: 0px;
+  padding-bottom: 6px;
+}
+.pages {
+  width: 790px;
+  margin: 0 auto;
+  padding: 30px 0;
+  border-top: 1px solid #dfdfdf;
+}
+.comment-page li {
+  display: inline-block;
+  font-size: 0;
+  margin-left: 10px;
+}
+.comment-page li span,
+.comment-page li a {
+  display: inline-block;
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 10px;
+  color: #ff941a;
+  border: 1px solid #dfdfdf;
+}
+.comment-page li a:hover {
+  color: #ff941a;
+  background: #fdf5ecd7;
+  border-color: #ff941a;
+}
+.pagination {
+  display: inline-block;
+}
+.pagination li.active span {
+  background: #ff941a;
+  color: #fff;
+  border-color: #ff941a;
+}
+.slick-slide img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.d-n {
+  display: none;
+}
+.project-list-li ul li i {
+  position: absolute;
+  left: 30px;
+  top: 0px;
+  width: 785px;
+  height: 1px;
+  background: #dfdfdf;
+}
+.project-list-li ul li:hover {
+  background: transparent;
 }
