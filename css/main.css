@@ -1882,13 +1882,13 @@ span.columnNewsColor:hover {
     margin-bottom: 0;
 }
 .brand-ranking {
-    width: 280px;
+    width: 290px;
     height: 525px;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0px 0px 10px 0px rgba(204, 204, 204, 0.5);
 }
 .ranking-title {
-    width: 280px;
+    width: 290px;
     height: 50px;
     background: #f0f7ff;
     line-height: 50px;
@@ -1933,30 +1933,23 @@ span.columnNewsColor:hover {
     float: left;
     width: 18px;
     height: 20px;
-    background: url(https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/top/img/rank-icon3.png)
-        no-repeat;
+    background: url(../images/cup.png) no-repeat center center;
     font-size: 12px;
     color: #999;
     line-height: 20px;
     text-align: center;
 }
-.ranking-up em.hot {
+.ranking-up svg {
     float: left;
     width: 18px;
     height: 20px;
-    background: url(https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/top/img/rank-icon2.png)
-        no-repeat;
-    font-size: 12px;
-    color: #333;
-    line-height: 18px;
-    font-weight: bold;
 }
 .ranking-up p {
     font-size: 13px;
     color: #333;
     float: left;
-    padding-left: 8px;
-    width: 100px;
+    padding-left: 16px;
+    width: 110px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1967,7 +1960,7 @@ span.columnNewsColor:hover {
     float: left;
 }
 .ranking-up span.s-price {
-    margin-left: 25px;
+    margin-left: 8px;
 }
 .ranking-up span.s-index {
     float: right;
@@ -1981,36 +1974,29 @@ span.columnNewsColor:hover {
     float: left;
     width: 18px;
     height: 20px;
-    background: url(https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/top/img/rank-icon3.png)
-        no-repeat;
+    background: url(../images/cup.png) no-repeat center center;
     font-size: 12px;
     color: #999;
     line-height: 20px;
     text-align: center;
 }
-.ranking-dw-i em.hot {
+.ranking-dw-i svg {
     float: left;
     width: 18px;
     height: 20px;
-    background: url(https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/top/img/rank-icon2.png)
-        no-repeat;
-    font-size: 12px;
-    color: #333;
-    line-height: 18px;
-    font-weight: bold;
 }
-
 .ranking-dw-i p {
     font-size: 13px;
     color: #333;
     float: left;
-    padding-left: 8px;
+    padding-left: 16px;
     width: 170px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     font-weight: bold;
 }
+
 .ranking-dw-i span.s-index {
     float: right;
     font-size: 12px;
@@ -2042,11 +2028,15 @@ span.columnNewsColor:hover {
     color: #666;
 }
 .sn1 {
-    padding-left: 12px;
+    padding-left: 6px;
 }
 .sn2 {
-    padding-left: 54px;
+    padding-left: 50px;
 }
 .sn3 {
-    padding-left: 23px;
+    padding-left: 46px;
+}
+.rankingtop {
+    display: flex;
+    justify-content: space-between;
 }

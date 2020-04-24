@@ -2,377 +2,712 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>8090餐饮招商加盟</title>
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-  <!-- iconfont font-class 引用 -->
-  <link rel="stylesheet" href="./css/iconfont.css">
-  <!-- bootstrap css -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/main.css">
-  <!-- iconfont Symbol 引用  -->
-  <script src="./js/iconfont.js"></script>
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <!-- popper -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <!-- bootstrap js -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-  <!-- vue -->
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <meta charset="UTF-8">
+    <title>8090餐饮招商加盟</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- iconfont font-class 引用 -->
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- iconfont Symbol 引用  -->
+    <script src="./js/iconfont.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <!-- popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
 </head>
 
 <body>
-  <div id="header-vue">
-    <!-- 头部区域 -->
-    <headercontent></headercontent>
-    <!-- 导航区域 -->
-    <navcontent></navcontent>
-  </div>
-
-  <div class="brandContent bgAux" style="min-width: 1200px;">
-    <div class="container-zf">
-      <!-- 导航 -->
-      <div class="guidance">
-        <span><a href="./index.html" title="首页">8090餐饮加盟网</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./programlist.html"
-            title="项目大全">品牌排行榜</a></span>
-      </div>
-      <div class="brand-ranking">
-        <div class="ranking-title">
-          <h2>本月人气品牌排行榜</h2>
-        </div>
-        <div class="ranking-nr">
-          <div class="brand-ranking-s">
-            <span>排名</span>
-            <span class="sn1">品牌名称</span>
-            <span class="sn2">投资额</span>
-            <span class="sn3">排名指数</span>
-          </div>
-          <ul class="ranking-ul">
-            <li>
-              <a href="https://www.mxj.com.cn/brands/5873.html" target="_blank" title="新辣道">
-                <div class="ranking-up" style="display: block;">
-                  <em class="hot">1</em>
-                  <p>新辣道</p>
-                  <span class="s-price">￥101-200万</span>
-                  <span class="s-index">35048</span>
-                </div>
-                <div class="ranking-dw" style="display: none;">
-                  <div class="ranking-dw-i">
-                    <em class="hot">1</em>
-                    <p>新辣道</p>
-                    <span class="s-index">35048</span>
-                  </div>
-                  <div class="ranking-dw-u">
-                    <div class="ranking-dw-ul">
-                      <img
-                        src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200225/190792786352e578653fe4438e008998.jpg">
-                    </div>
-                    <div class="ranking-dw-ur">
-                      <p>投资额：<span>￥101-200万</span></p>
-                      <p>全国门店：<span>109家</span></p>
-                      <p>标准店面：<span>270-350平<span></span></span></p>
-                    </div>
-                  </div>
-                </div>
-
-              </a>
-            </li>
-            <li>
-              <a href="https://www.mxj.com.cn/brands/3989.html" target="_blank" title="唯美度">
-                <div class="ranking-up">
-                  <em class="hot">2</em>
-                  <p>唯美度</p>
-                  <span class="s-price">￥10万以下</span>
-                  <span class="s-index">27305</span>
-                </div>
-                <div class="ranking-dw" style="display: none;">
-                  <div class="ranking-dw-i">
-                    <em class="hot">2</em>
-                    <p>唯美度</p>
-                    <span class="s-index">27305</span>
-                  </div>
-                  <div class="ranking-dw-u">
-                    <div class="ranking-dw-ul">
-                      <img
-                        src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190416/7345221b5383e16ce33b1d0d9a2655cd.jpg">
-                    </div>
-                    <div class="ranking-dw-ur">
-                      <p>投资额：<span>￥10万以下</span></p>
-                      <p>全国门店：<span>5693家</span></p>
-                      <p>标准店面：<span>100~1000平<span></span></span></p>
-                    </div>
-                  </div>
-                </div>
-
-              </a>
-            </li>
-            <li>
-              <a href="https://www.mxj.com.cn/brands/4134.html" target="_blank" title="权金城烤肉">
-                <div class="ranking-up">
-                  <em class="hot">3</em>
-                  <p>权金城烤肉</p>
-                  <span class="s-price">￥51-100万</span>
-                  <span class="s-index">26542</span>
-                </div>
-                <div class="ranking-dw" style="display: none;">
-                  <div class="ranking-dw-i">
-                    <em class="hot">3</em>
-                    <p>权金城烤肉</p>
-                    <span class="s-index">26542</span>
-                  </div>
-                  <div class="ranking-dw-u">
-                    <div class="ranking-dw-ul">
-                      <img
-                        src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190315/0679d4fa21b4b67ae021541c6d81e107.jpg">
-                    </div>
-                    <div class="ranking-dw-ur">
-                      <p>投资额：<span>￥51-100万</span></p>
-                      <p>全国门店：<span>51家</span></p>
-                      <p>标准店面：<span>200平<span></span></span></p>
-                    </div>
-                  </div>
-                </div>
-
-              </a>
-            </li>
-            <li>
-              <a href="https://www.mxj.com.cn/brands/5966.html" target="_blank" title="LE CYGNE 天鹅童话">
-                <div class="ranking-up" style="display: block;">
-                  <em>4</em>
-                  <p>LE CYGNE 天鹅童话</p>
-                  <span class="s-price">￥21-50万</span>
-                  <span class="s-index">25795</span>
-                </div>
-                <div class="ranking-dw" style="display: none;">
-                  <div class="ranking-dw-i">
-                    <em>4</em>
-                    <p>LE CYGNE 天鹅童话</p>
-                    <span class="s-index">25795</span>
-                  </div>
-                  <div class="ranking-dw-u">
-                    <div class="ranking-dw-ul">
-                      <img
-                        src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20180720/4d389e390dc91bbf1a0b431675722f75.jpg">
-                    </div>
-                    <div class="ranking-dw-ur">
-                      <p>投资额：<span>￥21-50万</span></p>
-                      <p>全国门店：<span>68家</span></p>
-                      <p>标准店面：<span>150平<span></span></span></p>
-                    </div>
-                  </div>
-                </div>
-
-              </a>
-            </li>
-            <li>
-              <a href="https://www.mxj.com.cn/brands/8317.html" target="_blank" title="仔皇煲">
-                <div class="ranking-up" style="display: block;">
-                  <em>5</em>
-                  <p>仔皇煲</p>
-                  <span class="s-price">￥51-100万</span>
-                  <span class="s-index">23178</span>
-                </div>
-                <div class="ranking-dw" style="display: none;">
-                  <div class="ranking-dw-i">
-                    <em>5</em>
-                    <p>仔皇煲</p>
-                    <span class="s-index">23178</span>
-                  </div>
-                  <div class="ranking-dw-u">
-                    <div class="ranking-dw-ul">
-                      <img
-                        src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200314/1880e6f52feb5c333a76ed1dfb558e0c.jpg">
-                    </div>
-                    <div class="ranking-dw-ur">
-                      <p>投资额：<span>￥51-100万</span></p>
-                      <p>全国门店：<span>65家</span></p>
-                      <p>标准店面：<span>80-100平<span></span></span></p>
-                    </div>
-                  </div>
-                </div>
-
-              </a>
-            </li>
-            <li>
-              <a href="https://www.mxj.com.cn/brands/10356.html" target="_blank" title="权味">
-                <div class="ranking-up" style="display: block;">
-                  <em>6</em>
-                  <p>权味</p>
-                  <span class="s-price">￥21-50万</span>
-                  <span class="s-index">22112</span>
-                </div>
-                <div class="ranking-dw" style="display: none;">
-                  <div class="ranking-dw-i">
-                    <em>6</em>
-                    <p>权味</p>
-                    <span class="s-index">22112</span>
-                  </div>
-                  <div class="ranking-dw-u">
-                    <div class="ranking-dw-ul">
-                      <img
-                        src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190315/0f126950c95d0968cb36d59df2fa8006.jpg">
-                    </div>
-                    <div class="ranking-dw-ur">
-                      <p>投资额：<span>￥21-50万</span></p>
-                      <p>全国门店：<span>35家</span></p>
-                      <p>标准店面：<span>100平<span></span></span></p>
-                    </div>
-                  </div>
-                </div>
-
-              </a>
-            </li>
-            <li>
-              <a href="https://www.mxj.com.cn/brands/5087.html" target="_blank" title="阿甘锅盔">
-                <div class="ranking-up">
-                  <em>7</em>
-                  <p>阿甘锅盔</p>
-                  <span class="s-price">￥10-20万</span>
-                  <span class="s-index">17892</span>
-                </div>
-                <div class="ranking-dw" style="display: none;">
-                  <div class="ranking-dw-i">
-                    <em>7</em>
-                    <p>阿甘锅盔</p>
-                    <span class="s-index">17892</span>
-                  </div>
-                  <div class="ranking-dw-u">
-                    <div class="ranking-dw-ul">
-                      <img
-                        src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20180515/04f224ea8c56ac36f886b8b1507deaaa.jpg">
-                    </div>
-                    <div class="ranking-dw-ur">
-                      <p>投资额：<span>￥10-20万</span></p>
-                      <p>全国门店：<span>507家</span></p>
-                      <p>标准店面：<span>10-50平<span></span></span></p>
-                    </div>
-                  </div>
-                </div>
-
-              </a>
-            </li>
-            <li>
-              <a href="https://www.mxj.com.cn/brands/5025.html" target="_blank" title="和合谷">
-                <div class="ranking-up">
-                  <em>8</em>
-                  <p>和合谷</p>
-                  <span class="s-price">￥51-100万</span>
-                  <span class="s-index">17786</span>
-                </div>
-                <div class="ranking-dw" style="display: none;">
-                  <div class="ranking-dw-i">
-                    <em>8</em>
-                    <p>和合谷</p>
-                    <span class="s-index">17786</span>
-                  </div>
-                  <div class="ranking-dw-u">
-                    <div class="ranking-dw-ul">
-                      <img
-                        src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20180425/2056ed1eb68f6bea9108dd384cee6365.jpg">
-                    </div>
-                    <div class="ranking-dw-ur">
-                      <p>投资额：<span>￥51-100万</span></p>
-                      <p>全国门店：<span>138家</span></p>
-                      <p>标准店面：<span>80-150平<span></span></span></p>
-                    </div>
-                  </div>
-                </div>
-
-              </a>
-            </li>
-            <li>
-              <a href="https://www.mxj.com.cn/brands/4275.html" target="_blank" title="唯美召香">
-                <div class="ranking-up">
-                  <em>9</em>
-                  <p>唯美召香</p>
-                  <span class="s-price">￥21-50万</span>
-                  <span class="s-index">16651</span>
-                </div>
-                <div class="ranking-dw" style="display: none;">
-                  <div class="ranking-dw-i">
-                    <em>9</em>
-                    <p>唯美召香</p>
-                    <span class="s-index">16651</span>
-                  </div>
-                  <div class="ranking-dw-u">
-                    <div class="ranking-dw-ul">
-                      <img
-                        src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20171201/19e15a230ce76de7027bafdc253f4d54.jpg">
-                    </div>
-                    <div class="ranking-dw-ur">
-                      <p>投资额：<span>￥21-50万</span></p>
-                      <p>全国门店：<span>150家</span></p>
-                      <p>标准店面：<span>80平<span></span></span></p>
-                    </div>
-                  </div>
-                </div>
-
-              </a>
-            </li>
-            <li>
-              <a href="https://www.mxj.com.cn/brands/4666.html" target="_blank" title="雪乐山滑雪培训连锁机构">
-                <div class="ranking-up">
-                  <em>10</em>
-                  <p>雪乐山滑雪培训连锁机构</p>
-                  <span class="s-price">￥51-100万</span>
-                  <span class="s-index">14626</span>
-                </div>
-                <div class="ranking-dw" style="display: none;">
-                  <div class="ranking-dw-i">
-                    <em>10</em>
-                    <p>雪乐山滑雪培训连锁机构</p>
-                    <span class="s-index">14626</span>
-                  </div>
-                  <div class="ranking-dw-u">
-                    <div class="ranking-dw-ul">
-                      <img
-                        src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20180611/13c4db415bec4132d7e840a43afd66af.jpg">
-                    </div>
-                    <div class="ranking-dw-ur">
-                      <p>投资额：<span>￥51-100万</span></p>
-                      <p>全国门店：<span>34家</span></p>
-                      <p>标准店面：<span>150平<span></span></span></p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div id="header-vue">
+        <!-- 头部区域 -->
+        <headercontent></headercontent>
+        <!-- 导航区域 -->
+        <navcontent></navcontent>
     </div>
-  </div>
 
-  <!-- 底部 -->
-  <div id="footer-vue">
-    <footercontent></footercontent>
-  </div>
+    <div class="brandContent bgAux" style="min-width: 1200px;">
+        <div class="container-zf">
+            <!-- 导航 -->
+            <div class="guidance">
+                <span><a href="./index.html" title="首页">8090餐饮加盟网</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a
+                        href="./programlist.html" title="项目大全">品牌排行榜</a></span>
+            </div>
+            <div class="rankingtop">
+                <div class="brand-ranking">
+                    <div class="ranking-title">
+                        <h2>本月人气品牌排行榜</h2>
+                    </div>
+                    <div class="ranking-nr">
+                        <div class="brand-ranking-s">
+                            <span>排名</span>
+                            <span class="sn1">品牌名称</span>
+                            <span class="sn2">投资额</span>
+                            <span class="sn3">排名</span>
+                        </div>
+                        <ul class="ranking-ul">
+                            <li>
+                                <a href="#" target="_blank" title="新辣道">
+                                    <div class="ranking-up" style="display: block;">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-jiangbei-"></use>
+                                        </svg>
+                                        <p>新辣道</p>
+                                        <span class="s-price">￥101-200万</span>
+                                        <span class="s-index">35048</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <svg class="icon" aria-hidden="true">
+                                                <use xlink:href="#icon-jiangbei-"></use>
+                                            </svg>
+                                            <p>新辣道</p>
+                                            <span class="s-index">35048</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200225/190792786352e578653fe4438e008998.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥101-200万</span></p>
+                                                <p>全国门店：<span>109家</span></p>
+                                                <p>标准店面：<span>270-350平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
 
-  <script src="./js/common.js"></script>
-  <script src="./js/template-zf.js"></script>
-  <script src="./js/brand.js"></script>
-  <script src="./js/lazyload.js"></script>
-  <script>
-    $(function () {
-      /*人气排行榜*/
-      $(".ranking-ul li:first-child").find(".ranking-up").hide();
-      $(".ranking-ul li:first-child").find(".ranking-dw").show();
-      $(".ranking-ul li").mouseenter(function () {
-        $(this).find(".ranking-up").hide();
-        $(this).find(".ranking-dw").show();
-        $(this).siblings().find(".ranking-up").show();
-        $(this).siblings().find(".ranking-dw").hide();
-      });
-    });
-  </script>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="唯美度">
+                                    <div class="ranking-up">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-jiangbei-"></use>
+                                        </svg>
+                                        <p>唯美度</p>
+                                        <span class="s-price">￥10万以下</span>
+                                        <span class="s-index">27305</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <svg class="icon" aria-hidden="true">
+                                                <use xlink:href="#icon-jiangbei-"></use>
+                                            </svg>
+                                            <p>唯美度</p>
+                                            <span class="s-index">27305</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190416/7345221b5383e16ce33b1d0d9a2655cd.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥10万以下</span></p>
+                                                <p>全国门店：<span>5693家</span></p>
+                                                <p>标准店面：<span>100~1000平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="权金城烤肉">
+                                    <div class="ranking-up">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-jiangbei-"></use>
+                                        </svg>
+                                        <p>权金城烤肉</p>
+                                        <span class="s-price">￥51-100万</span>
+                                        <span class="s-index">26542</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <svg class="icon" aria-hidden="true">
+                                                <use xlink:href="#icon-jiangbei-"></use>
+                                            </svg>
+                                            <p>权金城烤肉</p>
+                                            <span class="s-index">26542</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190315/0679d4fa21b4b67ae021541c6d81e107.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥51-100万</span></p>
+                                                <p>全国门店：<span>51家</span></p>
+                                                <p>标准店面：<span>200平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="LE CYGNE 天鹅童话">
+                                    <div class="ranking-up" style="display: block;">
+                                        <em>4</em>
+                                        <p>LE CYGNE 天鹅童话</p>
+                                        <span class="s-price">￥21-50万</span>
+                                        <span class="s-index">25795</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>4</em>
+                                            <p>LE CYGNE 天鹅童话</p>
+                                            <span class="s-index">25795</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20180720/4d389e390dc91bbf1a0b431675722f75.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥21-50万</span></p>
+                                                <p>全国门店：<span>68家</span></p>
+                                                <p>标准店面：<span>150平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="仔皇煲">
+                                    <div class="ranking-up" style="display: block;">
+                                        <em>5</em>
+                                        <p>仔皇煲</p>
+                                        <span class="s-price">￥51-100万</span>
+                                        <span class="s-index">23178</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>5</em>
+                                            <p>仔皇煲</p>
+                                            <span class="s-index">23178</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200314/1880e6f52feb5c333a76ed1dfb558e0c.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥51-100万</span></p>
+                                                <p>全国门店：<span>65家</span></p>
+                                                <p>标准店面：<span>80-100平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="权味">
+                                    <div class="ranking-up" style="display: block;">
+                                        <em>6</em>
+                                        <p>权味</p>
+                                        <span class="s-price">￥21-50万</span>
+                                        <span class="s-index">22112</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>6</em>
+                                            <p>权味</p>
+                                            <span class="s-index">22112</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190315/0f126950c95d0968cb36d59df2fa8006.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥21-50万</span></p>
+                                                <p>全国门店：<span>35家</span></p>
+                                                <p>标准店面：<span>100平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="阿甘锅盔">
+                                    <div class="ranking-up">
+                                        <em>7</em>
+                                        <p>阿甘锅盔</p>
+                                        <span class="s-price">￥10-20万</span>
+                                        <span class="s-index">17892</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>7</em>
+                                            <p>阿甘锅盔</p>
+                                            <span class="s-index">17892</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20180515/04f224ea8c56ac36f886b8b1507deaaa.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥10-20万</span></p>
+                                                <p>全国门店：<span>507家</span></p>
+                                                <p>标准店面：<span>10-50平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="和合谷">
+                                    <div class="ranking-up">
+                                        <em>8</em>
+                                        <p>和合谷</p>
+                                        <span class="s-price">￥51-100万</span>
+                                        <span class="s-index">17786</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>8</em>
+                                            <p>和合谷</p>
+                                            <span class="s-index">17786</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20180425/2056ed1eb68f6bea9108dd384cee6365.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥51-100万</span></p>
+                                                <p>全国门店：<span>138家</span></p>
+                                                <p>标准店面：<span>80-150平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="唯美召香">
+                                    <div class="ranking-up">
+                                        <em>9</em>
+                                        <p>唯美召香</p>
+                                        <span class="s-price">￥21-50万</span>
+                                        <span class="s-index">16651</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>9</em>
+                                            <p>唯美召香</p>
+                                            <span class="s-index">16651</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20171201/19e15a230ce76de7027bafdc253f4d54.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥21-50万</span></p>
+                                                <p>全国门店：<span>150家</span></p>
+                                                <p>标准店面：<span>80平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="雪乐山滑雪培训连锁机构">
+                                    <div class="ranking-up">
+                                        <em>10</em>
+                                        <p>雪乐山滑雪培训连锁机构</p>
+                                        <span class="s-price">￥51-100万</span>
+                                        <span class="s-index">14626</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>10</em>
+                                            <p>雪乐山滑雪培训连锁机构</p>
+                                            <span class="s-index">14626</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20180611/13c4db415bec4132d7e840a43afd66af.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥51-100万</span></p>
+                                                <p>全国门店：<span>34家</span></p>
+                                                <p>标准店面：<span>150平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box" style="height: 525px;width: 600px;background-color: #fff;">
+                    <img src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20191017/4a1a5e56233b8443160cdfd7a3e507a7.jpg"
+                        style="width: 100%;">
+                </div>
+                <div class="brand-ranking">
+                    <div class="ranking-title">
+                        <h2>本月人气品牌排行榜</h2>
+                    </div>
+                    <div class="ranking-nr">
+                        <div class="brand-ranking-s">
+                            <span>排名</span>
+                            <span class="sn1">品牌名称</span>
+                            <span class="sn2">投资额</span>
+                            <span class="sn3">排名</span>
+                        </div>
+                        <ul class="ranking-ul">
+                            <li>
+                                <a href="#" target="_blank" title="新辣道">
+                                    <div class="ranking-up" style="display: block;">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-jiangbei-"></use>
+                                        </svg>
+                                        <p>新辣道</p>
+                                        <span class="s-price">￥101-200万</span>
+                                        <span class="s-index">35048</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <svg class="icon" aria-hidden="true">
+                                                <use xlink:href="#icon-jiangbei-"></use>
+                                            </svg>
+                                            <p>新辣道</p>
+                                            <span class="s-index">35048</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200225/190792786352e578653fe4438e008998.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥101-200万</span></p>
+                                                <p>全国门店：<span>109家</span></p>
+                                                <p>标准店面：<span>270-350平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="唯美度">
+                                    <div class="ranking-up">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-jiangbei-"></use>
+                                        </svg>
+                                        <p>唯美度</p>
+                                        <span class="s-price">￥10万以下</span>
+                                        <span class="s-index">27305</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <svg class="icon" aria-hidden="true">
+                                                <use xlink:href="#icon-jiangbei-"></use>
+                                            </svg>
+                                            <p>唯美度</p>
+                                            <span class="s-index">27305</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190416/7345221b5383e16ce33b1d0d9a2655cd.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥10万以下</span></p>
+                                                <p>全国门店：<span>5693家</span></p>
+                                                <p>标准店面：<span>100~1000平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="权金城烤肉">
+                                    <div class="ranking-up">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-jiangbei-"></use>
+                                        </svg>
+                                        <p>权金城烤肉</p>
+                                        <span class="s-price">￥51-100万</span>
+                                        <span class="s-index">26542</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <svg class="icon" aria-hidden="true">
+                                                <use xlink:href="#icon-jiangbei-"></use>
+                                            </svg>
+                                            <p>权金城烤肉</p>
+                                            <span class="s-index">26542</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190315/0679d4fa21b4b67ae021541c6d81e107.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥51-100万</span></p>
+                                                <p>全国门店：<span>51家</span></p>
+                                                <p>标准店面：<span>200平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="LE CYGNE 天鹅童话">
+                                    <div class="ranking-up" style="display: block;">
+                                        <em>4</em>
+                                        <p>LE CYGNE 天鹅童话</p>
+                                        <span class="s-price">￥21-50万</span>
+                                        <span class="s-index">25795</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>4</em>
+                                            <p>LE CYGNE 天鹅童话</p>
+                                            <span class="s-index">25795</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20180720/4d389e390dc91bbf1a0b431675722f75.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥21-50万</span></p>
+                                                <p>全国门店：<span>68家</span></p>
+                                                <p>标准店面：<span>150平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="仔皇煲">
+                                    <div class="ranking-up" style="display: block;">
+                                        <em>5</em>
+                                        <p>仔皇煲</p>
+                                        <span class="s-price">￥51-100万</span>
+                                        <span class="s-index">23178</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>5</em>
+                                            <p>仔皇煲</p>
+                                            <span class="s-index">23178</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200314/1880e6f52feb5c333a76ed1dfb558e0c.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥51-100万</span></p>
+                                                <p>全国门店：<span>65家</span></p>
+                                                <p>标准店面：<span>80-100平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="权味">
+                                    <div class="ranking-up" style="display: block;">
+                                        <em>6</em>
+                                        <p>权味</p>
+                                        <span class="s-price">￥21-50万</span>
+                                        <span class="s-index">22112</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>6</em>
+                                            <p>权味</p>
+                                            <span class="s-index">22112</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20190315/0f126950c95d0968cb36d59df2fa8006.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥21-50万</span></p>
+                                                <p>全国门店：<span>35家</span></p>
+                                                <p>标准店面：<span>100平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="阿甘锅盔">
+                                    <div class="ranking-up">
+                                        <em>7</em>
+                                        <p>阿甘锅盔</p>
+                                        <span class="s-price">￥10-20万</span>
+                                        <span class="s-index">17892</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>7</em>
+                                            <p>阿甘锅盔</p>
+                                            <span class="s-index">17892</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20180515/04f224ea8c56ac36f886b8b1507deaaa.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥10-20万</span></p>
+                                                <p>全国门店：<span>507家</span></p>
+                                                <p>标准店面：<span>10-50平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="和合谷">
+                                    <div class="ranking-up">
+                                        <em>8</em>
+                                        <p>和合谷</p>
+                                        <span class="s-price">￥51-100万</span>
+                                        <span class="s-index">17786</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>8</em>
+                                            <p>和合谷</p>
+                                            <span class="s-index">17786</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20180425/2056ed1eb68f6bea9108dd384cee6365.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥51-100万</span></p>
+                                                <p>全国门店：<span>138家</span></p>
+                                                <p>标准店面：<span>80-150平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="唯美召香">
+                                    <div class="ranking-up">
+                                        <em>9</em>
+                                        <p>唯美召香</p>
+                                        <span class="s-price">￥21-50万</span>
+                                        <span class="s-index">16651</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>9</em>
+                                            <p>唯美召香</p>
+                                            <span class="s-index">16651</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20171201/19e15a230ce76de7027bafdc253f4d54.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥21-50万</span></p>
+                                                <p>全国门店：<span>150家</span></p>
+                                                <p>标准店面：<span>80平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="雪乐山滑雪培训连锁机构">
+                                    <div class="ranking-up">
+                                        <em>10</em>
+                                        <p>雪乐山滑雪培训连锁机构</p>
+                                        <span class="s-price">￥51-100万</span>
+                                        <span class="s-index">14626</span>
+                                    </div>
+                                    <div class="ranking-dw" style="display: none;">
+                                        <div class="ranking-dw-i">
+                                            <em>10</em>
+                                            <p>雪乐山滑雪培训连锁机构</p>
+                                            <span class="s-index">14626</span>
+                                        </div>
+                                        <div class="ranking-dw-u">
+                                            <div class="ranking-dw-ul">
+                                                <img
+                                                    src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20180611/13c4db415bec4132d7e840a43afd66af.jpg">
+                                            </div>
+                                            <div class="ranking-dw-ur">
+                                                <p>投资额：<span>￥51-100万</span></p>
+                                                <p>全国门店：<span>34家</span></p>
+                                                <p>标准店面：<span>150平<span></span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div id="footer-vue">
+        <footercontent></footercontent>
+    </div>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/template-zf.js"></script>
+    <script src="./js/brand.js"></script>
+    <script src="./js/lazyload.js"></script>
+    <script>
+        $(function () {
+            /*人气排行榜*/
+            $(".ranking-ul li:first-child").find(".ranking-up").hide();
+            $(".ranking-ul li:first-child").find(".ranking-dw").show();
+            $(".ranking-ul li").mouseenter(function () {
+                $(this).find(".ranking-up").hide();
+                $(this).find(".ranking-dw").show();
+                $(this).siblings().find(".ranking-up").show();
+                $(this).siblings().find(".ranking-dw").hide();
+            });
+        });
+    </script>
 </body>
 
 </html>
