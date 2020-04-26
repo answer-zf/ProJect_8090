@@ -18,6 +18,9 @@
 
 # 1-33(6) 1-16(1)
 
+import random
+num = random.randint(1, 33)
+
 list_doubleball = []
 time = 1
 while True:
