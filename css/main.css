@@ -1882,28 +1882,31 @@ span.columnNewsColor:hover {
     margin-bottom: 0;
 }
 .brand-ranking {
-    width: 290px;
+    width: 292.5px;
     height: 525px;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0px 0px 10px 0px rgba(204, 204, 204, 0.5);
 }
 .ranking-title {
-    width: 290px;
+    display: flex;
+    width: 292.5px;
     height: 50px;
-    background: #f0f7ff;
-    line-height: 50px;
     padding: 0 10px;
+    background: #ffeaaf77;
+    line-height: 52px;
 }
-
+.ranking-title .zficon {
+    margin-top: 0px;
+    width: 3.6em;
+    height: 3.6em;
+}
 .ranking-title h2 {
     margin-bottom: 0;
     font-size: 16px;
-    color: #3399ff;
+    color: #ffba00;
     font-weight: bold;
     line-height: 50px;
-    padding-left: 25px;
-    background: url(https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/top/img/rank-icon1.png)
-        no-repeat 0 center;
+    padding-left: 12px;
 }
 .ranking-nr {
     padding: 0px 10px;
@@ -2034,9 +2037,114 @@ span.columnNewsColor:hover {
     padding-left: 50px;
 }
 .sn3 {
-    padding-left: 46px;
+    padding-left: 60px;
 }
 .rankingtop {
+    display: flex;
+    justify-content: space-between;
+}
+.ranking-rec {
+    width: 595px;
+    height: 215px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(205, 205, 205, 0.5);
+    margin-top: 10px;
+}
+
+.ranking-rec-title {
+    padding: 14px 10px;
+}
+.ranking-rec-title p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff8520;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACWklEQVQ4jaWUv0tjQRDHV8TZ9cUQIlYWiiBEsFJrQbCxOisbz+quEpzdPH+QCBZa6lU2csKJ5exsbAz+4KwU7FSw8g+wsLWwOIO5t1foe8QfuYveF7bY78z7zMzuY4Wokdqf6wbCM2B93tAiPFP7c92insDiNjBGwHjxbyBeAGMEFrffhu0s9gFjFUhz3YovvyHNwFiFncW+V0FJugSM1bQzuUaBaWdywFiVpEvPAoHNDwJjBKS3GoXVdLkFjFFg84OJqUgfAuv7rCt0vReYdYUuYH2vSB8+wRaGgdBLwvX3wmJJwnUg9IoWhoUifQyEPuOWemoTFOP3egBwYVFZ8yPeZ9xSzyNQHwvpwhkg9JJ1ecK5ZiGESJEeBdb3sqS/verG4TQQ/kqRHhVCiAnnmiXrMhB66cKZxySLa0DoW21+I+miFI4DmwcomaXYUxY/A5sKlMLx2Gu1+Q0g9NLiWlLVe98EFi0QeiAsJACenQIyv6XNY+DMJ2BTUTw7lRQlLAChB4vWe9/0bJTeA5SKzQkwRikKJ5+NyBgBm4p0OB37KQongTFSbE56D1C+ediZvWJWWnMFbCptND9SewngwmK8b6P5EWBTkdZcZfaK2TdhyZj7c92KzA2wuW0vF/pfxtvLhX5gc6vI3Pz1YahVsIsDwHinLF53HC13xn7H0XKnsngNjHfBLg40BIslXTgGbB6A8TJ3uprOna6mgfES2DxIF469C5Z0SuFXIPTK6p+KzBEQ+oDxy4dgCdSGK0+/kw9suPJfsFhgcbvuQ/oRDZ1vtgydb7Y0kvsH8ospbK8jnKUAAAAASUVORK5CYII=)
+        no-repeat 0 center;
+    padding-left: 28px;
+    margin-bottom: 0;
+}
+.brand-ranking-bn {
+    height: 96px;
+}
+.brand-ranking-bn ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.brand-ranking-bn li {
+    width: 136.25px;
+    height: 96px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.brand-ranking-bn li .ranking-bn-img {
+    position: relative;
+    display: block;
+    width: 136.25px;
+    height: 96px;
+    margin-bottom: 12px;
+}
+.brand-ranking-bn li img {
+    display: block;
+    width: 136.25px;
+    height: 96px;
+    border: 1px solid #eee;
+}
+.brand-ranking-bn li p {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 136.25px;
+    height: 22px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+.brand-ranking-bn li .text {
+    display: block;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #666;
+}
+.rankingmiddle .ranking-title .zficon {
+    width: 3em;
+    height: 3em;
+    margin-top: 4px;
+}
+.rankingmiddle .ranking-title h2 {
+    color: #1082ff;
+}
+.rankingmiddle .ranking-title {
+    background-color: #d1e8fc5b;
+}
+.rankingmiddle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rankingsection .ranking-title .zficon {
+    width: 3em;
+    height: 3em;
+    margin-top: 0px;
+}
+.rankingsection .ranking-title h2 {
+    padding-left: 6px;
+    color: #01c700;
+}
+.rankingsection .ranking-title {
+    background-color: #cdf5d15e;
+}
+.rankingsection {
     display: flex;
     justify-content: space-between;
 }
