@@ -1,1 +1,1 @@
-min(list_score)
+3, 4
