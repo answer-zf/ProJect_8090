@@ -1,11 +1,11 @@
 """
     
 """
-
-list01 = ["zfd", "cd", "ws"]
-list02 = [101, 102, 103]
-# dic01 = {item: len(item) for item in list01}
-# print(dic01)
-
-dic02 = {list01[i]: list02[i] for i in range(3)}
-print(dic02)
+frozonset_manager = frozenset(["cc", "lb", "sq"])
+frozonset_tech = frozenset(["cc", "lb", "gy", "zf"])
+print("1. %s" % (frozonset_manager & frozonset_tech))
+print("2. %s" % (frozonset_manager - frozonset_tech))
+print("3. %s" % (frozonset_tech - frozonset_manager))
+print("4 %s" % ("zf" in frozonset_manager))
+print("5 %s" % (frozonset_manager ^ frozonset_tech))
+print("6 %s" % (len(frozonset_manager | frozonset_tech)))
