@@ -2517,31 +2517,15 @@ span.columnNewsColor:hover {
     height: 70px;
     overflow: hidden;
 }
+.art-ts {
+    display: flex;
+    justify-content: space-between;
+}
 .art-ts span {
-    float: left;
     font-size: 12px;
     color: #999;
-    padding-left: 20px;
-    margin-right: 50px;
 }
-.art-s {
-    background: url(https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/news/img/art-icon1.png)
-        no-repeat 0 center;
-}
-.art-g {
-    background: url(https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/news/img/art-icon2.png)
-        no-repeat 0 center;
-}
-.art-c {
-    background: url(https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/news/img/art-icon3.png)
-        no-repeat 0 center;
-}
-.art-ts span.art-u {
-    font-size: 14px;
-    color: #04935f;
-    float: right;
-    margin-right: 0;
-}
+
 .article-ui {
     overflow: hidden;
 }
@@ -2561,4 +2545,51 @@ span.columnNewsColor:hover {
     color: #ff8520;
     font-weight: bold;
     margin-bottom: 8px;
+}
+.article-fl-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+.article-fl-list a:nth-of-type(odd) {
+    width: 60%;
+}
+.article-fl-list a:nth-of-type(even) {
+    width: 40%;
+}
+.article-fl-list a {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+}
+.art_ts_fl_item {
+    margin-right: 50px;
+}
+.art_ts_fl_item em {
+    font-size: 14px;
+}
+.art-ts span.art_ts_rg_item a {
+    padding-right: 10px;
+    font-size: 14px;
+    color: #666;
+}
+.article-fl-list a {
+    display: flex;
+    align-items: center;
+}
+.article-fl-list a .mdi {
+    font-size: 16px;
+    line-height: 16px;
+    margin-right: 4px;
+}
+.article-fl-list a .mdi-newspaper-variant {
+    color: #ff6062;
+}
+.article-fl-list a .mdi-ballot {
+    color: #ff8520;
+}
+.art-border {
+    border-bottom: 1px dashed #d8d8d8;
+    margin-top: 13px;
 }
