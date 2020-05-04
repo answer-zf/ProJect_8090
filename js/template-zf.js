@@ -1,5 +1,5 @@
 var headercontent = {
-  template: `  <header class="header">
+    template: `  <header class="header">
   <div class="container-zf">
     <div class="logo">
       <a href="#">
@@ -68,14 +68,14 @@ var headercontent = {
 </header>`,
 }
 var navcontent = {
-  template: `<nav class="nav nav-zf" id="nav-zf">
+    template: `<nav class="nav nav-zf" id="nav-zf">
     <div class="container-zf">
       <a class="nav-link" id="index" href="./index.html" target="_blank">首页</a>
       <a class="nav-link" id="brand" href="./brand.html" target="_blank">品牌查询</a>
       <a class="nav-link" id="programlist" href="./programlist.html" target="_blank">项目大全</a>
       <a class="nav-link" id="leaderboard" href="./leaderboard.html" target="_blank">排行榜</a>
       <a class="nav-link" id="newsinfo" href="./newsinfo.html" target="_blank">新闻资讯</a>
-      <a class="nav-link" id="joininfo" href="./joininfo.html" target="_blank">加盟资讯</a>
+      <a class="nav-link" id="joininfo" href="./joininfo.html" target="_blank">加盟聚焦</a>
       <a class="nav-link" id="entstory" href="./entstory.html" target="_blank">创业故事</a>
       <a class="nav-link navSpecialColor" id="settle" href="./settle.html" target="_blank">品牌入驻</a>
     </div>
@@ -83,7 +83,7 @@ var navcontent = {
 }
 
 var footercontent = {
-  template: `  <footer class="footer-zf" style="min-width: 1200px;">
+    template: `  <footer class="footer-zf" style="min-width: 1200px;">
   <div class="footer-header">
     <div class="container-zf">
       <div class="brand">
@@ -139,10 +139,10 @@ var footercontent = {
 }
 
 new Vue({
-  el: '#header-vue',
-  components: { headercontent, navcontent },
+    el: '#header-vue',
+    components: { headercontent, navcontent },
 })
 new Vue({
-  el: '#footer-vue',
-  components: { footercontent },
+    el: '#footer-vue',
+    components: { footercontent },
 })

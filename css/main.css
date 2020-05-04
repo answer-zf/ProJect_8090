@@ -2479,9 +2479,10 @@ span.columnNewsColor:hover {
     width: 275px;
 }
 .article-list li {
-    padding: 15px;
-    border: 1px solid #fff;
+    padding: 14px;
+    border: 2px solid #fff;
     position: relative;
+    transition: all 0.3s;
 }
 .article-img {
     display: block;
@@ -2508,6 +2509,10 @@ span.columnNewsColor:hover {
     font-size: 18px;
     color: #333;
     font-weight: bold;
+    transition: all 0.3s;
+}
+.art-title a:hover {
+    color: #ff8520;
 }
 .art-cont {
     font-size: 12px;
@@ -2562,6 +2567,10 @@ span.columnNewsColor:hover {
     font-size: 14px;
     color: #666;
     margin-bottom: 12px;
+    transition: all 0.4s;
+}
+.article-fl-list a:hover {
+    color: #ff8520;
 }
 .art_ts_fl_item {
     margin-right: 50px;
@@ -2573,6 +2582,10 @@ span.columnNewsColor:hover {
     padding-right: 10px;
     font-size: 14px;
     color: #666;
+    transition: all 0.5s;
+}
+.art-ts span.art_ts_rg_item a:hover {
+    color: #ff8520;
 }
 .article-fl-list a {
     display: flex;
@@ -2592,4 +2605,44 @@ span.columnNewsColor:hover {
 .art-border {
     border-bottom: 1px dashed #d8d8d8;
     margin-top: 13px;
+}
+.join-aside-hot {
+    overflow: hidden;
+}
+.join-aside-hot li {
+    width: 246px;
+}
+.join-aside-hot li a {
+    width: 192px;
+}
+.brand-info-hot {
+    width: 108px;
+}
+.brand-info-hot img {
+    width: 108px;
+    height: 75px;
+}
+.brand-info-hot-r {
+    width: 126px;
+}
+.article-list li:hover {
+    border-color: #ff8520;
+}
+.article-list li:hover i {
+    background-color: transparent;
+}
+.joincontainer .pages {
+    width: 887px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.joincontainer .ranking-fixed {
+    width: 275px;
+}
+/* settle */
+.settle {
+    width: 860px;
+    height: 600px;
+    margin: 6% auto 0;
+    background-color: #fafafa;
 }
