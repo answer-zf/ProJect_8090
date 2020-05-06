@@ -31,21 +31,88 @@
 
 <body>
     <section class="settle">
+        <a href="./index.html" class="tohome">
+            <em class="mdi mdi-home"></em>
+            <span>首页</span>
+        </a>
         <div class="row">
-            <div class="col-3">
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-                        aria-controls="v-pills-home" aria-selected="true">Home</a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-                        aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+            <div class="col-6">
+                <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-personal-tab" data-toggle="pill" href="#v-pills-personal"
+                        role="tab" aria-controls="v-pills-personal" aria-selected="true">
+                        <div class="personalText">
+                            <h3>品牌咨询</h3>
+                            <span>我是客户</span>
+                        </div>
+                        <div class="img"></div>
+                    </a>
+                    <a class="nav-link business-part" id="v-pills-business-tab" data-toggle="pill"
+                        href="#v-pills-business" role="tab" aria-controls="v-pills-business" aria-selected="false">
+                        <div class="personalText">
+                            <h3>品牌入驻</h3>
+                            <span>我是商家</span>
+                        </div>
+                        <div class="img"></div>
+                    </a>
                 </div>
             </div>
-            <div class="col-9">
+            <div class="col-6 settle-form">
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                        aria-labelledby="v-pills-home-tab">home</div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                        aria-labelledby="v-pills-profile-tab">profile</div>
+                    <div class="tab-pane fade show active" id="v-pills-personal" role="tabpanel"
+                        aria-labelledby="v-pills-personal-tab">
+                        <div class="form-box">
+                            <div class="tab-box tab-show" id="form1">
+                                <img src="./images/logo.png" alt="">
+                                <div class="reg-tit">品牌咨询 <span>您信赖的加盟管家</span></div>
+                                <form action="">
+                                    <ul class="ul-inpbox">
+                                        <li>
+                                            <span>姓名：</span>
+                                            <input type="text" name="username" placeholder="请输入您的姓名"
+                                                class="inp phone-num">
+                                        </li>
+                                        <li><span>手机：</span><input type="text" name="phone" placeholder="请输入手机号"
+                                                class="inp inp-pwd"></li>
+                                        <li><span>项目：</span><input type="text" name="program" placeholder="请输入您所青睐的项目"
+                                                class="inp inp-pwd"><em class="tip-f"></em>
+                                        </li>
+                                    </ul>
+                                    <input type="submit" value="预约" class="sub disabled">
+                                </form>
+                                <div class="info">将有专业客服与您联系&nbsp;<span>您的隐私将绝对保密</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-business" role="tabpanel"
+                        aria-labelledby="v-pills-business-tab">
+                        <div class="form-box">
+                            <div class="tab-box tab-show" id="form1">
+                                <img src="./images/logo.png" alt="">
+                                <div class="reg-tit">品牌入驻 <span>您信赖的加盟管家</span></div>
+                                <form action="">
+                                    <ul class="ul-inpbox">
+                                        <li>
+                                            <span>品牌：</span>
+                                            <input type="text" name="brand" placeholder="请输入品牌名称" class="inp phone-num">
+                                        </li>
+                                        <li>
+                                            <span>公司：</span>
+                                            <input type="text" name="brand" placeholder="请输入公司名称" class="inp phone-num">
+                                        </li>
+                                        <li><span>联系人：</span><input type="text" name="username" placeholder="请输入联系人姓名"
+                                                class="inp inp-pwd"></li>
+                                        <li><span>手机：</span><input type="text" name="phone" placeholder="请输入联系人手机号码"
+                                                class="inp inp-pwd">
+                                        </li>
+                                    </ul>
+                                    <input type="submit" value="预约" class="sub disabled">
+                                </form>
+                                <div class="info">将有专业客服与您联系&nbsp;<span>您的隐私将绝对保密</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

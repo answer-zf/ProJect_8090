@@ -2642,7 +2642,160 @@ span.columnNewsColor:hover {
 /* settle */
 .settle {
     width: 860px;
-    height: 600px;
+    height: 640px;
     margin: 6% auto 0;
-    background-color: #fafafa;
+}
+.tohome {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.tohome span {
+    margin-left: 6px;
+    font-size: 15px;
+    color: #ff6062;
+}
+.tohome em {
+    font-size: 20px;
+    color: #ff6062;
+}
+.settle .row {
+    margin: 0;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 6px #eee;
+}
+.settle .col-6 {
+    padding: 0;
+}
+.settle .col-6 .nav {
+    height: 600px;
+}
+.settle .col-6 .nav-link {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    background: #fafafa;
+    border: 1px solid transparent;
+    border-right-color: #ff8520;
+}
+.settle .col-6 .nav-link.active {
+    background: #fff;
+    border: 1px solid #ff8520;
+    border-right-color: transparent;
+}
+.settle .col-6 .nav-link .img {
+    width: 220px;
+    height: 217px;
+    background: url(../images/selltle_personal_colourless.png);
+}
+.settle .col-6 .nav-link.active .img {
+    background: url(../images/selltle_personal.png);
+}
+.settle .col-6 .nav-link.business-part .img {
+    width: 220px;
+    height: 217px;
+    background: url(../images/selltle_bussness_colourless.png);
+}
+.settle .col-6 .nav-link.active.business-part .img {
+    background: url(../images/selltle_bussness.png);
+}
+.settle .col-6 .nav-link .personalText {
+    width: 170px;
+}
+.settle .col-6 .nav-link.active .personalText h3 {
+    color: #ff8520;
+}
+.settle .col-6 .nav-link.active.business-part .personalText h3 {
+    color: #5d91da;
+}
+.settle .col-6 .nav-link .personalText h3 {
+    color: #777;
+}
+
+.settle .col-6 .nav-link .personalText span {
+    color: #999;
+}
+.settle .col-6 .nav-link.active .personalText span {
+    color: #777;
+}
+.settle-form {
+    border: 1px solid #ff8520;
+    border-left-color: transparent;
+}
+.form-box {
+    padding: 38px 55px 0;
+}
+.reg-tit {
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 12px;
+}
+.reg-tit span {
+    font-size: 14px;
+    color: #999;
+    border-left: 1px solid #999999;
+    padding-left: 13px;
+    margin-left: 10px;
+}
+.ul-inpbox li {
+    margin-bottom: 10px;
+    position: relative;
+}
+.ul-inpbox li span {
+    float: left;
+    width: 64px;
+    font-size: 14px;
+    color: #333;
+}
+.ul-inpbox li .inp {
+    overflow: hidden;
+    border: 0;
+    height: 40px;
+    float: left;
+    width: 234px;
+    font-size: 14px;
+}
+
+.ul-inpbox li em,
+.pwd-inner .ul-inpbox li em {
+    font-size: 12px;
+    color: #ff5c5c;
+    position: absolute;
+    left: 64px;
+    bottom: -33px;
+    display: block;
+}
+.ul-inpbox li {
+    border-bottom: 1px solid #dfdfdf;
+    height: 42px;
+    margin-top: 17px;
+    line-height: 42px;
+    font-size: 14px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.tab-box .sub,
+.pwd-inner .sub {
+    width: 100%;
+    height: 50px;
+    background: #ff8520;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    border: 0;
+    margin-top: 38px;
+}
+.tab-box .info {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    padding: 10px 0;
+}
+.tab-box .info span {
+    color: #ff8520;
+}
+.ul-inpbox li .inp:focus {
+    outline: none;
 }
