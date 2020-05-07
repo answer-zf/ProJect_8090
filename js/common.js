@@ -16,7 +16,13 @@ $(function () {
         $('#index').addClass('active')
     } else {
         $('#nav-zf .nav-link').removeClass('active')
-        $(hash).addClass('active')
+        if (hash.indexOf('programlist') != -1) {
+            $('#programlist').addClass('active')
+        } else if (hash.indexOf('projectitem') != -1) {
+            $('#programlist').addClass('active')
+        } else {
+            $(hash).addClass('active')
+        }
     }
 })
 
