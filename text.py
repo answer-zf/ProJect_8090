@@ -40,10 +40,10 @@ def get_students_for_gender(list_student, gender):
 
 
 def get_students_for_scope(list_student, age, score):
-    list_scope = []
-    for item in list_student:
-        if (item.age > age and item.score > score):
-            list_scope.append(item)
+    list_scope = [
+        item for item in list_student
+        if (item.age > age and item.score > score)
+    ]
     return list_scope
 
 
