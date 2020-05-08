@@ -20,6 +20,12 @@ $(function () {
             $('#programlist').addClass('active')
         } else if (hash.indexOf('projectitem') != -1) {
             $('#programlist').addClass('active')
+        } else if (hash.indexOf('newsinfo') != -1) {
+            $('#newsinfo').addClass('active')
+        } else if (hash.indexOf('joininfo') != -1) {
+            $('#joininfo').addClass('active')
+        } else if (hash.indexOf('entstory') != -1) {
+            $('#entstory').addClass('active')
         } else {
             $(hash).addClass('active')
         }

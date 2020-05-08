@@ -1,52 +1,22 @@
 """
-
+    
 """
-
-
-class Student:
+class Vector2:
     """
-        学生类
+        ??
     """
-    def __init__(self, name, gender, age, score):
-        self.name = name
-        self.gender = gender
-        self.age = age
-        self.score = score
+    def fun01(self):
+        pass
 
-    def print_self(self):
-        print(self.name, self.age, self.score, self.gender)
+    @classmethod
+    def fun02(cls):
+        pass
 
-
-list01 = [
-    Student("zf", "male", 20, 30),
-    Student("cf", "female", 21, 60),
-    Student("gf", "male", 22, 70),
-    Student("df", "female", 23, 80),
-]
+    @staticmethod
+    def fun03(cls):
 
 
-def get_student_for_name(list_student, name):
-    for item in list_student:
-        if item.name == name:
-            return item
+v01 = Vector2()
+v01.fun01()
 
-
-def get_students_for_gender(list_student, gender):
-    list_gender = []
-    for item in list_student:
-        if item.gender == gender:
-            list_gender.append(item)
-    return list_gender
-
-
-def get_students_for_scope(list_student, age, score):
-    list_scope = [
-        item for item in list_student
-        if (item.age > age and item.score > score)
-    ]
-    return list_scope
-
-
-re = get_students_for_scope(list01, 20, 60)
-for item in re:
-    item.print_self()
+Vector2().fun02()

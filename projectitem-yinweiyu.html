@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css">
     <!-- iconfont Symbol 引用  -->
     <script src="./js/iconfont.js"></script>
     <!-- jquery -->
@@ -63,6 +64,7 @@
                     <a href="./programlist-kaoyu.html" title="因为鱼">因为鱼</a>
                 </span>
             </div>
+            <!-- 落地页 -->
             <div class="content-items">
                 <div><img src="./project-images/yinweiyu/PC_01.jpg" alt=""></div>
                 <div><img src="./project-images/yinweiyu/PC_02.jpg" alt=""></div>
@@ -80,6 +82,87 @@
                 <div><img src="./project-images/yinweiyu/PC_14.jpg" alt=""></div>
                 <div><img src="./project-images/yinweiyu/PC_15.jpg" alt=""></div>
             </div>
+            <!-- 留言 -->
+            <div class="message-board">
+                <div class="messsage-board-container">
+                    <div class="message-board-box" id="message_boardBox">
+                        <div class="message-title"><img style="width:540px;"
+                                src="http://msgk18.tbkf.net/pc/gbook2018/images/msgBoard.title.png">
+                        </div>
+                        <div class="message-left">
+                            <div class="msg-left-item msg-others">
+                                <div class="msg-left-tit"><i class="msg-tit-icon"></i>温馨提示</div>
+                                <dl class="others-dl">
+                                    <dt>事实证明：</dt>
+                                    <dd>95%成功者都进行过留言垂询</dd>
+                                    <dt>仔细甄选：</dt>
+                                    <dd>认真留言，多方比较，果断执行</dd>
+                                    <dt>权威呈现：</dt>
+                                    <dd>3证严审项目，确保商机高质量</dd>
+                                </dl>
+                            </div>
+                            <div class="msg-legal">
+                                <p><b>1913</b>的人看好此项目</p>
+                                <p><span class="mdi mdi-heart" style="font-size: 14px;color:#a3a3a3;"></span>
+                                    <b>83%</b>人关注</p>
+                                <a href="/htmfw/flsm.htm" target="_blank" log100_show_on_off="true"><span
+                                        class="mdi mdi-alert-circle-outline"
+                                        style="font-size: 16px;color:#a3a3a3;"></span>
+                                    <span style="font-size:14px;color:#a3a3a3;">法律声明</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="message-right">
+
+                            <div class="msg-right-form">
+                                <form id="message_igbookForm" action="" target="_blank" method="POST">
+
+                                    <dl class="msg-guestname">
+                                        <dt>姓名：</dt>
+                                        <dd>
+                                            <input type="text" class="msg-input placeholder" id="msg_board_username"
+                                                value="" placeholder="请填写姓名" name="guestname">
+                                            <i class="msg-asterisk">*</i>
+                                        </dd>
+                                    </dl>
+                                    <dl class="msg-other">
+                                        <dt>手机：</dt>
+                                        <dd>
+                                            <input type="text" class="msg-input placeholder" id="msg_board_mobile"
+                                                name="other" placeholder="您的手机号">
+                                            <i class="msg-asterisk">*</i>
+                                        </dd>
+                                    </dl>
+                                    <dl class="msg-content">
+                                        <dt>留言：</dt>
+                                        <dd>
+                                            <textarea name="content" class="msg-textarea" id="msg_board_textarea"
+                                                placeholder="请输入您的留言内容或选择快捷留言 (按Esc取消快捷留言)"></textarea>
+                                            <i class="msg-asterisk">*</i>
+                                        </dd>
+                                    </dl>
+                                    <div class="msg-button-box">
+                                        <button type="button" class="msg-button" onclick="submitMsg()">提交留言</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="easy-checkMsg hide" id="message_easyCheckMsg"> <i class="easy-icon"></i>
+                                <div class="checkMsg-title">
+                                    <span>请填写留言或选择下列快捷留言</span>
+                                    <span id="textarea_clear">清空</span>
+                                </div>
+                                <ul class="easy-input" id="textarea_input">
+                                    <li>请问我这个地方有加盟商了吗？</li>
+                                    <li>我想加盟，请来电话告诉我具体细节。</li>
+                                    <li>想了解加盟细节，请尽快寄一份资料。</li>
+                                    <li>给您留过言，未收到资料，请给我来电。</li>
+                                    <li>很感兴趣，想知道加盟细节。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -92,7 +175,54 @@
 
     <script src="./js/common.js"></script>
     <script src="./js/template-zf.js"></script>
-
+    <script>
+        // 表单验证：只验证 手机姓名非空以及手机号码合法
+        function submitMsg() {
+            var name = $("#msg_board_username").val();
+            if (name.trim() == "") {
+                alert('您的姓名不能为空噢');
+                return false;
+            }
+            var mobile = $("#msg_board_mobile").val();
+            if (mobile.trim() == "") {
+                alert('您的手机号不能留空噢');
+                return false;
+            }
+            var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1})|(14[0-9]{1}))+\d{8})$/;
+            if (!myreg.test(mobile)) {
+                alert('请填写有效手机号');
+                return false;
+            }
+        }
+        $(function () {
+            // 快捷留言的控制
+            $("#msg_board_textarea").text("")
+            $("#textarea_input li").click(function () {
+                text = $("#msg_board_textarea").val()
+                text += $(this).text() + "\n"
+                $("#msg_board_textarea").val(text)
+                $("#message_easyCheckMsg").addClass("hide")
+            });
+            $("#msg_board_textarea").focus(function () {
+                $("#message_easyCheckMsg").removeClass("hide")
+            });
+            $("#textarea_clear").click(function () {
+                $("#msg_board_textarea").val("")
+                $("#message_easyCheckMsg").addClass("hide")
+            })
+            $("#msg_board_textarea").keyup(function (e) {
+                if (e.keyCode == 27) {
+                    $("#message_easyCheckMsg").addClass("hide")
+                }
+            })
+            $("#msg_board_username").click(function () {
+                $("#message_easyCheckMsg").addClass("hide")
+            })
+            $("#msg_board_mobile").click(function () {
+                $("#message_easyCheckMsg").addClass("hide")
+            })
+        })
+    </script>
 </body>
 
 </html>
