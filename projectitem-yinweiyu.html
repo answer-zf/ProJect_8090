@@ -86,8 +86,8 @@
             <div class="message-board">
                 <div class="messsage-board-container">
                     <div class="message-board-box" id="message_boardBox">
-                        <div class="message-title"><img style="width:540px;"
-                                src="http://msgk18.tbkf.net/pc/gbook2018/images/msgBoard.title.png">
+                        <div class="message-title">
+                            <img style="width:540px;" src="./images/msgBoard.title.png">
                         </div>
                         <div class="message-left">
                             <div class="msg-left-item msg-others">
@@ -105,15 +105,13 @@
                                 <p><b>1913</b>的人看好此项目</p>
                                 <p><span class="mdi mdi-heart" style="font-size: 14px;color:#a3a3a3;"></span>
                                     <b>83%</b>人关注</p>
-                                <a href="/htmfw/flsm.htm" target="_blank" log100_show_on_off="true"><span
-                                        class="mdi mdi-alert-circle-outline"
+                                <a href="/htmfw/flsm.htm" target="_blank"><span class="mdi mdi-alert-circle-outline"
                                         style="font-size: 16px;color:#a3a3a3;"></span>
                                     <span style="font-size:14px;color:#a3a3a3;">法律声明</span>
                                 </a>
                             </div>
                         </div>
                         <div class="message-right">
-
                             <div class="msg-right-form">
                                 <form id="message_igbookForm" action="" target="_blank" method="POST">
 
@@ -175,54 +173,7 @@
 
     <script src="./js/common.js"></script>
     <script src="./js/template-zf.js"></script>
-    <script>
-        // 表单验证：只验证 手机姓名非空以及手机号码合法
-        function submitMsg() {
-            var name = $("#msg_board_username").val();
-            if (name.trim() == "") {
-                alert('您的姓名不能为空噢');
-                return false;
-            }
-            var mobile = $("#msg_board_mobile").val();
-            if (mobile.trim() == "") {
-                alert('您的手机号不能留空噢');
-                return false;
-            }
-            var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1})|(14[0-9]{1}))+\d{8})$/;
-            if (!myreg.test(mobile)) {
-                alert('请填写有效手机号');
-                return false;
-            }
-        }
-        $(function () {
-            // 快捷留言的控制
-            $("#msg_board_textarea").text("")
-            $("#textarea_input li").click(function () {
-                text = $("#msg_board_textarea").val()
-                text += $(this).text() + "\n"
-                $("#msg_board_textarea").val(text)
-                $("#message_easyCheckMsg").addClass("hide")
-            });
-            $("#msg_board_textarea").focus(function () {
-                $("#message_easyCheckMsg").removeClass("hide")
-            });
-            $("#textarea_clear").click(function () {
-                $("#msg_board_textarea").val("")
-                $("#message_easyCheckMsg").addClass("hide")
-            })
-            $("#msg_board_textarea").keyup(function (e) {
-                if (e.keyCode == 27) {
-                    $("#message_easyCheckMsg").addClass("hide")
-                }
-            })
-            $("#msg_board_username").click(function () {
-                $("#message_easyCheckMsg").addClass("hide")
-            })
-            $("#msg_board_mobile").click(function () {
-                $("#message_easyCheckMsg").addClass("hide")
-            })
-        })
-    </script>
+    <script src="./js/msg-board.js"></script>
 </body>
 
 </html>
