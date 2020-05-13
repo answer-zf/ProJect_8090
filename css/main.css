@@ -1492,7 +1492,8 @@ span.columnNewsColor:hover {
 }
 /* 分项 */
 .project-list-li {
-    width: 880px;
+    width: 967px;
+    border: 1px solid #ddd;
 }
 .project-list-li .project-list-item-zf {
     position: relative;
@@ -1508,7 +1509,7 @@ span.columnNewsColor:hover {
 .pro-m {
     width: 410px;
     float: left;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .pro-m .pro-m-h {
     font-size: 18px;
@@ -1540,7 +1541,7 @@ span.columnNewsColor:hover {
     transition: all 0.5s;
 }
 .pro-m dl dd {
-    width: 140px;
+    width: 164px;
     float: left;
     font-size: 12px;
     color: #999;
@@ -1574,21 +1575,21 @@ span.columnNewsColor:hover {
     font-weight: bold;
 }
 .pro-m p span.span-3a {
+    margin-left: 38px;
     background: #defdeb;
     color: #04935f;
 }
 .pro-m p span.span-cz {
+    margin-left: 20px;
     background: #e0efff;
     color: #3399ff;
 }
 .pro-m p span {
-    margin-left: 10px;
     border: 0px;
     padding: 2px 6px;
 }
 .project-r {
-    /* position: fixed; */
-    width: 310px;
+    width: 222px;
 }
 .ranking-fixed {
     position: fixed;
@@ -1601,26 +1602,50 @@ span.columnNewsColor:hover {
     margin-left: 890px;
 }
 .ranking {
-    padding: 15px;
-    background: #fff;
-    border-top: 2px solid #ff941a;
-}
-.ranking .h3 {
-    font-size: 16px;
-    color: #ff941a;
-    font-weight: bold;
+    width: 223px;
+    float: right;
+    height: 490px;
+    border: #dadada solid 1px;
+    overflow: hidden;
     margin-bottom: 10px;
+    background-color: #fff;
 }
-
+.poplist {
+    height: 438px;
+}
+.ranking h3,
+.ranking .h3 {
+    padding-left: 12px;
+    display: block;
+    height: 31px;
+    border-bottom: #dadada solid 1px;
+    background: #f3f3f3;
+    border-top: #ffffff solid 1px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: #333;
+}
+.ranking h3 em,
+.ranking .h3 em {
+    color: #ff941a;
+}
+.ranking .ul-ranking {
+    padding: 10px;
+}
+.ranking .ul-ranking {
+    padding: 10px;
+}
 .ul-ranking li {
     height: 44px;
     font-size: 14px;
 }
-
 .ul-ranking li em {
     color: #999;
     margin-right: 8px;
     margin-left: 18px;
+    font-size: 12px;
 }
 .projectcontent {
     display: flex;
@@ -1630,13 +1655,14 @@ span.columnNewsColor:hover {
 .ul-ranking li {
     display: flex;
     align-items: center;
+    border-bottom: 1px dashed #ccc;
 }
 .ul-ranking li .num {
-    width: 21px;
-    height: 21px;
-    margin: 0 6px 0 1px;
+    width: 18px;
+    height: 18px;
+    margin: 0 5px 0 0px;
     font-size: 12px;
-    line-height: 21px;
+    line-height: 18px;
     color: #ff941a;
     text-align: center;
     border-radius: 50%;
@@ -1646,7 +1672,7 @@ span.columnNewsColor:hover {
 .icon-icon_erjizhandui::before,
 .icon-icon_sanjizhandui::before {
     margin-left: -4px;
-    font-size: 32px;
+    font-size: 28px;
     color: #ff941a;
 }
 .rankingText {
@@ -1655,7 +1681,7 @@ span.columnNewsColor:hover {
     margin-left: 5px;
     height: 36px;
     overflow: hidden;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
     line-height: 36px;
     color: #666;
@@ -1711,7 +1737,7 @@ span.columnNewsColor:hover {
     padding-bottom: 6px;
 }
 .pages {
-    width: 790px;
+    width: 905px;
     margin: 0 auto;
     padding: 30px 0;
     border-top: 1px solid #dfdfdf;
@@ -1755,7 +1781,7 @@ span.columnNewsColor:hover {
     position: absolute;
     left: 30px;
     top: 0px;
-    width: 785px;
+    width: 905px;
     height: 1px;
     background: #dfdfdf;
 }
@@ -2317,6 +2343,9 @@ span.columnNewsColor:hover {
     overflow: hidden;
     padding-bottom: 5px;
 }
+.hot-com {
+    height: 470px;
+}
 .brand-info-bk li {
     float: left;
     width: 269px;
@@ -2358,6 +2387,7 @@ span.columnNewsColor:hover {
     white-space: nowrap;
     margin-bottom: 0;
     margin-top: 10px;
+    padding: 0 10px;
 }
 .brand-info-t .int a {
     font-size: 15px;
@@ -2371,6 +2401,7 @@ span.columnNewsColor:hover {
 .brand-info-lr {
     margin-top: 15px;
     overflow: hidden;
+    padding: 0 10px;
 }
 .brand-info-l {
     width: 113px;
@@ -2478,8 +2509,9 @@ span.columnNewsColor:hover {
     justify-content: space-between;
 }
 .join_content {
-    width: 915px;
+    width: 1142px;
     background-color: #fff;
+    border: 1px solid #ddd;
 }
 .joincontainer aside {
     width: 275px;
@@ -2501,7 +2533,7 @@ span.columnNewsColor:hover {
     height: 146px;
 }
 .article-cont {
-    width: 622px;
+    width: 673px;
     float: left;
     margin-left: 30px;
     text-align: justify;
@@ -2544,39 +2576,66 @@ span.columnNewsColor:hover {
     position: absolute;
     left: 15px;
     bottom: -1px;
-    width: 882px;
+    width: 932px;
     height: 1px;
     background: #dfdfdf;
 }
 .article-list li:last-child i {
     background-color: transparent;
 }
-.ranking h3 {
-    font-size: 16px;
-    color: #ff8520;
-    font-weight: bold;
-    margin-bottom: 8px;
+.article-fl {
+    height: 156px;
 }
 .article-fl-list {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0px;
+    padding: 10px 0;
 }
-.article-fl-list a:nth-of-type(odd) {
-    width: 60%;
-}
-.article-fl-list a:nth-of-type(even) {
-    width: 40%;
-}
+
 .article-fl-list a {
-    display: block;
-    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 5px 0 5px;
+    font-size: 12px;
     color: #666;
-    margin-bottom: 12px;
     transition: all 0.4s;
+    border-right: 1px dashed #ccc;
 }
-.article-fl-list a:hover {
-    color: #ff8520;
+.article-fl-list a:nth-child(even) {
+    border-right-color: transparent;
+}
+.article-fl-list a .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 4px;
+    border-color: #ccc;
+}
+.article-fl-list .active .btn,
+.article-fl-list .active .btn:hover {
+    background-color: #ff941a;
+    border-color: #ff941a;
+}
+.article-fl-list .active .btn span {
+    color: #fff;
+}
+.article-fl-list .active .btn em {
+    color: #fff;
+}
+.article-fl-list a .btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.article-fl-list a button span {
+    font-size: 12px;
+    color: #666;
+}
+.article-fl-list a .mdi {
+    margin-right: 2px;
+    font-size: 14px;
+    line-height: 16px;
 }
 .art_ts_fl_item {
     margin-right: 50px;
@@ -2588,7 +2647,6 @@ span.columnNewsColor:hover {
     padding-right: 10px;
     font-size: 14px;
     color: #666;
-    transition: all 0.5s;
 }
 .art-ts span.art_ts_rg_item a:hover {
     color: #ff8520;
@@ -2597,13 +2655,11 @@ span.columnNewsColor:hover {
     display: flex;
     align-items: center;
 }
-.article-fl-list a .mdi {
-    font-size: 16px;
-    line-height: 16px;
-    margin-right: 4px;
-}
 .article-fl-list a .mdi-newspaper-variant {
-    color: #ff6062;
+    color: #ff941a;
+}
+.article-fl-list a .btn {
+    transition: all 0.5s;
 }
 .article-fl-list a .mdi-ballot {
     color: #ff8520;
@@ -2614,22 +2670,23 @@ span.columnNewsColor:hover {
 }
 .join-aside-hot {
     overflow: hidden;
+    padding: 0 10px;
 }
 .join-aside-hot li {
-    width: 246px;
+    width: 202px;
 }
 .join-aside-hot li a {
-    width: 192px;
+    width: 150px;
 }
 .brand-info-hot {
-    width: 108px;
+    width: 90px;
 }
 .brand-info-hot img {
-    width: 108px;
+    width: 90px;
     height: 75px;
 }
 .brand-info-hot-r {
-    width: 126px;
+    width: 100px;
 }
 .article-list li:hover {
     border-color: #ff8520;
@@ -2638,12 +2695,13 @@ span.columnNewsColor:hover {
     background-color: transparent;
 }
 .joincontainer .pages {
-    width: 887px;
+    width: 933px;
     padding-left: 4px;
     padding-right: 4px;
 }
 .joincontainer .ranking-fixed {
-    width: 275px;
+    width: 221px;
+    margin-left: 10px;
 }
 /* settle */
 .settle {
@@ -3070,7 +3128,7 @@ span.columnNewsColor:hover {
     overflow: hidden;
 }
 .hy_cont1 .hy_l {
-    width: 955px;
+    width: 967 px;
     float: left;
     overflow: auto;
 }
