@@ -743,7 +743,6 @@ span.columnNewsColor:hover {
 .zfcont5miner li a:hover {
     box-shadow: 0 0 10px #999999;
 }
-
 .columnHeader {
     display: flex;
     padding-top: 17px;
@@ -1036,6 +1035,7 @@ span.columnNewsColor:hover {
 }
 
 /* 独立样式 */
+
 .columnItemList a.starHover {
     border-right: 3px solid #ff941a;
 }
@@ -1053,7 +1053,6 @@ span.columnNewsColor:hover {
     background: -o-linear-gradient(to right, #ff4c2e, #ff9813);
     background: linear-gradient(to right, #ff4c2e, #ff9813);
 }
-
 .columnItemList a.creHover {
     border-right: 3px solid #01c700;
 }
@@ -1136,7 +1135,6 @@ span.columnNewsColor:hover {
 .hotTitle {
     border-bottom: 1px solid #dcdcdc;
 }
-
 .newsContainer h4 {
     display: flex;
     margin-top: 14px;
@@ -1194,7 +1192,6 @@ span.columnNewsColor:hover {
     width: 520px;
     margin: 0 10px;
 }
-
 .newsContentMin {
     height: 229px;
     background-color: #fff;
@@ -1312,7 +1309,6 @@ span.columnNewsColor:hover {
 .qora ul li a:hover span {
     color: rgba(16, 130, 255);
 }
-
 .toLinks .linksItem {
     display: inline-block;
     padding: 10px 30px;
@@ -3128,7 +3124,7 @@ span.columnNewsColor:hover {
     overflow: hidden;
 }
 .hy_cont1 .hy_l {
-    width: 967 px;
+    width: 967px;
     float: left;
     overflow: auto;
 }
