@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css">
+    <!-- materialdesignicons -->
+    <link rel="stylesheet" href="./css/materialdesignicons.min.css">
     <!-- iconfont Symbol 引用  -->
     <script src="./js/iconfont.js"></script>
     <!-- jquery -->
@@ -28,18 +29,7 @@
         crossorigin="anonymous"></script>
     <!-- vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-    <style>
-        .project_content {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
 
-        .project_content img {
-            display: block;
-            width: 100%;
-        }
-
-    </style>
 </head>
 
 <body>
@@ -47,124 +37,218 @@
         <!-- 头部区域 -->
         <headercontent></headercontent>
         <!-- 导航区域 -->
-        <navcontent></navcontent>
+        <nav class="nav nav-zf">
+            <div class="container-zf">
+                <a class="nav-link" id="index" href="./index.html" target="_blank">首页</a>
+                <a class="nav-link" id="brand" href="./brand.html" target="_blank">品牌查询</a>
+                <a class="nav-link" id="programlist" href="./programlist.html" target="_blank">项目大全</a>
+                <a class="nav-link" id="leaderboard" href="./leaderboard.html" target="_blank">排行榜</a>
+                <a class="nav-link" id="newsinfo" href="./newsinfo.html" target="_blank">新闻资讯</a>
+                <a class="nav-link" id="joininfo" href="./joininfo.html" target="_blank">加盟聚焦</a>
+                <a class="nav-link" id="entstory" href="./entstory.html" target="_blank">创业故事</a>
+                <a class="nav-link navSpecialColor" id="settle" href="./settle.html" target="_blank">合作咨询</a>
+            </div>
+        </nav>
     </div>
 
-    <section class="project_content">
-        <div class="project-container">
-            <!-- 导航 -->
-            <div class="guidance">
-                <span>
-                    <a href="./index.html" title="首页">
-                        8090餐饮加盟网
-                    </a>
-                    &nbsp;&nbsp;&gt;&nbsp;&nbsp;
-                    <a href="./programlist.html" title="烤鱼">烤鱼</a>
-                    &nbsp;&nbsp;&gt;&nbsp;&nbsp;
-                    <span>因为鱼</span>
-                </span>
-            </div>
-            <!-- 落地页 -->
-            <div class="content-items">
-                <div><img src="./project-images/yinweiyu/PC_01.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_02.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_03.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_04.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_05.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_06.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_07.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_08.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_09.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_10.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_11.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_12.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_13.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_14.jpg" alt=""></div>
-                <div><img src="./project-images/yinweiyu/PC_15.jpg" alt=""></div>
-            </div>
-            <!-- 留言 -->
-            <div class="message-board">
-                <div class="messsage-board-container">
-                    <div class="message-board-box" id="message_boardBox">
-                        <div class="message-title">
-                            <img style="width:540px;" src="./images/msgBoard.title.png">
-                        </div>
-                        <div class="message-left">
-                            <div class="msg-left-item msg-others">
-                                <div class="msg-left-tit"><i class="msg-tit-icon"></i>温馨提示</div>
-                                <dl class="others-dl">
-                                    <dt>事实证明：</dt>
-                                    <dd>95%成功者都进行过留言垂询</dd>
-                                    <dt>仔细甄选：</dt>
-                                    <dd>认真留言，多方比较，果断执行</dd>
-                                    <dt>权威呈现：</dt>
-                                    <dd>3证严审项目，确保商机高质量</dd>
-                                </dl>
-                            </div>
-                            <div class="msg-legal">
-                                <p><b>1913</b>的人看好此项目</p>
-                                <p><span class="mdi mdi-heart" style="font-size: 14px;color:#a3a3a3;"></span>
-                                    <b>83%</b>人关注</p>
-                                <a href="#" target="_blank"><span class="mdi mdi-alert-circle-outline"
-                                        style="font-size: 16px;color:#a3a3a3;"></span>
-                                    <span style="font-size:14px;color:#a3a3a3;">法律声明</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="message-right">
-                            <div class="msg-right-form">
-                                <form id="message_igbookForm" action="" target="_blank" method="POST">
 
-                                    <dl class="msg-guestname">
-                                        <dt>姓名：</dt>
-                                        <dd>
-                                            <input type="text" class="msg-input placeholder" id="msg_board_username"
-                                                value="" placeholder="请填写姓名" name="guestname">
-                                            <i class="msg-asterisk">*</i>
-                                        </dd>
-                                    </dl>
-                                    <dl class="msg-other">
-                                        <dt>手机：</dt>
-                                        <dd>
-                                            <input type="text" class="msg-input placeholder" id="msg_board_mobile"
-                                                name="other" placeholder="您的手机号">
-                                            <i class="msg-asterisk">*</i>
-                                        </dd>
-                                    </dl>
-                                    <dl class="msg-content">
-                                        <dt>留言：</dt>
-                                        <dd>
-                                            <textarea name="content" class="msg-textarea" id="msg_board_textarea"
-                                                placeholder="请输入您的留言内容或选择快捷留言 (按Esc取消快捷留言)"></textarea>
-                                            <i class="msg-asterisk">*</i>
-                                        </dd>
-                                    </dl>
-                                    <div class="msg-button-box">
-                                        <button type="button" class="msg-button" onclick="submitMsg()">提交留言</button>
-                                    </div>
-                                </form>
+    <!-- 地图导航 -->
+    <div class="project-guidance">
+        <div class="guidance">
+            <span>
+                <a href="./index.html" title="首页">
+                    8090餐饮加盟网
+                </a>
+                &nbsp;&nbsp;&gt;&nbsp;&nbsp;
+                <a href="./programlist.html" title="烤鱼">烤鱼</a>
+                &nbsp;&nbsp;&gt;&nbsp;&nbsp;
+                <span>因为鱼</span>
+            </span>
+        </div>
+    </div>
+    <!-- 项目导航以及展示-->
+    <div class="project-content-nav">
+        <div class="con-nav" id="con-nav" style="position: absolute; top: 0px;">
+            <div class="con-nav-spc-box">
+                <div class="con-nav-spc">
+                    <div class="cpy-infor">
+                        <div class="cpy-spc"><span class="cpy-logo"><img height="82" width="82" alt="茶千岁饮品"
+                                    src="./images/project-item-ywy.jpg"></span>
+                            <div class="cpy-intro"><span class="<strong>cpy-tit</strong>">
+                                    <h1>茶千岁饮品</h1>
+                                </span><span class="un-line"></span>
+                                <p>南京荣世联创餐饮管理有限公司</p>
+                                <p>诚信等级：<span class="star">★★★★★</span></p>
+                                <p>更新时间：<span>2020-04-26</span></p>
                             </div>
-                            <div class="easy-checkMsg hide" id="message_easyCheckMsg"> <i class="easy-icon"></i>
-                                <div class="checkMsg-title">
-                                    <span>请填写留言或选择下列快捷留言</span>
-                                    <span id="textarea_clear">清空</span>
+                            <div class="cpy-intro-price">
+                                <p>投资金额：</p><span>5-10万</span>
+                            </div>
+                        </div>
+                    </div><span class="ln-line"></span>
+                    <div class="nav-box">
+                        <div class="con-nav-bar">
+                            <ul>
+                                <li class="cpy-bar home"><a href="javascript:;">
+                                        <span class="mdi mdi-atom"></span>
+                                        <p class="h-line"></p>
+                                        <div class="spc-cn">项目首页</div>
+                                        <p class="spc-en">PROJECT HOME</p>
+                                    </a></li>
+                                <li class="cpy-bar detail"><a href="javascript:;">
+                                        <span class="mdi mdi-clipboard-text"></span>
+                                        <p class="h-line"></p>
+                                        <div class="spc-cn">项目详情</div>
+                                        <p class="spc-en">DETAILS</p>
+                                    </a></li>
+                                <li class="cpy-bar information"><a href="javascript:;">
+                                        <span class="mdi mdi-clipboard-list"></span>
+                                        <p class="h-line"></p>
+                                        <div class="spc-cn">项目资讯</div>
+                                        <p class="spc-en">INFORMATION</p>
+                                    </a></li>
+                                <li class="cpy-bar pics"><a href="javascript:;">
+                                        <span class="mdi mdi-image-size-select-actual"></span>
+                                        <p class="h-line"></p>
+                                        <div class="spc-cn">项目图片</div>
+                                        <p class="spc-en">PICTURE</p>
+                                    </a></li>
+                                <li class="cpy-bar getinform"><a href="#msg-board">
+                                        <span class="mdi mdi-account-tie"></span>
+                                        <p class="h-line"></p>
+                                        <div class="spc-cn">免费索要资料</div>
+                                        <p class="spc-en">GET INFORMATION</p>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div><a href="#msg-board" class="btn-get" id="btn-get">免费索要资料</a>
+                </div>
+            </div>
+        </div>
+        <div id="m_content_div" class="m-content">
+            <div class="m-con-spc">
+                <!-- 落地页 -->
+                <div style="width:1200px;">
+                    <img src="./project-images/yinweiyu/PC_01.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_02.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_03.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_04.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_05.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_06.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_07.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_08.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_09.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_10.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_11.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_12.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_13.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_14.jpg" alt="">
+                    <img src="./project-images/yinweiyu/PC_15.jpg" alt="">
+                    <br>
+                    <!-- 留言 -->
+                    <div class="message-board">
+                        <div class="messsage-board-container">
+                            <div class="message-board-box" id="message_boardBox">
+                                <div class="message-title">
+                                    <img style="width:540px;" src="./images/msgBoard.title.png">
                                 </div>
-                                <ul class="easy-input" id="textarea_input">
-                                    <li>请问我这个地方有加盟商了吗？</li>
-                                    <li>我想加盟，请来电话告诉我具体细节。</li>
-                                    <li>想了解加盟细节，请尽快寄一份资料。</li>
-                                    <li>给您留过言，未收到资料，请给我来电。</li>
-                                    <li>很感兴趣，想知道加盟细节。</li>
-                                </ul>
+                                <div class="message-left">
+                                    <div class="msg-left-item msg-others">
+                                        <div class="msg-left-tit"><i class="msg-tit-icon"></i>温馨提示</div>
+                                        <dl class="others-dl">
+                                            <dt>事实证明：</dt>
+                                            <dd>95%成功者都进行过留言垂询</dd>
+                                            <dt>仔细甄选：</dt>
+                                            <dd>认真留言，多方比较，果断执行</dd>
+                                            <dt>权威呈现：</dt>
+                                            <dd>3证严审项目，确保商机高质量</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="msg-legal">
+                                        <p><b>1913</b>的人看好此项目</p>
+                                        <p><span class="mdi mdi-heart" style="font-size: 14px;color:#a3a3a3;"></span>
+                                            <b>83%</b>人关注</p>
+                                        <a href="#" target="_blank"><span class="mdi mdi-alert-circle-outline"
+                                                style="font-size: 16px;color:#a3a3a3;"></span>
+                                            <span style="font-size:14px;color:#a3a3a3;">法律声明</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="message-right">
+                                    <div class="msg-right-form">
+                                        <form id="message_igbookForm" action="" target="_blank" method="POST">
+
+                                            <dl class="msg-guestname">
+                                                <dt>姓名：</dt>
+                                                <dd>
+                                                    <input type="text" class="msg-input placeholder"
+                                                        id="msg_board_username" value="" placeholder="请填写姓名"
+                                                        name="guestname">
+                                                    <i class="msg-asterisk">*</i>
+                                                </dd>
+                                            </dl>
+                                            <dl class="msg-other">
+                                                <dt>手机：</dt>
+                                                <dd>
+                                                    <input type="text" class="msg-input placeholder"
+                                                        id="msg_board_mobile" name="other" placeholder="您的手机号">
+                                                    <i class="msg-asterisk">*</i>
+                                                </dd>
+                                            </dl>
+                                            <dl class="msg-content">
+                                                <dt>留言：</dt>
+                                                <dd>
+                                                    <textarea name="content" class="msg-textarea"
+                                                        id="msg_board_textarea"
+                                                        placeholder="请输入您的留言内容或选择快捷留言 (按Esc取消快捷留言)"></textarea>
+                                                    <i class="msg-asterisk">*</i>
+                                                </dd>
+                                            </dl>
+                                            <div class="msg-button-box">
+                                                <button type="button" class="msg-button"
+                                                    onclick="submitMsg()">提交留言</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="easy-checkMsg hide" id="message_easyCheckMsg"> <i class="easy-icon"></i>
+                                        <div class="checkMsg-title">
+                                            <span>请填写留言或选择下列快捷留言</span>
+                                            <span id="textarea_clear">清空</span>
+                                        </div>
+                                        <ul class="easy-input" id="textarea_input">
+                                            <li>请问我这个地方有加盟商了吗？</li>
+                                            <li>我想加盟，请来电话告诉我具体细节。</li>
+                                            <li>想了解加盟细节，请尽快寄一份资料。</li>
+                                            <li>给您留过言，未收到资料，请给我来电。</li>
+                                            <li>很感兴趣，想知道加盟细节。</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-    </section>
-
+    </div>
+    <div id="PROJECT_DETAILS_div" class="PROJECT-DETAILS">
+        <div class="detail-con">
+            <div class="detail-con-mid overflow-hidden">
+                <div id="detail_con_mid_lt" class="detail_con_mid_lt project-detail" style="display: block;">
+                    detail
+                </div>
+                <div id="project_news_div" class="project-news" style="display: none;">
+                    information
+                </div>
+                <div id="project_pics_div" class="project-pics" style="display: none;">
+                    pic
+                </div>
+                <div id="detail-con-mid-rt" class="detail-con-mid-rt">
+                    aside
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- 底部 -->
     <div id="footer-vue">
@@ -174,6 +258,7 @@
     <script src="./js/common.js"></script>
     <script src="./js/template-zf.js"></script>
     <script src="./js/msg-board.js"></script>
+    <script src="./js/program-item.js"></script>
 </body>
 
 </html>
