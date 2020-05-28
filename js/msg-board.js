@@ -16,6 +16,7 @@ function submitMsg() {
         return false
     }
 }
+
 $(function () {
     // 快捷留言的控制
     $('#msg_board_textarea').text('')

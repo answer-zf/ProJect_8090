@@ -16,9 +16,8 @@
     <!-- iconfont Symbol 引用  -->
     <script src="./js/iconfont.js"></script>
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <!-- popper -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -32,7 +31,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-detail-zf">
     <div id="header-vue">
         <!-- 头部区域 -->
         <headercontent></headercontent>
@@ -113,7 +112,7 @@
                                         <div class="spc-cn">项目图片</div>
                                         <p class="spc-en">PICTURE</p>
                                     </a></li>
-                                <li class="cpy-bar getinform"><a href="#msg-board">
+                                <li class="cpy-bar getinform"><a href="#message_boardBox" id="zf-btn-get">
                                         <span class="mdi mdi-account-tie"></span>
                                         <p class="h-line"></p>
                                         <div class="spc-cn">免费索要资料</div>
@@ -121,11 +120,11 @@
                                     </a></li>
                             </ul>
                         </div>
-                    </div><a href="#msg-board" class="btn-get" id="btn-get">免费索要资料</a>
+                    </div><a href="#message_boardBox_zf" class="btn-get" id="btn-get">免费索要资料</a>
                 </div>
             </div>
         </div>
-        <div id="m_content_div" class="m-content">
+        <div id="m_content_div" class="m-content bgAux">
             <div class="m-con-spc">
                 <!-- 落地页 -->
                 <div style="width:1200px;">
@@ -231,34 +230,763 @@
             </div>
         </div>
     </div>
-    <div id="PROJECT_DETAILS_div" class="PROJECT-DETAILS">
+    <div id="PROJECT_DETAILS_div" class="PROJECT-DETAILS bgAux">
         <div class="detail-con">
             <div class="detail-con-mid overflow-hidden">
                 <div id="detail_con_mid_lt" class="detail_con_mid_lt project-detail" style="display: block;">
-                    detail
+                    <nav id="navbar-detail-zf" class="navbar navbar-white bg-white">
+                        <ul class="nav nav-pills w-100">
+                            <li class="nav-item">
+                                <a class="nav-link active navbar-detail-zf-indicate" href="#application_fee">
+                                    <span>加盟费用</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbar-detail-zf-indicate" href="#brand_detail">
+                                    <span>品牌概况</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbar-detail-zf-indicate" href="#brand_advantage">
+                                    <span>品牌优势</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbar-detail-zf-indicate" href="#join_support">
+                                    <span class="border-color-transparent">加盟支持</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" style="margin-left: auto;">
+                                <a class="nav-link navbar-detail-zf-indicate" href="#to_consult">
+                                    <span class="border-color-transparent">我要咨询</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div data-spy="scroll" data-target="#navbar-detail-zf" data-offset="0"
+                        class="navbar-detail-zf-item">
+                        <h4 id="application_fee"></h4>
+                        <h4 class="application_fee_title">
+                            YO!TEA有茶 加盟费用
+                        </h4>
+                        <div class="application_fee_content">
+                            <ul>
+                                <li class="fee_item">加盟金：8.8万元</li>
+                                <li class="fee_item">特许权使用费：1.8万元</li>
+                                <li class="fee_item bg-white">首批原材料费：6.5万元</li>
+                                <li class="fee_item bg-white">保证金：1万元</li>
+                                <li class="fee_item">设备费用：0万元</li>
+                                <li class="fee_item">其他费用：0万元</li>
+                            </ul>
+                            <p>
+                                <span class="mdi mdi-currency-cny"></span>
+                                <span>预估投资额 <em>21-50</em> 万</span>
+                            </p>
+                        </div>
+                        <h4 id="brand_detail"></h4>
+                        <h4 class="application_fee_title">YO!TEA有茶 品牌概况</h4>
+                        <div class="brand_detail_content">
+                            <div class="img">
+                                <img src="http://img.canyin.com/2018/11/1671bbb482b.png">
+                            </div>
+                            <span>深圳市合道餐饮管理有限公司，旗下持有专业鲜果茶速饮品牌“YO!TEA有茶”；</span>
+                            <span>2015年YO!TEA有茶首家门店开设，首创提出“多茶底水果茶”的概念，以现切鲜果搭配多种不同茗茶茶汤，1000cc的大容量为标志，不出一年遍创下了年销百万杯的销售记录。</span>
+                            <span>发展至2016年12月，以过3000000+杯的年销量稳居深圳水果茶速饮榜首，成为深圳水果茶市场领先代表。</span>
+                            <span>
+                                2018年YO!TEA有茶专利方杯面世，突破常规速饮圆杯的局限，以方形为主造型杯体，打造了市面上首款持有专利技术的速饮方型杯；黄色杯即刻成为让人印象深刻的品牌印记。</span>
+                            <span>
+                                为更好地塑造品牌形象，2019年8月YO!TEA有茶进行一次全面的品牌升级，升级的视觉与空间形象更为年轻时尚，以“研创水果茶”为slogan，希望传递一种乐享当下，自在生活的年轻态。
+                            </span>
+                        </div>
+                        <h4 id="brand_advantage"></h4>
+                        <h4 class="application_fee_title">YO!TEA有茶 品牌优势</h4>
+                        <div class="brand_detail_content brand_advantage_content">
+                            <span>a、理念优势：产品品类定位清晰，通过品牌营销渗透成为刚需健康鲜果茶饮</span>
+                            <span>b、引领健康茶饮的新概念：首创提出“多茶底水果茶”概念，1000cc的大容量为标志</span>
+                            <span>c、产品优势：原材料严格甄选，把控材料新鲜安全，调研区域消费习惯，针对性做产品系列规划，新品研发上市及下市管理</span>
+                            <span>d、模式优势：成熟运营管理模式，无需摸索经验</span>
+                            <span>e、培训优势：零基础培训，简单易学，包学会，已开店按照公司培训周期进行常规培训，对加盟商/代理商定期组织年度管理培训</span>
+                            <span>f、扶持优势：整店输出，总部提供统一CIS,全方位扶持指导：总部策划团队提供从调研选址、装修设计、开业造势、日常引流、促销等营销策划方案及总部老师驻店支持。</span>
+                            <span>g、运营优势：5年直营店运营经验，形成了一套店面稳定经营、区域拓展、扶商的完善运营体系。</span>
+                            <span>h、团队优势：具有强大的研发团队，为产品不断升级提供保障；后援专业团队扶持，让你经营无忧</span>
+
+                        </div>
+                        <h4 id="join_support"></h4>
+                        <h4 class="application_fee_title">YO!TEA有茶 加盟支持</h4>
+                        <div class="brand_detail_content brand_advantage_content">
+                            <span>1.核心技术支持： 产品技术独家配方、生产工艺和流程及制作方法。</span>
+                            <span>2.系统培训支持： 系统培训做无敌鸡排经营管理的全能人才。</span>
+                            <span>3.经营模式支持： 统一的品牌形象、服装、配送、广告宣传。</span>
+                            <span>4.店面设计支持： 全国统一的店面设计。</span>
+                            <span>5.技术研发支持： 新产品的技术研发和免费二次技术升级。</span>
+                            <span>6.区域保障支持： 在合同约定区域内不发展第二家。</span>
+                            <span>7.营销策划支持： 为合作商提供全套营销策划方案。</span>
+                        </div>
+                        <!-- 留言 -->
+                        <h4 id="to_consult"></h4>
+                        <h4 class="application_fee_title">我要咨询 YO!TEA有茶</h4>
+                        <div class="message-board" style="background-color: transparent;padding:0;margin-top:-10px">
+                            <div class="messsage-board-container" style="box-shadow: none;">
+                                <div class="message-board-box" id="message_boardBox_zf">
+                                    <div class="message-title">
+                                        <img style="width:540px;" src="./images/msgBoard.title.png">
+                                    </div>
+                                    <div class="message-left">
+                                        <div class="msg-left-item msg-others">
+                                            <div class="msg-left-tit"><i class="msg-tit-icon"></i>温馨提示</div>
+                                            <dl class="others-dl">
+                                                <dt>事实证明：</dt>
+                                                <dd>95%成功者都进行过留言垂询</dd>
+                                                <dt>仔细甄选：</dt>
+                                                <dd>认真留言，多方比较，果断执行</dd>
+                                                <dt>权威呈现：</dt>
+                                                <dd>3证严审项目，确保商机高质量</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="msg-legal">
+                                            <p><b>1913</b>的人看好此项目</p>
+                                            <p><span class="mdi mdi-heart"
+                                                    style="font-size: 14px;color:#a3a3a3;"></span>
+                                                <b>83%</b>人关注</p>
+                                            <a href="#" target="_blank"><span class="mdi mdi-alert-circle-outline"
+                                                    style="font-size: 16px;color:#a3a3a3;"></span>
+                                                <span style="font-size:14px;color:#a3a3a3;">法律声明</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="message-right">
+                                        <div class="msg-right-form">
+                                            <form id="message_igbookForm" action="" target="_blank" method="POST">
+
+                                                <dl class="msg-guestname">
+                                                    <dt>姓名：</dt>
+                                                    <dd>
+                                                        <input type="text" class="msg-input placeholder"
+                                                            id="msg_board_username_zf" value="" placeholder="请填写姓名"
+                                                            name="guestname">
+                                                        <i class="msg-asterisk">*</i>
+                                                    </dd>
+                                                </dl>
+                                                <dl class="msg-other">
+                                                    <dt>手机：</dt>
+                                                    <dd>
+                                                        <input type="text" class="msg-input placeholder"
+                                                            id="msg_board_mobile_zf" name="other" placeholder="您的手机号">
+                                                        <i class="msg-asterisk">*</i>
+                                                    </dd>
+                                                </dl>
+                                                <dl class="msg-content">
+                                                    <dt>留言：</dt>
+                                                    <dd>
+                                                        <textarea name="content" class="msg-textarea"
+                                                            id="msg_board_textarea_zf"
+                                                            placeholder="请输入您的留言内容或选择快捷留言 (按Esc取消快捷留言)"></textarea>
+                                                        <i class="msg-asterisk">*</i>
+                                                    </dd>
+                                                </dl>
+                                                <div class="msg-button-box">
+                                                    <button type="button" class="msg-button"
+                                                        onclick="submitMsg_zf()">提交留言</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="easy-checkMsg hide" id="message_easyCheckMsg_zf"> <i
+                                                class="easy-icon"></i>
+                                            <div class="checkMsg-title">
+                                                <span>请填写留言或选择下列快捷留言</span>
+                                                <span id="textarea_clear_zf">清空</span>
+                                            </div>
+                                            <ul class="easy-input" id="textarea_input_zf">
+                                                <li>请问我这个地方有加盟商了吗？</li>
+                                                <li>我想加盟，请来电话告诉我具体细节。</li>
+                                                <li>想了解加盟细节，请尽快寄一份资料。</li>
+                                                <li>给您留过言，未收到资料，请给我来电。</li>
+                                                <li>很感兴趣，想知道加盟细节。</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- 咨询 -->
                 <div id="project_news_div" class="project-news" style="display: none;">
-                    information
+                    <ul class="article-list">
+                        <li>
+                            <div class="article-ui">
+                                <a class="article-img" href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者" target="_blank">
+                                    <img src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200430/04acc8759a6277294ffe9ecf5fedf5cd.jpg"
+                                        alt="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者">
+                                </a>
+                                <div class="article-cont">
+                                    <p class="art-title">
+                                        <a href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者"
+                                            target="_blank">英奇源儿童成长学苑，0-6岁儿童成长的陪伴者</a>
+                                    </p>
+                                    <p class="art-cont">
+                                        ​2019年被称为托育元年，这一年，从国家到地方，逐渐出台托育机构的监管意见，对托育监管提出新要求的同时也表明托育行业已迎来新的发展方向。2020年伊始，国务院与社会司陆续提出了对托育行业相关的扶持政策，潜力蓄势待发。&nbsp;…
+                                    </p>
+                                    <div class="art-ts">
+                                        <div>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-clock"></em>
+                                                2020-04-30</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-eye-outline"
+                                                    style="font-size:16px"></em>
+                                                1240</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-star"></em> 0</span>
+                                        </div>
+                                        <span class="art_ts_rg_item"><a href="#" title="品牌动态"
+                                                target="_blank">品牌动态</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <i></i>
+                        </li>
+                        <li>
+                            <div class="article-ui">
+                                <a class="article-img" href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者" target="_blank">
+                                    <img src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200430/6f121d79ef60beaf73caca58a879709b.jpg"
+                                        alt="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者">
+                                </a>
+                                <div class="article-cont">
+                                    <p class="art-title">
+                                        <a href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者"
+                                            target="_blank">英奇源儿童成长学苑，0-6岁儿童成长的陪伴者</a>
+                                    </p>
+                                    <p class="art-cont">
+                                        ​2019年被称为托育元年，这一年，从国家到地方，逐渐出台托育机构的监管意见，对托育监管提出新要求的同时也表明托育行业已迎来新的发展方向。2020年伊始，国务院与社会司陆续提出了对托育行业相关的扶持政策，潜力蓄势待发。&nbsp;…
+                                    </p>
+                                    <div class="art-ts">
+                                        <div>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-clock"></em>
+                                                2020-04-30</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-eye-outline"
+                                                    style="font-size:16px"></em>
+                                                1240</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-star"></em> 0</span>
+                                        </div>
+                                        <span class="art_ts_rg_item"><a href="#" title="品牌动态"
+                                                target="_blank">品牌动态</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <i></i>
+                        </li>
+                        <li>
+                            <div class="article-ui">
+                                <a class="article-img" href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者" target="_blank">
+                                    <img src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200430/6f121d79ef60beaf73caca58a879709b.jpg"
+                                        alt="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者">
+                                </a>
+                                <div class="article-cont">
+                                    <p class="art-title">
+                                        <a href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者"
+                                            target="_blank">英奇源儿童成长学苑，0-6岁儿童成长的陪伴者</a>
+                                    </p>
+                                    <p class="art-cont">
+                                        ​2019年被称为托育元年，这一年，从国家到地方，逐渐出台托育机构的监管意见，对托育监管提出新要求的同时也表明托育行业已迎来新的发展方向。2020年伊始，国务院与社会司陆续提出了对托育行业相关的扶持政策，潜力蓄势待发。&nbsp;…
+                                    </p>
+                                    <div class="art-ts">
+                                        <div>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-clock"></em>
+                                                2020-04-30</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-eye-outline"
+                                                    style="font-size:16px"></em>
+                                                1240</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-star"></em> 0</span>
+                                        </div>
+                                        <span class="art_ts_rg_item"><a href="#" title="品牌动态"
+                                                target="_blank">品牌动态</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <i></i>
+                        </li>
+                        <li>
+                            <div class="article-ui">
+                                <a class="article-img" href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者" target="_blank">
+                                    <img src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200430/6f121d79ef60beaf73caca58a879709b.jpg"
+                                        alt="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者">
+                                </a>
+                                <div class="article-cont">
+                                    <p class="art-title">
+                                        <a href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者"
+                                            target="_blank">英奇源儿童成长学苑，0-6岁儿童成长的陪伴者</a>
+                                    </p>
+                                    <p class="art-cont">
+                                        ​2019年被称为托育元年，这一年，从国家到地方，逐渐出台托育机构的监管意见，对托育监管提出新要求的同时也表明托育行业已迎来新的发展方向。2020年伊始，国务院与社会司陆续提出了对托育行业相关的扶持政策，潜力蓄势待发。&nbsp;…
+                                    </p>
+                                    <div class="art-ts">
+                                        <div>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-clock"></em>
+                                                2020-04-30</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-eye-outline"
+                                                    style="font-size:16px"></em>
+                                                1240</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-star"></em> 0</span>
+                                        </div>
+                                        <span class="art_ts_rg_item"><a href="#" title="品牌动态"
+                                                target="_blank">品牌动态</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <i></i>
+                        </li>
+                        <li>
+                            <div class="article-ui">
+                                <a class="article-img" href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者" target="_blank">
+                                    <img src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200430/6f121d79ef60beaf73caca58a879709b.jpg"
+                                        alt="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者">
+                                </a>
+                                <div class="article-cont">
+                                    <p class="art-title">
+                                        <a href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者"
+                                            target="_blank">英奇源儿童成长学苑，0-6岁儿童成长的陪伴者</a>
+                                    </p>
+                                    <p class="art-cont">
+                                        ​2019年被称为托育元年，这一年，从国家到地方，逐渐出台托育机构的监管意见，对托育监管提出新要求的同时也表明托育行业已迎来新的发展方向。2020年伊始，国务院与社会司陆续提出了对托育行业相关的扶持政策，潜力蓄势待发。&nbsp;…
+                                    </p>
+                                    <div class="art-ts">
+                                        <div>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-clock"></em>
+                                                2020-04-30</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-eye-outline"
+                                                    style="font-size:16px"></em>
+                                                1240</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-star"></em> 0</span>
+                                        </div>
+                                        <span class="art_ts_rg_item"><a href="#" title="品牌动态"
+                                                target="_blank">品牌动态</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <i></i>
+                        </li>
+                        <li>
+                            <div class="article-ui">
+                                <a class="article-img" href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者" target="_blank">
+                                    <img src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200430/6f121d79ef60beaf73caca58a879709b.jpg"
+                                        alt="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者">
+                                </a>
+                                <div class="article-cont">
+                                    <p class="art-title">
+                                        <a href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者"
+                                            target="_blank">英奇源儿童成长学苑，0-6岁儿童成长的陪伴者</a>
+                                    </p>
+                                    <p class="art-cont">
+                                        ​2019年被称为托育元年，这一年，从国家到地方，逐渐出台托育机构的监管意见，对托育监管提出新要求的同时也表明托育行业已迎来新的发展方向。2020年伊始，国务院与社会司陆续提出了对托育行业相关的扶持政策，潜力蓄势待发。&nbsp;…
+                                    </p>
+                                    <div class="art-ts">
+                                        <div>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-clock"></em>
+                                                2020-04-30</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-eye-outline"
+                                                    style="font-size:16px"></em>
+                                                1240</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-star"></em> 0</span>
+                                        </div>
+                                        <span class="art_ts_rg_item"><a href="#" title="品牌动态"
+                                                target="_blank">品牌动态</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <i></i>
+                        </li>
+                        <li>
+                            <div class="article-ui">
+                                <a class="article-img" href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者" target="_blank">
+                                    <img src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200430/6f121d79ef60beaf73caca58a879709b.jpg"
+                                        alt="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者">
+                                </a>
+                                <div class="article-cont">
+                                    <p class="art-title">
+                                        <a href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者"
+                                            target="_blank">英奇源儿童成长学苑，0-6岁儿童成长的陪伴者</a>
+                                    </p>
+                                    <p class="art-cont">
+                                        ​2019年被称为托育元年，这一年，从国家到地方，逐渐出台托育机构的监管意见，对托育监管提出新要求的同时也表明托育行业已迎来新的发展方向。2020年伊始，国务院与社会司陆续提出了对托育行业相关的扶持政策，潜力蓄势待发。&nbsp;…
+                                    </p>
+                                    <div class="art-ts">
+                                        <div>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-clock"></em>
+                                                2020-04-30</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-eye-outline"
+                                                    style="font-size:16px"></em>
+                                                1240</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-star"></em> 0</span>
+                                        </div>
+                                        <span class="art_ts_rg_item"><a href="#" title="品牌动态"
+                                                target="_blank">品牌动态</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <i></i>
+                        </li>
+                        <li>
+                            <div class="article-ui">
+                                <a class="article-img" href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者" target="_blank">
+                                    <img src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200430/6f121d79ef60beaf73caca58a879709b.jpg"
+                                        alt="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者">
+                                </a>
+                                <div class="article-cont">
+                                    <p class="art-title">
+                                        <a href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者"
+                                            target="_blank">英奇源儿童成长学苑，0-6岁儿童成长的陪伴者</a>
+                                    </p>
+                                    <p class="art-cont">
+                                        ​2019年被称为托育元年，这一年，从国家到地方，逐渐出台托育机构的监管意见，对托育监管提出新要求的同时也表明托育行业已迎来新的发展方向。2020年伊始，国务院与社会司陆续提出了对托育行业相关的扶持政策，潜力蓄势待发。&nbsp;…
+                                    </p>
+                                    <div class="art-ts">
+                                        <div>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-clock"></em>
+                                                2020-04-30</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-eye-outline"
+                                                    style="font-size:16px"></em>
+                                                1240</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-star"></em> 0</span>
+                                        </div>
+                                        <span class="art_ts_rg_item"><a href="#" title="品牌动态"
+                                                target="_blank">品牌动态</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <i></i>
+                        </li>
+                        <li>
+                            <div class="article-ui">
+                                <a class="article-img" href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者" target="_blank">
+                                    <img src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200430/6f121d79ef60beaf73caca58a879709b.jpg"
+                                        alt="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者">
+                                </a>
+                                <div class="article-cont">
+                                    <p class="art-title">
+                                        <a href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者"
+                                            target="_blank">英奇源儿童成长学苑，0-6岁儿童成长的陪伴者</a>
+                                    </p>
+                                    <p class="art-cont">
+                                        ​2019年被称为托育元年，这一年，从国家到地方，逐渐出台托育机构的监管意见，对托育监管提出新要求的同时也表明托育行业已迎来新的发展方向。2020年伊始，国务院与社会司陆续提出了对托育行业相关的扶持政策，潜力蓄势待发。&nbsp;…
+                                    </p>
+                                    <div class="art-ts">
+                                        <div>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-clock"></em>
+                                                2020-04-30</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-eye-outline"
+                                                    style="font-size:16px"></em>
+                                                1240</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-star"></em> 0</span>
+                                        </div>
+                                        <span class="art_ts_rg_item"><a href="#" title="品牌动态"
+                                                target="_blank">品牌动态</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <i></i>
+                        </li>
+                        <li>
+                            <div class="article-ui">
+                                <a class="article-img" href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者" target="_blank">
+                                    <img src="https://resourceimg.oss-cn-beijing.aliyuncs.com/uploads/20200430/6f121d79ef60beaf73caca58a879709b.jpg"
+                                        alt="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者">
+                                </a>
+                                <div class="article-cont">
+                                    <p class="art-title">
+                                        <a href="#" title="英奇源儿童成长学苑，0-6岁儿童成长的陪伴者"
+                                            target="_blank">英奇源儿童成长学苑，0-6岁儿童成长的陪伴者</a>
+                                    </p>
+                                    <p class="art-cont">
+                                        ​2019年被称为托育元年，这一年，从国家到地方，逐渐出台托育机构的监管意见，对托育监管提出新要求的同时也表明托育行业已迎来新的发展方向。2020年伊始，国务院与社会司陆续提出了对托育行业相关的扶持政策，潜力蓄势待发。&nbsp;…
+                                    </p>
+                                    <div class="art-ts">
+                                        <div>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-clock"></em>
+                                                2020-04-30</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-eye-outline"
+                                                    style="font-size:16px"></em>
+                                                1240</span>
+                                            <span class="art_ts_fl_item"><em class="mdi mdi-star"></em> 0</span>
+                                        </div>
+                                        <span class="art_ts_rg_item"><a href="#" title="品牌动态"
+                                                target="_blank">品牌动态</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <i></i>
+                        </li>
+                    </ul>
+                    <!-- 页签备用 -->
+                    <div class="comment-page pages">
+                        <ul class="pagination">
+                            <li class="disabled"><span>上一页</span></li>
+                            <li class="active"><span>1</span></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li class="disabled"><span>...</span></li>
+                            <li><a href="#">3537</a></li>
+                            <li><a href="#">3538</a></li>
+                            <li><a href="#">下一页</a></li>
+                            <li style=" float: left;margin:5px;">共 42449 条</li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- 图片 -->
                 <div id="project_pics_div" class="project-pics" style="display: none;">
-                    pic
+                    <div class="detail_pic_content">
+                        <h4 class="application_fee_title">YO!TEA有茶</h4>
+                        <div class="imgs">
+                            <figure class="figure" data-toggle="modal" data-target="#detail_pic_figure01">
+                                <img src="http://img.canyin.com/2018/11/1671bbb482b.png"
+                                    class="figure-img img-fluid rounded">
+                                <figcaption class="figure-caption">YO!TEA有茶</figcaption>
+                            </figure>
+                            <!-- 图片详情模态框 每个模态框id 必须与 figure标签的data-target属性名一致且不与其他图片重复-->
+                            <div class="modal fade" id="detail_pic_figure01" tabindex="-1" role="dialog"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">YO!TEA有茶</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="http://img.canyin.com/2018/11/1671bbb482b.png"" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="detail-con-mid-rt" class="detail-con-mid-rt">
-                    aside
-                </div>
-            </div>
-        </div>
-    </div>
+                <!-- 右侧边栏 ps. 所有广告部分看情况删减 -->
+                <div id=" detail-con-mid-rt" class="detail-con-mid-rt">
+                                            <!-- 品牌介绍 -->
+                                            <div class="cont_r1" id="brandintroduction">
+                                                <h2 class="f14 yh"><em class="emcolor">因为鱼</em>烤鱼饭</h2>
+                                                <div class="cont2">
+                                                    <div class="brandlogo">
+                                                        <img src="./images/project-item-ywy.jpg" alt="">
+                                                    </div>
+                                                    <div class="brandinfo">
+                                                        <div class="infoitem">
+                                                            <h4>因为鱼烤鱼饭</h4>
+                                                            <span>加盟店：<em class="emcolor font-weight-bold">118</em>
+                                                                家</span>
+                                                            <span>成立时间：2005-04-05</span>
+                                                            <span>已有 <em class="emcolor font-weight-bold">548</em>
+                                                                人电话沟通过该项目</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="brandmsg">
+                                                        <h4>我们立即与您沟通</h4>
+                                                        <input type="text" class="msg-input placeholder"
+                                                            id="brand_msg_board_phone" value="" placeholder="请填写手机号码"
+                                                            name="brandphone">
+                                                        <button type="button"
+                                                            class="btn btn-success btn-sm">免费电话</button>
+                                                    </div>
+                                                    <div class="infops">
+                                                        <span>据市场数据反馈：99%的成功从沟通开始，这个项目就是您想要的！</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 广告 -->
+                                            <a href="#" target="_blank" class="slick-slide"><img
+                                                    src="https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/index/img/yqblist0218.jpg">
+                                            </a>
+                                            <!-- 猜你喜欢 -->
+                                            <div class="cont_r1" style="margin-top:10px">
+                                                <h2 class="f14 yh">猜你喜欢</h2>
+                                                <div class="cont2">
+                                                    <dl>
+                                                        <dd><span><a
+                                                                    href="#">黄蜀郎鸡公煲</a><br><em>★★★★☆</em><br>3-5万</span><a
+                                                                href="#" target="_blank"><img
+                                                                    src="http://www.k18.com/mypic/2018-09/201809031856152716341.jpg"
+                                                                    width="96" height="58" alt="黄蜀郎鸡公煲"
+                                                                    title="黄蜀郎鸡公煲"></a></dd>
+                                                        <dd><span><a
+                                                                    href="#">疯迷便当</a><br><em>★★★★☆</em><br>3-5万</span><a
+                                                                href="#" target="_blank"><img
+                                                                    src="http://www.k18.com/mypic/2019-01/201901141733492716836.jpg"
+                                                                    width="96" height="58" alt="疯迷便当" title="疯迷便当"></a>
+                                                        </dd>
+                                                        <dd><span><a
+                                                                    href="#">菜立方芽苗菜</a><br><em>★★★★☆</em><br>3-5万</span><a
+                                                                href="#" target="_blank"><img
+                                                                    src="http://www.k18.com/mypic/2018-07/201807051443302712716.gif"
+                                                                    width="96" height="58" alt="菜立方芽苗菜"
+                                                                    title="菜立方芽苗菜"></a></dd>
+                                                        <dd><span><a
+                                                                    href="#">睦记花甲爪爪</a><br><em>★★★★☆</em><br>3-5万</span><a
+                                                                href="#" target="_blank"><img
+                                                                    src="http://www.k18.com/mypic/2018-04/20180408160710.jpg"
+                                                                    width="96" height="58" alt="睦记花甲爪爪"
+                                                                    title="睦记花甲爪爪"></a></dd>
+                                                        <dd><span><a
+                                                                    href="#">泉城烤薯</a><br><em>★★★★☆</em><br>3-5万</span><a
+                                                                href="#" target="_blank"><img
+                                                                    src="http://www.k18.com/mypic/2016-11/20161128150433.gif"
+                                                                    width="96" height="58" alt="泉城烤薯" title="泉城烤薯"></a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!-- 广告 -->
+                                            <a href="#" target="_blank" class="slick-slide"><img
+                                                    src="https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/index/img/yqblist0218.jpg">
+                                            </a>
+                                            <!-- 新闻排行 -->
+                                            <div class="cont_r4" style="margin-bottom: 10px;">
+                                                <h2 class="f14 yh"><em class="emcolor">新闻</em>排行</h2>
+                                                <div class="cont1">
+                                                    <dl>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>做好一家麻辣烫店应注意什么</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>打破麻辣烫传统印象
+                                                                    那些年口味</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>那些年麻辣烫加盟
+                                                                    带你玩转餐饮</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>一碗焖鱼的时间足够回忆——巧仙</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>中式快餐加盟费多少
+                                                                    投资随你点</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>巧仙婆焖鱼米饭是如何完胜传统鱼</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>为什么巧仙婆焖鱼米饭这么受人欢</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>巧仙婆焖鱼米饭加盟
+                                                                    与年轻人有</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>巧仙婆焖鱼米饭
+                                                                    只为“鱼”你相</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#" class="ellipsisOneLine"><span>·
+                                                                    &nbsp;</span><span>巧仙婆焖鱼米饭加盟
+                                                                    凭借什么迅巧仙婆焖鱼米饭加盟
+                                                                    凭借什么迅</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>巧仙婆焖鱼米饭告诉你
+                                                                    小餐饮店</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>那些年麻辣烫为你整理麻辣烫食材</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>中式快餐品牌加盟
+                                                                    代理随你点便</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>为什么开那些年麻辣烫店要选择加</span>
+                                                            </a>
+                                                        </dd>
+                                                        <dd><a href="#"><span>·
+                                                                    &nbsp;</span><span>加盟那些年麻辣烫怎么样
+                                                                    三大优</span>
+                                                            </a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!-- 广告 -->
+                                            <a href="#" target="_blank" class="slick-slide"><img
+                                                    src="https://mxjstatic.oss-cn-beijing.aliyuncs.com/www/c/index/img/yqblist0218.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 底部 -->
+                        <div id="footer-vue">
+                            <footercontent></footercontent>
+                        </div>
 
-    <!-- 底部 -->
-    <div id="footer-vue">
-        <footercontent></footercontent>
-    </div>
+                        <script src="./js/common.js"></script>
+                        <script src="./js/template-zf.js"></script>
+                        <script src="./js/msg-board.js"></script>
+                        <script src="./js/program-item.js"></script>
+                        <script>
+                            // 两个留言验证的逻辑分离
+                            function submitMsg_zf() {
+                                var name = $('#msg_board_username_zf').val()
+                                if (name.trim() == '') {
+                                    alert('您的姓名不能为空噢')
+                                    return false
+                                }
+                                var mobile = $('#msg_board_mobile_zf').val()
+                                if (mobile.trim() == '') {
+                                    alert('您的手机号不能留空噢')
+                                    return false
+                                }
+                                var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1})|(14[0-9]{1}))+\d{8})$/
+                                if (!myreg.test(mobile)) {
+                                    alert('请填写有效手机号')
+                                    return false
+                                }
+                            }
 
-    <script src="./js/common.js"></script>
-    <script src="./js/template-zf.js"></script>
-    <script src="./js/msg-board.js"></script>
-    <script src="./js/program-item.js"></script>
+                            $(function () {
+                                $('#msg_board_textarea_zf').text('')
+                                $('#textarea_input_zf li').click(function () {
+                                    text = $('#msg_board_textarea_zf').val()
+                                    text += $(this).text() + '\n'
+                                    $('#msg_board_textarea_zf').val(text)
+                                    $('#message_easyCheckMsg_zf').addClass('hide')
+                                })
+                                $('#msg_board_textarea_zf').focus(function () {
+                                    $('#message_easyCheckMsg_zf').removeClass('hide')
+                                })
+                                $('#textarea_clear_zf').click(function () {
+                                    $('#msg_board_textarea_zf').val('')
+                                    $('#message_easyCheckMsg_zf').addClass('hide')
+                                })
+                                $('#msg_board_textarea_zf').keyup(function (e) {
+                                    if (e.keyCode == 27) {
+                                        $('#message_easyCheckMsg_zf').addClass('hide')
+                                    }
+                                })
+                                $('#msg_board_username_zf').click(function () {
+                                    $('#message_easyCheckMsg_zf').addClass('hide')
+                                })
+                                $('#msg_board_mobile_zf').click(function () {
+                                    $('#message_easyCheckMsg_zf').addClass('hide')
+                                })
+                            })
+
+                        </script>
 </body>
 
 </html>
